@@ -1,0 +1,22 @@
+[
+  {
+    "activeMappingName": "CE - Projects",
+    "name": "Projects",
+    "status": "Active"
+  },
+  {
+    "activeMappingName": "AWS Cloud Formation Templates",
+    "name": "AWS Cloud Formation Templates",
+    "status": "Active"
+  },
+  {
+    "activeMappingName": "Ports and Protocols - CE",
+    "name": "Ports and Protocols",
+    "status": "Active"
+  },
+  {
+    "activeMappingName": "Count",
+    "name": "Counter",
+    "status": "Active"
+  }
+]

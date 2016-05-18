@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Template Name",
+    "structureField": "${fields('values[Template Name]')}"
+  },
+  {
+    "name": "Template Description",
+    "structureField": "${fields('values[Template Description]')}"
+  },
+  {
+    "name": "Template Parameters",
+    "structureField": "\t ${fields('values[Template Parameters]')}"
+  }
+]

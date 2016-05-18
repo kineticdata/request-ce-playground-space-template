@@ -1,0 +1,488 @@
+{
+  "anonymous": false,
+  "attributes": [
+    {
+      "name": "Image",
+      "values": [
+        "employee-onboarding.gif"
+      ]
+    }
+  ],
+  "bridgedResources": [
+
+  ],
+  "categorizations": [
+    {
+      "category": {
+        "name": "IT Services",
+        "slug": "it-services"
+      }
+    },
+    {
+      "category": {
+        "name": "Software Services",
+        "slug": "software-services"
+      }
+    }
+  ],
+  "createdAt": "2015-10-16T14:33:05.512Z",
+  "createdBy": "jeff.lockemy@kineticdata.com",
+  "description": "Subform for Ports Protocols and Services",
+  "name": "Ports and Protocols Entries",
+  "notes": "",
+  "pages": [
+    {
+      "advanceCondition": "false",
+      "displayCondition": null,
+      "displayPage": null,
+      "elements": [
+        {
+          "type": "section",
+          "name": "PPS Questions",
+          "title": "C&A Boundary Ports, Protocols, and Services",
+          "visible": true,
+          "renderAttributes": {
+
+          },
+          "elements": [
+            {
+              "type": "field",
+              "name": "Application Name",
+              "label": "Application Name",
+              "key": "f61",
+              "defaultValue": null,
+              "defaultResourceName": null,
+              "visible": true,
+              "enabled": true,
+              "required": true,
+              "requiredMessage": null,
+              "pattern": null,
+              "constraints": [
+
+              ],
+              "events": [
+
+              ],
+              "renderAttributes": {
+                "class": "col-sm-12"
+              },
+              "dataType": "string",
+              "renderType": "text",
+              "rows": 1,
+              "omitWhenHidden": null
+            },
+            {
+              "type": "field",
+              "name": "Application Description",
+              "label": "Application Description",
+              "key": "f62",
+              "defaultValue": null,
+              "defaultResourceName": null,
+              "visible": true,
+              "enabled": true,
+              "required": true,
+              "requiredMessage": null,
+              "pattern": null,
+              "constraints": [
+
+              ],
+              "events": [
+
+              ],
+              "renderAttributes": {
+                "class": "col-sm-12"
+              },
+              "dataType": "string",
+              "renderType": "text",
+              "rows": 1,
+              "omitWhenHidden": null
+            },
+            {
+              "type": "field",
+              "name": "Dynamic Port",
+              "label": "Dynamic Port",
+              "key": "f70",
+              "defaultValue": null,
+              "defaultResourceName": null,
+              "visible": true,
+              "enabled": true,
+              "required": false,
+              "requiredMessage": null,
+              "pattern": null,
+              "constraints": [
+
+              ],
+              "events": [
+
+              ],
+              "renderAttributes": {
+                "class": "col-sm-6"
+              },
+              "dataType": "string",
+              "renderType": "radio",
+              "choicesResourceName": null,
+              "choices": [
+                {
+                  "label": "Yes",
+                  "value": "Yes"
+                },
+                {
+                  "label": "No",
+                  "value": "No"
+                }
+              ],
+              "choicesRunIf": null,
+              "omitWhenHidden": null
+            },
+            {
+              "type": "field",
+              "name": "High Port",
+              "label": "High Port",
+              "key": "f71",
+              "defaultValue": null,
+              "defaultResourceName": null,
+              "visible": "values('Dynamic Port') === \"Yes\"",
+              "enabled": true,
+              "required": "values('Dynamic Port') === \"Yes\"",
+              "requiredMessage": "Required when Dynamic Port is Yes",
+              "pattern": null,
+              "constraints": [
+
+              ],
+              "events": [
+
+              ],
+              "renderAttributes": {
+                "class": "col-sm-3"
+              },
+              "dataType": "string",
+              "renderType": "text",
+              "rows": 1,
+              "omitWhenHidden": true
+            },
+            {
+              "type": "field",
+              "name": "Low Port",
+              "label": "Low Port",
+              "key": "f72",
+              "defaultValue": null,
+              "defaultResourceName": null,
+              "visible": "values('Dynamic Port') === \"Yes\"",
+              "enabled": true,
+              "required": "values('Dynamic Port') === \"Yes\"",
+              "requiredMessage": "Required when Dynamic Port is Yes",
+              "pattern": null,
+              "constraints": [
+
+              ],
+              "events": [
+
+              ],
+              "renderAttributes": {
+                "class": "col-sm-3"
+              },
+              "dataType": "string",
+              "renderType": "text",
+              "rows": 1,
+              "omitWhenHidden": true
+            },
+            {
+              "type": "field",
+              "name": "Static Port",
+              "label": "Static Port",
+              "key": "f73",
+              "defaultValue": null,
+              "defaultResourceName": null,
+              "visible": "values('Dynamic Port') === \"No\"",
+              "enabled": true,
+              "required": "values('Dynamic Port') === \"No\"",
+              "requiredMessage": "Required when Dynamic Port is No",
+              "pattern": null,
+              "constraints": [
+
+              ],
+              "events": [
+
+              ],
+              "renderAttributes": {
+                "class": "col-sm-3"
+              },
+              "dataType": "string",
+              "renderType": "text",
+              "rows": 1,
+              "omitWhenHidden": true
+            },
+            {
+              "type": "content",
+              "renderType": "html",
+              "name": "Fix Floats",
+              "text": "<div class=\"clearfix\"></div>",
+              "visible": true,
+              "renderAttributes": {
+
+              }
+            },
+            {
+              "type": "field",
+              "name": "Types of Access Controls Utilized",
+              "label": "Types of Access Controls Utilized (e.g., ACLs, VLANs)",
+              "key": "f64",
+              "defaultValue": null,
+              "defaultResourceName": null,
+              "visible": true,
+              "enabled": true,
+              "required": false,
+              "requiredMessage": null,
+              "pattern": null,
+              "constraints": [
+
+              ],
+              "events": [
+
+              ],
+              "renderAttributes": {
+                "class": "col-sm-6"
+              },
+              "dataType": "string",
+              "renderType": "text",
+              "rows": 1,
+              "omitWhenHidden": null
+            },
+            {
+              "type": "field",
+              "name": "Devices Used to Control CA Boundary Traffic",
+              "label": "Devices Used to Control C&A Boundary Traffic",
+              "key": "f63",
+              "defaultValue": null,
+              "defaultResourceName": null,
+              "visible": true,
+              "enabled": true,
+              "required": false,
+              "requiredMessage": null,
+              "pattern": null,
+              "constraints": [
+
+              ],
+              "events": [
+
+              ],
+              "renderAttributes": {
+                "class": "col-sm-6"
+              },
+              "dataType": "string",
+              "renderType": "text",
+              "rows": 1,
+              "omitWhenHidden": null
+            },
+            {
+              "type": "field",
+              "name": "Outbound",
+              "label": "Outbound",
+              "key": "f67",
+              "defaultValue": null,
+              "defaultResourceName": null,
+              "visible": true,
+              "enabled": true,
+              "required": false,
+              "requiredMessage": null,
+              "pattern": null,
+              "constraints": [
+
+              ],
+              "events": [
+
+              ],
+              "renderAttributes": {
+                "class": "col-sm-6"
+              },
+              "dataType": "string",
+              "renderType": "radio",
+              "choicesResourceName": null,
+              "choices": [
+                {
+                  "label": "Yes",
+                  "value": "Yes"
+                },
+                {
+                  "label": "No",
+                  "value": "No"
+                }
+              ],
+              "choicesRunIf": null,
+              "omitWhenHidden": null
+            },
+            {
+              "type": "field",
+              "name": "Inbound",
+              "label": "Inbound",
+              "key": "f68",
+              "defaultValue": null,
+              "defaultResourceName": null,
+              "visible": true,
+              "enabled": true,
+              "required": false,
+              "requiredMessage": null,
+              "pattern": null,
+              "constraints": [
+
+              ],
+              "events": [
+
+              ],
+              "renderAttributes": {
+                "class": "col-sm-6"
+              },
+              "dataType": "string",
+              "renderType": "radio",
+              "choicesResourceName": null,
+              "choices": [
+                {
+                  "label": "Yes",
+                  "value": "Yes"
+                },
+                {
+                  "label": "No",
+                  "value": "No"
+                }
+              ],
+              "choicesRunIf": null,
+              "omitWhenHidden": null
+            },
+            {
+              "type": "field",
+              "name": "Protocols Services",
+              "label": "Protocols/Services",
+              "key": "f66",
+              "defaultValue": null,
+              "defaultResourceName": null,
+              "visible": true,
+              "enabled": true,
+              "required": false,
+              "requiredMessage": null,
+              "pattern": null,
+              "constraints": [
+
+              ],
+              "events": [
+
+              ],
+              "renderAttributes": {
+                "class": "col-sm-12"
+              },
+              "dataType": "string",
+              "renderType": "text",
+              "rows": 1,
+              "omitWhenHidden": null
+            }
+          ],
+          "omitWhenHidden": null,
+          "renderType": null
+        },
+        {
+          "type": "section",
+          "renderType": null,
+          "name": "Hidden - System Fiedls",
+          "title": null,
+          "visible": false,
+          "omitWhenHidden": false,
+          "renderAttributes": {
+
+          },
+          "elements": [
+            {
+              "type": "field",
+              "name": "Parent Id",
+              "label": "Parent Id",
+              "key": "f74",
+              "defaultValue": null,
+              "defaultResourceName": null,
+              "visible": true,
+              "enabled": true,
+              "required": false,
+              "requiredMessage": null,
+              "omitWhenHidden": null,
+              "pattern": null,
+              "constraints": [
+
+              ],
+              "events": [
+
+              ],
+              "renderAttributes": {
+
+              },
+              "dataType": "string",
+              "renderType": "text",
+              "rows": 1
+            },
+            {
+              "type": "field",
+              "name": "Status",
+              "label": "Status",
+              "key": "f75",
+              "defaultValue": null,
+              "defaultResourceName": null,
+              "visible": true,
+              "enabled": true,
+              "required": false,
+              "requiredMessage": null,
+              "omitWhenHidden": null,
+              "pattern": null,
+              "constraints": [
+
+              ],
+              "events": [
+
+              ],
+              "renderAttributes": {
+
+              },
+              "dataType": "string",
+              "renderType": "text",
+              "rows": 1
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "name": "Buttons 2",
+          "title": null,
+          "visible": true,
+          "renderAttributes": {
+
+          },
+          "elements": [
+            {
+              "type": "button",
+              "label": "Add PPS",
+              "name": "Submit Button",
+              "visible": true,
+              "enabled": true,
+              "renderType": "submit-page",
+              "renderAttributes": {
+
+              }
+            }
+          ],
+          "renderType": null,
+          "omitWhenHidden": null
+        }
+      ],
+      "events": [
+
+      ],
+      "name": "Table Page",
+      "renderType": "submittable",
+      "type": "page"
+    }
+  ],
+  "securityPolicies": [
+
+  ],
+  "slug": "ports-and-protocols-entries",
+  "status": "New",
+  "submissionLabelExpression": "",
+  "type": "Subservice",
+  "updatedAt": "2016-05-12T22:20:01.921Z",
+  "updatedBy": "james.davies@kineticdata.com"
+}

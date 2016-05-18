@@ -1,0 +1,10 @@
+[
+  {
+    "allowsMultiple": false,
+    "name": "Parent"
+  },
+  {
+    "allowsMultiple": false,
+    "name": "Sort Order"
+  }
+]

@@ -1,0 +1,9 @@
+[
+  {
+    "event": "Submitted",
+    "filter": "",
+    "name": "Submission Submitted",
+    "type": "Submission",
+    "url": "http://democe.kineticdata.com:8080/kinetic-task/app/api/v1/run-tree/${kapp('attribute:Task Source Name')}/${kapp('slug')}%20%3E%20${form('slug')}/Complete"
+  }
+]

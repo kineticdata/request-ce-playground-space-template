@@ -1,0 +1,401 @@
+{
+  "anonymous": false,
+  "attributes": [
+    {
+      "name": "Image",
+      "values": [
+        "stock-check.png"
+      ]
+    }
+  ],
+  "bridgedResources": [
+
+  ],
+  "categorizations": [
+    {
+      "category": {
+        "name": "Facilities Services",
+        "slug": "facilities-services"
+      }
+    }
+  ],
+  "createdAt": "2015-12-09T12:41:13.380Z",
+  "createdBy": "jeff.lockemy@kineticdata.com",
+  "description": "This request is used for requesting if an item exists in inventory.",
+  "name": "Stock Check",
+  "notes": "a",
+  "pages": [
+    {
+      "advanceCondition": null,
+      "displayCondition": null,
+      "displayPage": null,
+      "elements": [
+        {
+          "type": "section",
+          "name": "Row A",
+          "title": null,
+          "visible": true,
+          "renderAttributes": {
+            "class": "row"
+          },
+          "elements": [
+            {
+              "type": "section",
+              "name": "Column A1",
+              "title": null,
+              "visible": true,
+              "renderAttributes": {
+                "class": "col-sm-12 col-md-12 col-lg-8"
+              },
+              "elements": [
+                {
+                  "type": "field",
+                  "name": "Description",
+                  "label": "Description",
+                  "key": "f3",
+                  "defaultValue": null,
+                  "defaultResourceName": null,
+                  "visible": true,
+                  "enabled": true,
+                  "required": true,
+                  "requiredMessage": "Please enter a Description....",
+                  "pattern": null,
+                  "constraints": [
+
+                  ],
+                  "events": [
+
+                  ],
+                  "renderAttributes": {
+
+                  },
+                  "dataType": "string",
+                  "renderType": "text",
+                  "rows": 4,
+                  "omitWhenHidden": null
+                }
+              ],
+              "renderType": null,
+              "omitWhenHidden": null
+            }
+          ],
+          "renderType": null,
+          "omitWhenHidden": null
+        },
+        {
+          "type": "section",
+          "name": "Row B",
+          "title": null,
+          "visible": true,
+          "renderAttributes": {
+            "class": "row"
+          },
+          "elements": [
+            {
+              "type": "section",
+              "name": "Column B1",
+              "title": null,
+              "visible": true,
+              "renderAttributes": {
+                "class": "col-sm-12 col-md-6 col-lg-4"
+              },
+              "elements": [
+                {
+                  "type": "field",
+                  "name": "Quantity Desired",
+                  "label": "Quantity Desired",
+                  "key": "f6",
+                  "defaultValue": null,
+                  "defaultResourceName": null,
+                  "visible": true,
+                  "enabled": true,
+                  "required": true,
+                  "requiredMessage": "Please enter a Quantity Desired...",
+                  "pattern": null,
+                  "constraints": [
+
+                  ],
+                  "events": [
+
+                  ],
+                  "renderAttributes": {
+
+                  },
+                  "dataType": "string",
+                  "renderType": "text",
+                  "rows": 1,
+                  "omitWhenHidden": null
+                }
+              ],
+              "renderType": null,
+              "omitWhenHidden": null
+            },
+            {
+              "type": "section",
+              "name": "Column B2",
+              "title": null,
+              "visible": true,
+              "renderAttributes": {
+                "class": "col-sm-12 col-md-6 col-lg-4"
+              },
+              "elements": [
+                {
+                  "type": "field",
+                  "name": "Date Required",
+                  "label": "Date Required",
+                  "key": "f5",
+                  "defaultValue": null,
+                  "defaultResourceName": null,
+                  "visible": true,
+                  "enabled": true,
+                  "required": true,
+                  "requiredMessage": "Please select a Date Required...",
+                  "pattern": null,
+                  "constraints": [
+
+                  ],
+                  "events": [
+
+                  ],
+                  "renderAttributes": {
+
+                  },
+                  "dataType": "string",
+                  "renderType": "date",
+                  "omitWhenHidden": null
+                }
+              ],
+              "renderType": null,
+              "omitWhenHidden": null
+            }
+          ],
+          "renderType": null,
+          "omitWhenHidden": null
+        },
+        {
+          "type": "section",
+          "name": "Row C",
+          "title": null,
+          "visible": true,
+          "renderAttributes": {
+            "class": "row"
+          },
+          "elements": [
+            {
+              "type": "section",
+              "name": "Column C1",
+              "title": null,
+              "visible": true,
+              "renderAttributes": {
+                "class": "col-sm-12 col-md-6 col-lg-4"
+              },
+              "elements": [
+                {
+                  "type": "field",
+                  "name": "Stock Number",
+                  "label": "Stock Number",
+                  "key": "f1",
+                  "defaultValue": null,
+                  "defaultResourceName": null,
+                  "visible": true,
+                  "enabled": true,
+                  "required": false,
+                  "requiredMessage": null,
+                  "pattern": null,
+                  "constraints": [
+
+                  ],
+                  "events": [
+
+                  ],
+                  "renderAttributes": {
+
+                  },
+                  "dataType": "string",
+                  "renderType": "text",
+                  "rows": 1,
+                  "omitWhenHidden": null
+                }
+              ],
+              "renderType": null,
+              "omitWhenHidden": null
+            },
+            {
+              "type": "section",
+              "name": "Column C2",
+              "title": null,
+              "visible": true,
+              "renderAttributes": {
+                "class": "col-sm-12 col-md-6 col-lg-4"
+              },
+              "elements": [
+                {
+                  "type": "field",
+                  "name": "Part Number",
+                  "label": "Part Number",
+                  "key": "f2",
+                  "defaultValue": null,
+                  "defaultResourceName": null,
+                  "visible": true,
+                  "enabled": true,
+                  "required": false,
+                  "requiredMessage": null,
+                  "pattern": null,
+                  "constraints": [
+
+                  ],
+                  "events": [
+
+                  ],
+                  "renderAttributes": {
+
+                  },
+                  "dataType": "string",
+                  "renderType": "text",
+                  "rows": 1,
+                  "omitWhenHidden": null
+                }
+              ],
+              "renderType": null,
+              "omitWhenHidden": null
+            }
+          ],
+          "renderType": null,
+          "omitWhenHidden": null
+        },
+        {
+          "type": "section",
+          "name": "Row D",
+          "title": null,
+          "visible": true,
+          "renderAttributes": {
+            "class": "row"
+          },
+          "elements": [
+            {
+              "type": "section",
+              "name": "Column D1",
+              "title": null,
+              "visible": true,
+              "renderAttributes": {
+                "class": "col-sm-12 col-md-12 col-lg-8"
+              },
+              "elements": [
+                {
+                  "type": "field",
+                  "name": "Comments",
+                  "label": "Comments",
+                  "key": "f4",
+                  "defaultValue": null,
+                  "defaultResourceName": null,
+                  "visible": true,
+                  "enabled": true,
+                  "required": false,
+                  "requiredMessage": null,
+                  "pattern": null,
+                  "constraints": [
+
+                  ],
+                  "events": [
+
+                  ],
+                  "renderAttributes": {
+
+                  },
+                  "dataType": "string",
+                  "renderType": "text",
+                  "rows": 4,
+                  "omitWhenHidden": null
+                }
+              ],
+              "renderType": null,
+              "omitWhenHidden": null
+            }
+          ],
+          "renderType": null,
+          "omitWhenHidden": null
+        },
+        {
+          "type": "section",
+          "name": "Buttons",
+          "title": null,
+          "visible": true,
+          "renderAttributes": {
+            "class": "box-footer"
+          },
+          "elements": [
+            {
+              "type": "button",
+              "label": "Submit",
+              "name": "Submit Button",
+              "visible": true,
+              "enabled": true,
+              "renderType": "submit-page",
+              "renderAttributes": {
+                "class": "pull-right"
+              }
+            }
+          ],
+          "renderType": null,
+          "omitWhenHidden": null
+        }
+      ],
+      "events": [
+        {
+          "name": "Set Numeric Spinners",
+          "type": "Load",
+          "action": "Custom",
+          "code": "$('input[name=\"Quantity Desired\"]').attr({\n  value: \"0\",\n  min: \"0\",\n  max: \"10000\"\n});\n$('input[name=\"Quantity Desired\"]').bootstrapNumber({\n\tupClass: 'info',\n\tdownClass: 'info'\n});"
+        }
+      ],
+      "name": "Stock Check",
+      "renderType": "submittable",
+      "type": "page"
+    },
+    {
+      "advanceCondition": null,
+      "displayCondition": null,
+      "displayPage": null,
+      "elements": [
+        {
+          "type": "section",
+          "name": "Confirmation Section",
+          "title": null,
+          "visible": true,
+          "renderAttributes": {
+
+          },
+          "elements": [
+            {
+              "type": "content",
+              "renderType": "html",
+              "name": "Confirmation Text",
+              "text": "<H3>\nThanks for your request. We'll get to work on it right away. \n<br></br><br></br>\nYou will be notified with a status update throughout the process.\n<H3>",
+              "visible": true,
+              "renderAttributes": {
+
+              }
+            }
+          ],
+          "renderType": null,
+          "omitWhenHidden": null
+        }
+      ],
+      "events": [
+
+      ],
+      "name": "Confirmation Page",
+      "renderType": "confirmation",
+      "type": "page"
+    }
+  ],
+  "securityPolicies": [
+
+  ],
+  "slug": "stock-check",
+  "status": "New",
+  "submissionLabelExpression": "${form('name')} - ${values('Description')}",
+  "type": "Service",
+  "updatedAt": "2016-04-29T16:39:31.621Z",
+  "updatedBy": "james.davies@kineticdata.com"
+}

@@ -1,0 +1,47 @@
+{
+  "anonymous": false,
+  "attributes": [
+    {
+      "name": "Kapp Slug",
+      "values": [
+        "erm-catalog"
+      ]
+    }
+  ],
+  "bridgedResources": [
+
+  ],
+  "categorizations": [
+
+  ],
+  "createdAt": "2016-04-20T17:39:35.163Z",
+  "createdBy": "marcin.zarycki@kineticdata.com",
+  "description": "Allows users to store supporting data used within their application.",
+  "name": "Datastore",
+  "notes": null,
+  "pages": [
+    {
+      "advanceCondition": null,
+      "displayCondition": null,
+      "displayPage": "pages/datastore/console.jsp",
+      "elements": [
+
+      ],
+      "events": [
+
+      ],
+      "name": "Datastore",
+      "renderType": "submittable",
+      "type": "page"
+    }
+  ],
+  "securityPolicies": [
+
+  ],
+  "slug": "datastore",
+  "status": "New",
+  "submissionLabelExpression": null,
+  "type": "Console",
+  "updatedAt": "2016-04-28T22:08:33.407Z",
+  "updatedBy": "james.davies@kineticdata.com"
+}

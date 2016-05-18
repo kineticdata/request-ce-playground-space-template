@@ -1,0 +1,312 @@
+{
+  "anonymous": false,
+  "attributes": [
+    {
+      "name": "Provider Name",
+      "values": [
+        "AWS"
+      ]
+    },
+    {
+      "name": "Template Logo",
+      "values": [
+        "https://upload.wikimedia.org/wikipedia/commons/a/af/Tux.png"
+      ]
+    },
+    {
+      "name": "Template ID",
+      "values": [
+        "ami-08111162"
+      ]
+    }
+  ],
+  "bridgedResources": [
+
+  ],
+  "categorizations": [
+
+  ],
+  "createdAt": "2016-03-30T23:03:37.589Z",
+  "createdBy": "james.davies@kineticdata.com",
+  "description": "The Amazon Linux AMI is an EBS-backed, AWS-supported image. The default image includes AWS command line tools, Python, Ruby, Perl, and Java. The repositories include Docker, PHP, MySQL, PostgreSQL, and other packages.",
+  "name": "Amazon Linux",
+  "notes": "- Make sure to configure the Resource Provider's Default Value to be a valid Resource Provider",
+  "pages": [
+    {
+      "advanceCondition": "false",
+      "displayCondition": null,
+      "displayPage": null,
+      "elements": [
+        {
+          "type": "field",
+          "name": "Quantity",
+          "label": "Quantity",
+          "key": "f4",
+          "defaultValue": null,
+          "defaultResourceName": null,
+          "visible": true,
+          "enabled": true,
+          "required": false,
+          "requiredMessage": null,
+          "omitWhenHidden": null,
+          "pattern": null,
+          "constraints": [
+
+          ],
+          "events": [
+
+          ],
+          "renderAttributes": {
+
+          },
+          "dataType": "string",
+          "renderType": "text",
+          "rows": 1
+        },
+        {
+          "type": "field",
+          "name": "Size",
+          "label": "Size",
+          "key": "f5",
+          "defaultValue": null,
+          "defaultResourceName": null,
+          "visible": true,
+          "enabled": true,
+          "required": false,
+          "requiredMessage": null,
+          "omitWhenHidden": null,
+          "pattern": null,
+          "constraints": [
+
+          ],
+          "events": [
+
+          ],
+          "renderAttributes": {
+
+          },
+          "dataType": "string",
+          "renderType": "dropdown",
+          "choicesResourceName": null,
+          "choicesRunIf": null,
+          "choices": [
+            {
+              "label": "Small",
+              "value": "Small"
+            },
+            {
+              "label": "Medium",
+              "value": "Medium"
+            },
+            {
+              "label": "Large",
+              "value": "Large"
+            }
+          ]
+        },
+        {
+          "type": "field",
+          "name": "RAM",
+          "label": "RAM",
+          "key": "f6",
+          "defaultValue": null,
+          "defaultResourceName": null,
+          "visible": true,
+          "enabled": true,
+          "required": false,
+          "requiredMessage": null,
+          "omitWhenHidden": null,
+          "pattern": null,
+          "constraints": [
+
+          ],
+          "events": [
+
+          ],
+          "renderAttributes": {
+
+          },
+          "dataType": "string",
+          "renderType": "dropdown",
+          "choicesResourceName": null,
+          "choicesRunIf": null,
+          "choices": [
+            {
+              "label": "1",
+              "value": "1"
+            },
+            {
+              "label": "2",
+              "value": "2"
+            },
+            {
+              "label": "4",
+              "value": "4"
+            },
+            {
+              "label": "8",
+              "value": "8"
+            },
+            {
+              "label": "16",
+              "value": "16"
+            },
+            {
+              "label": "32",
+              "value": "32"
+            },
+            {
+              "label": "64",
+              "value": "64"
+            }
+          ]
+        },
+        {
+          "type": "button",
+          "label": "Add to Cart",
+          "name": "Add to Cart",
+          "visible": true,
+          "enabled": true,
+          "renderType": "submit-page",
+          "renderAttributes": {
+            "class": "pull-right"
+          }
+        },
+        {
+          "type": "section",
+          "renderType": null,
+          "name": "Buttons",
+          "title": null,
+          "visible": true,
+          "omitWhenHidden": null,
+          "renderAttributes": {
+            "class": "clearfix"
+          },
+          "elements": [
+            {
+              "type": "button",
+              "label": "Close",
+              "name": "Close",
+              "visible": true,
+              "enabled": true,
+              "renderType": "custom",
+              "renderAttributes": {
+                "data-dismiss": "modal",
+                "class": "pull-left"
+              },
+              "events": [
+
+              ]
+            },
+            {
+              "type": "field",
+              "name": "Status",
+              "label": "Status",
+              "key": "f1",
+              "defaultValue": "In Cart",
+              "defaultResourceName": null,
+              "visible": false,
+              "enabled": true,
+              "required": false,
+              "requiredMessage": null,
+              "omitWhenHidden": false,
+              "pattern": null,
+              "constraints": [
+
+              ],
+              "events": [
+
+              ],
+              "renderAttributes": {
+
+              },
+              "dataType": "string",
+              "renderType": "text",
+              "rows": 1
+            }
+          ]
+        }
+      ],
+      "events": [
+
+      ],
+      "name": "Resource Details",
+      "renderType": "submittable",
+      "type": "page"
+    },
+    {
+      "advanceCondition": null,
+      "displayCondition": null,
+      "displayPage": null,
+      "elements": [
+        {
+          "type": "field",
+          "name": "Resource Provider",
+          "label": "Resource Provider",
+          "key": "f7",
+          "defaultValue": "AWS",
+          "defaultResourceName": null,
+          "visible": true,
+          "enabled": true,
+          "required": false,
+          "requiredMessage": null,
+          "omitWhenHidden": null,
+          "pattern": null,
+          "constraints": [
+
+          ],
+          "events": [
+
+          ],
+          "renderAttributes": {
+
+          },
+          "dataType": "string",
+          "renderType": "text",
+          "rows": 1
+        },
+        {
+          "type": "field",
+          "name": "Cart ID",
+          "label": "Cart ID",
+          "key": "f3",
+          "defaultValue": null,
+          "defaultResourceName": null,
+          "visible": true,
+          "enabled": true,
+          "required": false,
+          "requiredMessage": null,
+          "omitWhenHidden": null,
+          "pattern": null,
+          "constraints": [
+
+          ],
+          "events": [
+
+          ],
+          "renderAttributes": {
+
+          },
+          "dataType": "string",
+          "renderType": "text",
+          "rows": 1
+        }
+      ],
+      "events": [
+
+      ],
+      "name": "Confirmation Page",
+      "renderType": "confirmation",
+      "type": "page"
+    }
+  ],
+  "securityPolicies": [
+
+  ],
+  "slug": "amazon-linux",
+  "status": "New",
+  "submissionLabelExpression": "${form('name')}",
+  "type": "Resource Templates",
+  "updatedAt": "2016-05-17T18:19:01.562Z",
+  "updatedBy": "james.davies@kineticdata.com"
+}

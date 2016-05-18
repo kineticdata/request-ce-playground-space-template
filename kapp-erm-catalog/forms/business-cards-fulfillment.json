@@ -1,0 +1,387 @@
+{
+  "anonymous": false,
+  "attributes": [
+    {
+      "name": "Image",
+      "values": [
+        "approval.png"
+      ]
+    }
+  ],
+  "bridgedResources": [
+
+  ],
+  "categorizations": [
+
+  ],
+  "createdAt": "2016-02-03T23:10:20.246Z",
+  "createdBy": "john.sundberg@kineticdata.com",
+  "description": "This service is used to order business cards as part of an employee onboarding.",
+  "name": "Business Cards Fulfillment",
+  "notes": "a",
+  "pages": [
+    {
+      "advanceCondition": "values('Status of Request') == \"Completed\"",
+      "displayCondition": null,
+      "displayPage": "",
+      "elements": [
+        {
+          "type": "section",
+          "name": "Fulfillment Details",
+          "title": "Fulfillment Details",
+          "visible": true,
+          "renderAttributes": {
+
+          },
+          "elements": [
+            {
+              "type": "field",
+              "name": "Status of Request",
+              "label": "Status of Request",
+              "key": "f5",
+              "defaultValue": null,
+              "defaultResourceName": null,
+              "visible": true,
+              "enabled": true,
+              "required": true,
+              "requiredMessage": null,
+              "pattern": null,
+              "constraints": [
+
+              ],
+              "events": [
+
+              ],
+              "renderAttributes": {
+
+              },
+              "dataType": "string",
+              "renderType": "dropdown",
+              "choicesResourceName": null,
+              "choices": [
+                {
+                  "label": "In Progress",
+                  "value": "In Progress"
+                },
+                {
+                  "label": "Completed",
+                  "value": "Completed"
+                }
+              ],
+              "choicesRunIf": null,
+              "omitWhenHidden": null
+            },
+            {
+              "type": "field",
+              "name": "Comments",
+              "label": "Comments",
+              "key": "f11",
+              "defaultValue": null,
+              "defaultResourceName": null,
+              "visible": true,
+              "enabled": true,
+              "required": false,
+              "requiredMessage": null,
+              "pattern": null,
+              "constraints": [
+
+              ],
+              "events": [
+
+              ],
+              "renderAttributes": {
+
+              },
+              "dataType": "string",
+              "renderType": "text",
+              "rows": 4,
+              "omitWhenHidden": null
+            }
+          ],
+          "renderType": null,
+          "omitWhenHidden": null
+        },
+        {
+          "type": "section",
+          "name": "Request Details",
+          "title": "Request Details",
+          "visible": true,
+          "renderAttributes": {
+
+          },
+          "elements": [
+            {
+              "type": "content",
+              "renderType": "html",
+              "name": "Details HTML",
+              "text": "<div id=\"requestDetails\"></div>\n\n<script>\n  $(function() {   \n    var submissionId = K('field[Parent Instance ID]').value();\n    K.load({\n      path: '/kinetic/'+ bundle.spaceSlug() + '/submissions/' + submissionId + '?review',\n      container: \"#requestDetails\"\n    })\n  });\n</script>",
+              "visible": true,
+              "renderAttributes": {
+
+              }
+            },
+            {
+              "type": "field",
+              "name": "Parent Instance ID",
+              "label": "Parent Instance ID",
+              "key": "f8",
+              "defaultValue": null,
+              "defaultResourceName": null,
+              "visible": false,
+              "enabled": true,
+              "required": false,
+              "requiredMessage": null,
+              "pattern": null,
+              "constraints": [
+
+              ],
+              "events": [
+
+              ],
+              "renderAttributes": {
+
+              },
+              "dataType": "string",
+              "renderType": "text",
+              "rows": 1,
+              "omitWhenHidden": false
+            }
+          ],
+          "renderType": null,
+          "omitWhenHidden": null
+        },
+        {
+          "type": "section",
+          "name": "Buttons",
+          "title": null,
+          "visible": true,
+          "renderAttributes": {
+            "class": "box-footer"
+          },
+          "elements": [
+            {
+              "type": "button",
+              "label": "Submit",
+              "name": "Submit Button",
+              "visible": true,
+              "enabled": true,
+              "renderType": "submit-page",
+              "renderAttributes": {
+
+              }
+            }
+          ],
+          "renderType": null,
+          "omitWhenHidden": null
+        }
+      ],
+      "events": [
+
+      ],
+      "name": "Page 1",
+      "renderType": "submittable",
+      "type": "page"
+    },
+    {
+      "advanceCondition": null,
+      "displayCondition": null,
+      "displayPage": null,
+      "elements": [
+        {
+          "type": "content",
+          "renderType": "text",
+          "name": "Thanks",
+          "text": "Thanks for completing this request. We'll notify the submitter and take it from here!",
+          "visible": true,
+          "renderAttributes": {
+
+          }
+        },
+        {
+          "type": "section",
+          "name": "Hidden Fields",
+          "title": null,
+          "visible": "false",
+          "renderAttributes": {
+
+          },
+          "elements": [
+            {
+              "type": "field",
+              "name": "Deferral Token",
+              "label": "Deferral Token",
+              "key": "f1",
+              "defaultValue": null,
+              "defaultResourceName": null,
+              "visible": true,
+              "enabled": true,
+              "required": false,
+              "requiredMessage": null,
+              "pattern": null,
+              "constraints": [
+
+              ],
+              "events": [
+
+              ],
+              "renderAttributes": {
+
+              },
+              "dataType": "string",
+              "renderType": "text",
+              "rows": 1,
+              "omitWhenHidden": null
+            },
+            {
+              "type": "field",
+              "name": "Requested By",
+              "label": "Requested By",
+              "key": "f2",
+              "defaultValue": null,
+              "defaultResourceName": null,
+              "visible": true,
+              "enabled": true,
+              "required": false,
+              "requiredMessage": null,
+              "pattern": null,
+              "constraints": [
+
+              ],
+              "events": [
+
+              ],
+              "renderAttributes": {
+
+              },
+              "dataType": "string",
+              "renderType": "text",
+              "rows": 1,
+              "omitWhenHidden": null
+            },
+            {
+              "type": "field",
+              "name": "Requested For",
+              "label": "Requested For",
+              "key": "f3",
+              "defaultValue": null,
+              "defaultResourceName": null,
+              "visible": true,
+              "enabled": true,
+              "required": false,
+              "requiredMessage": null,
+              "pattern": null,
+              "constraints": [
+
+              ],
+              "events": [
+
+              ],
+              "renderAttributes": {
+
+              },
+              "dataType": "string",
+              "renderType": "text",
+              "rows": 1,
+              "omitWhenHidden": null
+            },
+            {
+              "type": "field",
+              "name": "Assigned Individual",
+              "label": "Assigned Individual",
+              "key": "f9",
+              "defaultValue": null,
+              "defaultResourceName": null,
+              "visible": true,
+              "enabled": true,
+              "required": false,
+              "requiredMessage": null,
+              "pattern": null,
+              "constraints": [
+
+              ],
+              "events": [
+
+              ],
+              "renderAttributes": {
+
+              },
+              "dataType": "string",
+              "renderType": "text",
+              "rows": 1,
+              "omitWhenHidden": null
+            },
+            {
+              "type": "field",
+              "name": "Status",
+              "label": "Status",
+              "key": "f4",
+              "defaultValue": null,
+              "defaultResourceName": null,
+              "visible": true,
+              "enabled": true,
+              "required": false,
+              "requiredMessage": null,
+              "pattern": null,
+              "constraints": [
+
+              ],
+              "events": [
+
+              ],
+              "renderAttributes": {
+
+              },
+              "dataType": "string",
+              "renderType": "text",
+              "rows": 1,
+              "omitWhenHidden": null
+            },
+            {
+              "type": "field",
+              "name": "Synopsis",
+              "label": "Synopsis",
+              "key": "f10",
+              "defaultValue": null,
+              "defaultResourceName": null,
+              "visible": true,
+              "enabled": true,
+              "required": false,
+              "requiredMessage": null,
+              "pattern": null,
+              "constraints": [
+
+              ],
+              "events": [
+
+              ],
+              "renderAttributes": {
+
+              },
+              "dataType": "string",
+              "renderType": "text",
+              "rows": 1,
+              "omitWhenHidden": null
+            }
+          ],
+          "renderType": null,
+          "omitWhenHidden": null
+        }
+      ],
+      "events": [
+
+      ],
+      "name": "Confirmation Page",
+      "renderType": "confirmation",
+      "type": "page"
+    }
+  ],
+  "securityPolicies": [
+
+  ],
+  "slug": "business-cards-fulfillment",
+  "status": "New",
+  "submissionLabelExpression": "${values('Synopsis')}",
+  "type": "Subservice",
+  "updatedAt": "2016-04-29T16:17:57.755Z",
+  "updatedBy": "james.davies@kineticdata.com"
+}

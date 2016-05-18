@@ -1,0 +1,67 @@
+{
+  "anonymous": false,
+  "attributes": [
+
+  ],
+  "bridgedResources": [
+
+  ],
+  "categorizations": [
+
+  ],
+  "createdAt": "2016-05-17T01:07:55.943Z",
+  "createdBy": "james.davies@kineticdata.com",
+  "description": "",
+  "name": "CPU",
+  "notes": null,
+  "pages": [
+    {
+      "advanceCondition": null,
+      "displayCondition": null,
+      "displayPage": null,
+      "elements": [
+        {
+          "type": "field",
+          "name": "Price",
+          "label": "Price",
+          "key": "f1",
+          "defaultValue": "20.00",
+          "defaultResourceName": null,
+          "visible": true,
+          "enabled": true,
+          "required": false,
+          "requiredMessage": null,
+          "omitWhenHidden": null,
+          "pattern": null,
+          "constraints": [
+
+          ],
+          "events": [
+
+          ],
+          "renderAttributes": {
+
+          },
+          "dataType": "string",
+          "renderType": "text",
+          "rows": 1
+        }
+      ],
+      "events": [
+
+      ],
+      "name": "Page 1",
+      "renderType": "submittable",
+      "type": "page"
+    }
+  ],
+  "securityPolicies": [
+
+  ],
+  "slug": "cpu",
+  "status": "New",
+  "submissionLabelExpression": null,
+  "type": "Component",
+  "updatedAt": "2016-05-17T01:08:25.376Z",
+  "updatedBy": "james.davies@kineticdata.com"
+}

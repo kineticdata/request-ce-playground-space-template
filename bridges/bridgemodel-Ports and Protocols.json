@@ -1,0 +1,41 @@
+{
+  "activeMappingName": "Ports and Protocols - CE",
+  "attributes": [
+    {
+      "name": "Application Name"
+    },
+    {
+      "name": "High Port"
+    },
+    {
+      "name": "Low Port"
+    },
+    {
+      "name": "Static Port"
+    },
+    {
+      "name": "Dynamic Port"
+    },
+    {
+      "name": "Id"
+    }
+  ],
+  "name": "Ports and Protocols",
+  "qualifications": [
+    {
+      "name": "All by Parent Id",
+      "parameters": [
+        {
+          "name": "Parent Id",
+          "notes": null
+        },
+        {
+          "name": "Kapp Slug",
+          "notes": null
+        }
+      ],
+      "resultType": "Multiple"
+    }
+  ],
+  "status": "Active"
+}

@@ -1,0 +1,726 @@
+{
+  "anonymous": false,
+  "attributes": [
+    {
+      "name": "Image",
+      "values": [
+        "property-disposal.png"
+      ]
+    }
+  ],
+  "bridgedResources": [
+
+  ],
+  "categorizations": [
+    {
+      "category": {
+        "name": "Facilities Services",
+        "slug": "facilities-services"
+      }
+    }
+  ],
+  "createdAt": "2015-12-11T14:19:16.420Z",
+  "createdBy": "jeff.lockemy@kineticdata.com",
+  "description": "Request this service if you have company owned property that needs to be disposed of.  According to company guidelines any property that has an asset tag must be disposed of via this service request.",
+  "name": "Excess Property Disposal Request",
+  "notes": "a",
+  "pages": [
+    {
+      "advanceCondition": null,
+      "displayCondition": null,
+      "displayPage": null,
+      "elements": [
+        {
+          "type": "section",
+          "name": "Row A",
+          "title": null,
+          "visible": true,
+          "renderAttributes": {
+            "class": "row"
+          },
+          "elements": [
+            {
+              "type": "section",
+              "name": "Column A1",
+              "title": null,
+              "visible": true,
+              "renderAttributes": {
+                "class": "col-xs-12 col-sm12 col-md-6 col-lg-4"
+              },
+              "elements": [
+                {
+                  "type": "field",
+                  "name": "Property Description",
+                  "label": "Property Description",
+                  "key": "f2",
+                  "defaultValue": null,
+                  "defaultResourceName": null,
+                  "visible": true,
+                  "enabled": true,
+                  "required": true,
+                  "requiredMessage": "Please enter a Property Description....",
+                  "pattern": null,
+                  "constraints": [
+
+                  ],
+                  "events": [
+
+                  ],
+                  "renderAttributes": {
+
+                  },
+                  "dataType": "string",
+                  "renderType": "text",
+                  "rows": 3,
+                  "omitWhenHidden": null
+                }
+              ],
+              "renderType": null,
+              "omitWhenHidden": null
+            },
+            {
+              "type": "section",
+              "name": "Column A2",
+              "title": null,
+              "visible": true,
+              "renderAttributes": {
+                "class": "col-xs-12 col-sm12 col-md-6 col-lg-4"
+              },
+              "elements": [
+                {
+                  "type": "field",
+                  "name": "Property Location",
+                  "label": "Property Location",
+                  "key": "f4",
+                  "defaultValue": null,
+                  "defaultResourceName": null,
+                  "visible": true,
+                  "enabled": true,
+                  "required": true,
+                  "requiredMessage": "Please enter a Property Location...",
+                  "pattern": null,
+                  "constraints": [
+
+                  ],
+                  "events": [
+
+                  ],
+                  "renderAttributes": {
+
+                  },
+                  "dataType": "string",
+                  "renderType": "text",
+                  "rows": 3,
+                  "omitWhenHidden": null
+                }
+              ],
+              "renderType": null,
+              "omitWhenHidden": null
+            }
+          ],
+          "renderType": null,
+          "omitWhenHidden": null
+        },
+        {
+          "type": "section",
+          "name": "Row A1",
+          "title": null,
+          "visible": true,
+          "renderAttributes": {
+            "class": "row"
+          },
+          "elements": [
+            {
+              "type": "section",
+              "name": "Column B1",
+              "title": null,
+              "visible": true,
+              "renderAttributes": {
+                "class": "col-xs-12 col-sm12 col-md-6 col-lg-4"
+              },
+              "elements": [
+                {
+                  "type": "field",
+                  "name": "Asset Tag",
+                  "label": "Asset Tag",
+                  "key": "f1",
+                  "defaultValue": null,
+                  "defaultResourceName": null,
+                  "visible": true,
+                  "enabled": true,
+                  "required": false,
+                  "requiredMessage": null,
+                  "pattern": null,
+                  "constraints": [
+
+                  ],
+                  "events": [
+
+                  ],
+                  "renderAttributes": {
+
+                  },
+                  "dataType": "string",
+                  "renderType": "text",
+                  "rows": 1,
+                  "omitWhenHidden": null
+                }
+              ],
+              "renderType": null,
+              "omitWhenHidden": null
+            },
+            {
+              "type": "section",
+              "name": "Column B2",
+              "title": null,
+              "visible": true,
+              "renderAttributes": {
+                "class": "col-xs-12 col-sm12 col-md-6 col-lg-4"
+              },
+              "elements": [
+                {
+                  "type": "field",
+                  "name": "Model Number",
+                  "label": "Model Number",
+                  "key": "f7",
+                  "defaultValue": null,
+                  "defaultResourceName": null,
+                  "visible": true,
+                  "enabled": true,
+                  "required": false,
+                  "requiredMessage": null,
+                  "pattern": null,
+                  "constraints": [
+
+                  ],
+                  "events": [
+
+                  ],
+                  "renderAttributes": {
+
+                  },
+                  "dataType": "string",
+                  "renderType": "text",
+                  "rows": 1,
+                  "omitWhenHidden": null
+                }
+              ],
+              "renderType": null,
+              "omitWhenHidden": null
+            }
+          ],
+          "renderType": null,
+          "omitWhenHidden": null
+        },
+        {
+          "type": "section",
+          "name": "Row A2",
+          "title": null,
+          "visible": true,
+          "renderAttributes": {
+            "class": "row"
+          },
+          "elements": [
+            {
+              "type": "section",
+              "name": "Column B3",
+              "title": null,
+              "visible": true,
+              "renderAttributes": {
+                "class": "col-xs-12 col-sm12 col-md-6 col-lg-4"
+              },
+              "elements": [
+                {
+                  "type": "field",
+                  "name": "Serial Number",
+                  "label": "Serial Number",
+                  "key": "f6",
+                  "defaultValue": null,
+                  "defaultResourceName": null,
+                  "visible": true,
+                  "enabled": true,
+                  "required": false,
+                  "requiredMessage": null,
+                  "pattern": null,
+                  "constraints": [
+
+                  ],
+                  "events": [
+
+                  ],
+                  "renderAttributes": {
+
+                  },
+                  "dataType": "string",
+                  "renderType": "text",
+                  "rows": 1,
+                  "omitWhenHidden": null
+                }
+              ],
+              "renderType": null,
+              "omitWhenHidden": null
+            },
+            {
+              "type": "section",
+              "name": "Column B4",
+              "title": null,
+              "visible": true,
+              "renderAttributes": {
+                "class": "col-xs-12 col-sm12 col-md-6 col-lg-4"
+              },
+              "elements": [
+                {
+                  "type": "field",
+                  "name": "Desired Pickup Turn In Date",
+                  "label": "Desired Pickup/Turn In Date",
+                  "key": "f5",
+                  "defaultValue": null,
+                  "defaultResourceName": null,
+                  "visible": true,
+                  "enabled": true,
+                  "required": true,
+                  "requiredMessage": "Please enter a Desired Pickup Turn In Date...",
+                  "pattern": null,
+                  "constraints": [
+
+                  ],
+                  "events": [
+
+                  ],
+                  "renderAttributes": {
+
+                  },
+                  "dataType": "string",
+                  "renderType": "date",
+                  "omitWhenHidden": null
+                }
+              ],
+              "renderType": null,
+              "omitWhenHidden": null
+            }
+          ],
+          "renderType": null,
+          "omitWhenHidden": null
+        },
+        {
+          "type": "section",
+          "name": "Row B",
+          "title": null,
+          "visible": true,
+          "renderAttributes": {
+            "class": "row"
+          },
+          "elements": [
+            {
+              "type": "section",
+              "name": "Column B5",
+              "title": null,
+              "visible": true,
+              "renderAttributes": {
+                "class": "col-xs-12 col-sm12 col-md-6 col-lg-4"
+              },
+              "elements": [
+                {
+                  "type": "field",
+                  "name": "Approximate Size",
+                  "label": "Approximate Size",
+                  "key": "f13",
+                  "defaultValue": null,
+                  "defaultResourceName": null,
+                  "visible": true,
+                  "enabled": true,
+                  "required": true,
+                  "requiredMessage": "Please enter the Approximate Size...",
+                  "pattern": null,
+                  "constraints": [
+
+                  ],
+                  "events": [
+
+                  ],
+                  "renderAttributes": {
+
+                  },
+                  "dataType": "string",
+                  "renderType": "text",
+                  "rows": 1,
+                  "omitWhenHidden": null
+                }
+              ],
+              "renderType": null,
+              "omitWhenHidden": null
+            },
+            {
+              "type": "section",
+              "name": "Column B6",
+              "title": null,
+              "visible": true,
+              "renderAttributes": {
+                "class": "col-xs-12 col-sm12 col-md-6 col-lg-4"
+              },
+              "elements": [
+                {
+                  "type": "field",
+                  "name": "Approximate Weight",
+                  "label": "Approximate Weight (lbs)",
+                  "key": "f10",
+                  "defaultValue": null,
+                  "defaultResourceName": null,
+                  "visible": true,
+                  "enabled": true,
+                  "required": true,
+                  "requiredMessage": "Please enter the Approximate Weight...",
+                  "pattern": null,
+                  "constraints": [
+
+                  ],
+                  "events": [
+
+                  ],
+                  "renderAttributes": {
+
+                  },
+                  "dataType": "string",
+                  "renderType": "text",
+                  "rows": 1,
+                  "omitWhenHidden": null
+                }
+              ],
+              "renderType": null,
+              "omitWhenHidden": null
+            }
+          ],
+          "renderType": null,
+          "omitWhenHidden": null
+        },
+        {
+          "type": "section",
+          "name": "Row C",
+          "title": null,
+          "visible": true,
+          "renderAttributes": {
+            "class": "row"
+          },
+          "elements": [
+            {
+              "type": "section",
+              "name": "Column C1",
+              "title": null,
+              "visible": true,
+              "renderAttributes": {
+                "class": "col-xs-12 col-sm12 col-md-6 col-lg-4"
+              },
+              "elements": [
+                {
+                  "type": "field",
+                  "name": "Hazardous Material",
+                  "label": "Hazardous Material?",
+                  "key": "f9",
+                  "defaultValue": null,
+                  "defaultResourceName": null,
+                  "visible": true,
+                  "enabled": true,
+                  "required": true,
+                  "requiredMessage": "Please select whether this is Hazardous Material...",
+                  "pattern": null,
+                  "constraints": [
+
+                  ],
+                  "events": [
+
+                  ],
+                  "renderAttributes": {
+
+                  },
+                  "dataType": "string",
+                  "renderType": "radio",
+                  "choicesResourceName": null,
+                  "choices": [
+                    {
+                      "label": "Yes",
+                      "value": "Yes"
+                    },
+                    {
+                      "label": "No",
+                      "value": "No"
+                    },
+                    {
+                      "label": "Unknown",
+                      "value": "Unknown"
+                    },
+                    {
+                      "label": "N/A",
+                      "value": "N/A"
+                    }
+                  ],
+                  "choicesRunIf": null,
+                  "omitWhenHidden": null
+                }
+              ],
+              "renderType": null,
+              "omitWhenHidden": null
+            },
+            {
+              "type": "section",
+              "name": "Column C2",
+              "title": null,
+              "visible": true,
+              "renderAttributes": {
+                "class": "col-xs-12 col-sm12 col-md-6 col-lg-4"
+              },
+              "elements": [
+                {
+                  "type": "field",
+                  "name": "Operational",
+                  "label": "Operational?",
+                  "key": "f11",
+                  "defaultValue": null,
+                  "defaultResourceName": null,
+                  "visible": true,
+                  "enabled": true,
+                  "required": true,
+                  "requiredMessage": "Please select whether this is Operational...",
+                  "pattern": null,
+                  "constraints": [
+
+                  ],
+                  "events": [
+
+                  ],
+                  "renderAttributes": {
+
+                  },
+                  "dataType": "string",
+                  "renderType": "radio",
+                  "choicesResourceName": null,
+                  "choices": [
+                    {
+                      "label": "Yes",
+                      "value": "Yes"
+                    },
+                    {
+                      "label": "No",
+                      "value": "No"
+                    },
+                    {
+                      "label": "Unknown",
+                      "value": "Unknown"
+                    },
+                    {
+                      "label": "N/A",
+                      "value": "N/A"
+                    }
+                  ],
+                  "choicesRunIf": null,
+                  "omitWhenHidden": null
+                }
+              ],
+              "renderType": null,
+              "omitWhenHidden": null
+            }
+          ],
+          "renderType": null,
+          "omitWhenHidden": null
+        },
+        {
+          "type": "section",
+          "name": "Row D",
+          "title": null,
+          "visible": true,
+          "renderAttributes": {
+            "class": "row"
+          },
+          "elements": [
+            {
+              "type": "section",
+              "name": "Column D1",
+              "title": null,
+              "visible": true,
+              "renderAttributes": {
+                "class": "col-xs-12 col-sm12 col-md-6 col-lg-4"
+              },
+              "elements": [
+                {
+                  "type": "field",
+                  "name": "Serviceable",
+                  "label": "Serviceable?",
+                  "key": "f12",
+                  "defaultValue": null,
+                  "defaultResourceName": null,
+                  "visible": true,
+                  "enabled": true,
+                  "required": true,
+                  "requiredMessage": "Please select whether this is Serviceable...",
+                  "pattern": null,
+                  "constraints": [
+
+                  ],
+                  "events": [
+
+                  ],
+                  "renderAttributes": {
+
+                  },
+                  "dataType": "string",
+                  "renderType": "radio",
+                  "choicesResourceName": null,
+                  "choices": [
+                    {
+                      "label": "Yes",
+                      "value": "Yes"
+                    },
+                    {
+                      "label": "No",
+                      "value": "No"
+                    },
+                    {
+                      "label": "Unknown",
+                      "value": "Unknown"
+                    },
+                    {
+                      "label": "N/A",
+                      "value": "N/A"
+                    }
+                  ],
+                  "choicesRunIf": null,
+                  "omitWhenHidden": null
+                }
+              ],
+              "renderType": null,
+              "omitWhenHidden": null
+            }
+          ],
+          "renderType": null,
+          "omitWhenHidden": null
+        },
+        {
+          "type": "section",
+          "name": "Row E",
+          "title": null,
+          "visible": true,
+          "renderAttributes": {
+            "class": "row"
+          },
+          "elements": [
+            {
+              "type": "section",
+              "name": "Column E1",
+              "title": null,
+              "visible": true,
+              "renderAttributes": {
+                "class": "col-md-8"
+              },
+              "elements": [
+                {
+                  "type": "field",
+                  "name": "Comments",
+                  "label": "Comments",
+                  "key": "f8",
+                  "defaultValue": null,
+                  "defaultResourceName": null,
+                  "visible": true,
+                  "enabled": true,
+                  "required": false,
+                  "requiredMessage": null,
+                  "pattern": null,
+                  "constraints": [
+
+                  ],
+                  "events": [
+
+                  ],
+                  "renderAttributes": {
+
+                  },
+                  "dataType": "string",
+                  "renderType": "text",
+                  "rows": 2,
+                  "omitWhenHidden": null
+                }
+              ],
+              "renderType": null,
+              "omitWhenHidden": null
+            }
+          ],
+          "renderType": null,
+          "omitWhenHidden": null
+        },
+        {
+          "type": "section",
+          "name": "Buttons",
+          "title": null,
+          "visible": true,
+          "renderAttributes": {
+            "class": "box-footer"
+          },
+          "elements": [
+            {
+              "type": "button",
+              "label": "Submit",
+              "name": "Submit Button",
+              "visible": true,
+              "enabled": true,
+              "renderType": "submit-page",
+              "renderAttributes": {
+                "class": "pull-right"
+              }
+            }
+          ],
+          "renderType": null,
+          "omitWhenHidden": null
+        }
+      ],
+      "events": [
+
+      ],
+      "name": "Details Page",
+      "renderType": "submittable",
+      "type": "page"
+    },
+    {
+      "advanceCondition": null,
+      "displayCondition": null,
+      "displayPage": null,
+      "elements": [
+        {
+          "type": "section",
+          "name": "Confirmation Section",
+          "title": null,
+          "visible": true,
+          "renderAttributes": {
+
+          },
+          "elements": [
+            {
+              "type": "content",
+              "renderType": "html",
+              "name": "Confirmation Text",
+              "text": "<H3>\nThanks for your request. We'll get to work on it right away. \n<br></br><br></br>\nYou will be notified with a status update throughout the process.\n<H3>",
+              "visible": true,
+              "renderAttributes": {
+
+              }
+            }
+          ],
+          "renderType": null,
+          "omitWhenHidden": null
+        }
+      ],
+      "events": [
+
+      ],
+      "name": "Confirmation Page",
+      "renderType": "confirmation",
+      "type": "page"
+    }
+  ],
+  "securityPolicies": [
+
+  ],
+  "slug": "property-excess-disposal-request",
+  "status": "New",
+  "submissionLabelExpression": "${form('name')} - ${values('Property Description')}",
+  "type": "Service",
+  "updatedAt": "2016-04-29T16:37:09.524Z",
+  "updatedBy": "james.davies@kineticdata.com"
+}

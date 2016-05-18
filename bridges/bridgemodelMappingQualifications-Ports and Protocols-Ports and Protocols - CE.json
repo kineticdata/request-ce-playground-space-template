@@ -1,0 +1,6 @@
+[
+  {
+    "name": "All by Parent Id",
+    "query": "kappSlug=${parameters('Kapp Slug')}&formSlug=ports-and-protocols-entries&values[Parent Id]=${parameters('Parent Id')}"
+  }
+]

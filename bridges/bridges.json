@@ -1,0 +1,12 @@
+[
+  {
+    "name": "Request CE",
+    "status": "Active",
+    "url": "http://democe.kineticdata.com:8080/kinetic-bridgehub/app/api/v1/bridges/demo-template-core/"
+  },
+  {
+    "name": "Counter",
+    "status": "Active",
+    "url": "http://democe.kineticdata.com:8080/kinetic-bridgehub/app/api/v1/bridges/counter/"
+  }
+]

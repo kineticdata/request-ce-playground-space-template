@@ -1,0 +1,35 @@
+{
+  "activeMappingName": "AWS Cloud Formation Templates",
+  "attributes": [
+    {
+      "name": "Template Description"
+    },
+    {
+      "name": "Template Name"
+    },
+    {
+      "name": "Template Parameters"
+    }
+  ],
+  "name": "AWS Cloud Formation Templates",
+  "qualifications": [
+    {
+      "name": "All",
+      "parameters": [
+
+      ],
+      "resultType": "Multiple"
+    },
+    {
+      "name": "By Name",
+      "parameters": [
+        {
+          "name": "Template Name",
+          "notes": null
+        }
+      ],
+      "resultType": "Single"
+    }
+  ],
+  "status": "Active"
+}
