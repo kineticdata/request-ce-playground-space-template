@@ -1,0 +1,10 @@
+[
+  {
+    "name": "Status",
+    "structureField": "${fields('values[Status]')}"
+  },
+  {
+    "name": "Sample Field",
+    "structureField": "${fields('values[Sample Field]')}"
+  }
+]

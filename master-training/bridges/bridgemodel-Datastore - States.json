@@ -1,0 +1,16 @@
+{
+  "activeMappingName": "Datastore - States",
+  "attributes": [
+    {
+      "name": "Status"
+    },
+    {
+      "name": "Sample Field"
+    }
+  ],
+  "name": "Datastore - States",
+  "qualifications": [
+
+  ],
+  "status": "Active"
+}

@@ -9,8 +9,64 @@
     "email": "brian.shealey@kineticdata.com",
     "enabled": true,
     "spaceAdmin": true,
-    "updatedAt": "2016-05-16T16:30:23.547Z",
-    "updatedBy": "admin",
+    "updatedAt": "2016-05-18T18:11:40.551Z",
+    "updatedBy": "james.davies@kineticdata.com",
     "username": "brian.shealey@kineticdata.com"
+  },
+  {
+    "attributes": [
+
+    ],
+    "createdAt": "2016-05-18T16:37:57.135Z",
+    "createdBy": "admin",
+    "displayName": "Jack Boespflug",
+    "email": "jack.boespflug@kineticdata.com",
+    "enabled": true,
+    "spaceAdmin": true,
+    "updatedAt": "2016-05-18T16:37:57.135Z",
+    "updatedBy": "admin",
+    "username": "jack.boespflug@kineticdata.com"
+  },
+  {
+    "attributes": [
+
+    ],
+    "createdAt": "2016-05-18T16:37:14.252Z",
+    "createdBy": "admin",
+    "displayName": "James Davies",
+    "email": "james.davies@kineticdata.com",
+    "enabled": true,
+    "spaceAdmin": true,
+    "updatedAt": "2016-05-18T16:37:14.252Z",
+    "updatedBy": "admin",
+    "username": "james.davies@kineticdata.com"
+  },
+  {
+    "attributes": [
+
+    ],
+    "createdAt": "2016-05-18T16:37:38.230Z",
+    "createdBy": "admin",
+    "displayName": "John Sundberg",
+    "email": "john.sundberg@kineticdata.com",
+    "enabled": true,
+    "spaceAdmin": true,
+    "updatedAt": "2016-05-18T16:37:38.230Z",
+    "updatedBy": "admin",
+    "username": "john.sundberg@kineticdata.com"
+  },
+  {
+    "attributes": [
+
+    ],
+    "createdAt": "2016-05-18T16:38:24.964Z",
+    "createdBy": "admin",
+    "displayName": "Kinetic Task Integrator",
+    "email": "task.integrator",
+    "enabled": true,
+    "spaceAdmin": true,
+    "updatedAt": "2016-05-18T16:47:10.205Z",
+    "updatedBy": "admin",
+    "username": "task.integrator"
   }
 ]

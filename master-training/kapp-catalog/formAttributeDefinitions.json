@@ -1,0 +1,18 @@
+[
+  {
+    "allowsMultiple": false,
+    "name": "Form Manager"
+  },
+  {
+    "allowsMultiple": false,
+    "name": "Approval Type"
+  },
+  {
+    "allowsMultiple": false,
+    "name": "Charge"
+  },
+  {
+    "allowsMultiple": false,
+    "name": "SLA"
+  }
+]
