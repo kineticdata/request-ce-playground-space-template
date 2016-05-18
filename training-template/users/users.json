@@ -3,20 +3,6 @@
     "attributes": [
 
     ],
-    "createdAt": "2016-05-16T16:30:23.547Z",
-    "createdBy": "admin",
-    "displayName": "Brian Shealey",
-    "email": "brian.shealey@kineticdata.com",
-    "enabled": true,
-    "spaceAdmin": true,
-    "updatedAt": "2016-05-18T18:11:40.551Z",
-    "updatedBy": "james.davies@kineticdata.com",
-    "username": "brian.shealey@kineticdata.com"
-  },
-  {
-    "attributes": [
-
-    ],
     "createdAt": "2016-05-18T16:37:57.135Z",
     "createdBy": "admin",
     "displayName": "Jack Boespflug",

@@ -1,18 +1,47 @@
 {
-  "afterLogoutPath": null,
+  "afterLogoutPath": "",
   "attributes": [
-
+    {
+      "name": "Task Server Url",
+      "values": [
+        "http://democe.kineticdata.com:8080/kinetic-task"
+      ]
+    },
+    {
+      "name": "Task Source Name",
+      "values": [
+        "Demo Template"
+      ]
+    },
+    {
+      "name": "Web Server Url",
+      "values": [
+        "http://democe.kineticdata.com:8080/kinetic"
+      ]
+    },
+    {
+      "name": "Company Name",
+      "values": [
+        "Acme"
+      ]
+    },
+    {
+      "name": "Company Logo",
+      "values": [
+        "http://keg.kineticdata.com/images/KD_logo_159box@2x.png"
+      ]
+    }
   ],
-  "bundlePath": null,
-  "createdAt": "2016-05-17T18:18:10.469Z",
+  "bundlePath": "adminlte",
+  "createdAt": "2016-04-28T22:07:55.423Z",
   "createdBy": "james.davies@kineticdata.com",
   "defaultFormConfirmationPage": null,
   "defaultFormDisplayPage": null,
   "defaultSubmissionLabelExpression": null,
   "displayType": "Display Page",
-  "displayValue": null,
-  "loginPage": null,
-  "name": "App Store",
+  "displayValue": "kapp.jsp",
+  "loginPage": "login.jsp",
+  "name": "ERM Catalog",
   "resetPasswordPage": null,
   "securityPolicies": [
     {
@@ -40,7 +69,7 @@
       "name": "Submitter"
     }
   ],
-  "slug": "app-store",
-  "updatedAt": "2016-05-17T18:18:10.469Z",
+  "slug": "catalog",
+  "updatedAt": "2016-05-17T01:07:45.241Z",
   "updatedBy": "james.davies@kineticdata.com"
 }
