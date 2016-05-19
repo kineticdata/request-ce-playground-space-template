@@ -1,26 +1,2 @@
 [
-  {
-    "message": "Must be an administrator.",
-    "name": "Admins",
-    "rule": "false",
-    "type": "Kapp"
-  },
-  {
-    "message": "Must be authenticated.",
-    "name": "Authenticated Users",
-    "rule": "identity('authenticated')",
-    "type": "Kapp"
-  },
-  {
-    "message": "Everyone is allowed access.",
-    "name": "Everyone",
-    "rule": "true",
-    "type": "Kapp"
-  },
-  {
-    "message": "Must be the user that created the submission.",
-    "name": "Submitter",
-    "rule": "(submission('anonymous') && identity('sessionToken') == submission('sessionToken'))\n|| (!submission('anonymous') && identity('username') == submission('createdBy'))",
-    "type": "Submission"
-  }
 ]
