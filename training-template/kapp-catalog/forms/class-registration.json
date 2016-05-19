@@ -961,6 +961,6 @@
   "status": "New",
   "submissionLabelExpression": "${form('name')} - ${values('Class Name')} ${values('Class Start Date')}",
   "type": "Service",
-  "updatedAt": "2016-04-29T16:19:42.635Z",
-  "updatedBy": "james.davies@kineticdata.com"
+  "updatedAt": "2016-05-18T20:28:53.463Z",
+  "updatedBy": "kdadmin@kineticdata.com"
 }

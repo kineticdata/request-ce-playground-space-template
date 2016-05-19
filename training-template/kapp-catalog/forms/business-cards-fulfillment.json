@@ -382,6 +382,6 @@
   "status": "New",
   "submissionLabelExpression": "${values('Synopsis')}",
   "type": "Subservice",
-  "updatedAt": "2016-04-29T16:17:57.755Z",
-  "updatedBy": "james.davies@kineticdata.com"
+  "updatedAt": "2016-05-18T20:28:52.391Z",
+  "updatedBy": "kdadmin@kineticdata.com"
 }
