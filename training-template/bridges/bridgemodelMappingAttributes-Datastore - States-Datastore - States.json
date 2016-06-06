@@ -1,10 +1,14 @@
 [
   {
-    "name": "Status",
-    "structureField": "${fields('values[Status]')}"
+    "name": "Name",
+    "structureField": "${fields('values[Name]')}"
   },
   {
-    "name": "Sample Field",
-    "structureField": "${fields('values[Sample Field]')}"
+    "name": "Abbreviation",
+    "structureField": "${fields('values[Abbreviation]')}"
+  },
+  {
+    "name": "Status",
+    "structureField": "${fields('values[Status]')}"
   }
 ]
