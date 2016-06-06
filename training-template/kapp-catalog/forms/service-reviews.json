@@ -148,9 +148,9 @@
 
   ],
   "slug": "service-reviews",
-  "status": "New",
-  "submissionLabelExpression": null,
+  "status": "Active",
+  "submissionLabelExpression": "${values('Form Slug')} - ${values('Rating')}",
   "type": "Console",
-  "updatedAt": "2016-05-18T20:29:02.598Z",
-  "updatedBy": "kdadmin@kineticdata.com"
+  "updatedAt": "2016-06-03T18:06:43.548Z",
+  "updatedBy": "john"
 }
