@@ -43,5 +43,20 @@
     "updatedBy": "admin",
     "username": "kinetic-task",
     "password": "RghHEWycK3Nk4LT"
+  },
+  {
+    "attributes": [
+
+    ],
+    "createdAt": "2016-05-19T13:58:49.451Z",
+    "createdBy": "admin",
+    "displayName": "Kinetic Integrations",
+    "email": null,
+    "enabled": true,
+    "spaceAdmin": true,
+    "updatedAt": "2016-05-19T13:58:49.451Z",
+    "updatedBy": "admin",
+    "username": "demo.taskman@kineticdata.com",
+    "password": "Taskpass20!6"
   }
 ]
