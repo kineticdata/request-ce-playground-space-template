@@ -2,15 +2,15 @@
   "anonymous": false,
   "attributes": [
     {
-      "name": "Kapp Slug",
-      "values": [
-        "catalog"
-      ]
-    },
-    {
       "name": "Community Link",
       "values": [
         "{\"name\":\"Category Instructions\",\"url\":\"http://community.kineticdata.com/10_Kinetic_Request/Kinetic_Request_Core_Edition/Resources/Kapp-Admin/Category_Administration\"}"
+      ]
+    },
+    {
+      "name": "Kapp Slug",
+      "values": [
+        "catalog"
       ]
     }
   ],
@@ -48,6 +48,6 @@
   "status": "Active",
   "submissionLabelExpression": null,
   "type": "Console",
-  "updatedAt": "2016-05-18T18:25:15.154Z",
-  "updatedBy": "james.davies@kineticdata.com"
+  "updatedAt": "2016-05-19T20:28:49.517Z",
+  "updatedBy": "kdadmin@kineticdata.com"
 }
