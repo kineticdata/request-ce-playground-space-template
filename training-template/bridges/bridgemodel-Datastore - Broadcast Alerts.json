@@ -1,0 +1,25 @@
+{
+  "activeMappingName": "Datastore - Broadcast Alerts",
+  "attributes": [
+    {
+      "name": "Message"
+    },
+    {
+      "name": "Status"
+    },
+    {
+      "name": "Subject"
+    }
+  ],
+  "name": "Datastore - Broadcast Alerts",
+  "qualifications": [
+    {
+      "name": "All",
+      "parameters": [
+
+      ],
+      "resultType": "Multiple"
+    }
+  ],
+  "status": "Active"
+}
