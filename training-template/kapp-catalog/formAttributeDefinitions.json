@@ -1,15 +1,31 @@
 [
   {
     "allowsMultiple": false,
-    "name": "Form Manager"
+    "name": "Approval Form Slug"
   },
   {
     "allowsMultiple": false,
-    "name": "Approval Type"
+    "name": "Approval Group"
+  },
+  {
+    "allowsMultiple": false,
+    "name": "Approval Individual"
   },
   {
     "allowsMultiple": false,
     "name": "Charge"
+  },
+  {
+    "allowsMultiple": false,
+    "name": "Fulfillment Form Slug"
+  },
+  {
+    "allowsMultiple": false,
+    "name": "Fulfillment Group"
+  },
+  {
+    "allowsMultiple": false,
+    "name": "Fulfillment Individual"
   },
   {
     "allowsMultiple": false,
