@@ -1,12 +1,7 @@
 {
   "anonymous": false,
   "attributes": [
-    {
-      "name": "Datastore Configuration",
-      "values": [
-        "[]"
-      ]
-    }
+
   ],
   "bridgedResources": [
 
@@ -14,21 +9,21 @@
   "categorizations": [
 
   ],
-  "createdAt": "2016-05-03T22:58:29.704Z",
-  "createdBy": "james.davies@kineticdata.com",
-  "description": "Stores Assets",
+  "createdAt": "2016-05-26T15:39:45.047Z",
+  "createdBy": "sharms2010",
+  "description": "",
   "name": "Assets",
   "notes": null,
   "pages": [
     {
-      "advanceCondition": "false",
+      "advanceCondition": null,
       "displayCondition": null,
-      "displayPage": "pages/datastore/datastoreForm.jsp",
+      "displayPage": null,
       "elements": [
         {
           "type": "field",
-          "name": "Asset Name",
-          "label": "Asset Name",
+          "name": "Assigned Individual",
+          "label": "Assigned Individual",
           "key": "f3",
           "defaultValue": null,
           "defaultResourceName": null,
@@ -53,88 +48,10 @@
         },
         {
           "type": "field",
-          "name": "Asset Type",
-          "label": "Asset Type",
-          "key": "f4",
-          "defaultValue": null,
-          "defaultResourceName": null,
-          "visible": true,
-          "enabled": true,
-          "required": false,
-          "requiredMessage": null,
-          "omitWhenHidden": null,
-          "pattern": null,
-          "constraints": [
-
-          ],
-          "events": [
-
-          ],
-          "renderAttributes": {
-
-          },
-          "dataType": "string",
-          "renderType": "text",
-          "rows": 1
-        },
-        {
-          "type": "field",
-          "name": "Asset Description",
-          "label": "Asset Description",
-          "key": "f5",
-          "defaultValue": null,
-          "defaultResourceName": null,
-          "visible": true,
-          "enabled": true,
-          "required": false,
-          "requiredMessage": null,
-          "omitWhenHidden": null,
-          "pattern": null,
-          "constraints": [
-
-          ],
-          "events": [
-
-          ],
-          "renderAttributes": {
-
-          },
-          "dataType": "string",
-          "renderType": "text",
-          "rows": 1
-        },
-        {
-          "type": "field",
-          "name": "Assigned Individual",
-          "label": "Assigned Individual",
-          "key": "fSample",
-          "defaultValue": null,
-          "defaultResourceName": null,
-          "visible": true,
-          "enabled": true,
-          "required": false,
-          "requiredMessage": null,
-          "omitWhenHidden": null,
-          "pattern": null,
-          "constraints": [
-
-          ],
-          "events": [
-
-          ],
-          "renderAttributes": {
-
-          },
-          "dataType": "string",
-          "renderType": "text",
-          "rows": 1
-        },
-        {
-          "type": "field",
-          "name": "Assigned Group",
-          "label": "Assigned Group",
-          "key": "f2",
-          "defaultValue": null,
+          "name": "User",
+          "label": "User",
+          "key": "f1",
+          "defaultValue": "${identity('username')}",
           "defaultResourceName": null,
           "visible": true,
           "enabled": true,
@@ -159,12 +76,12 @@
           "type": "field",
           "name": "Status",
           "label": "Status",
-          "key": "f1",
-          "defaultValue": null,
+          "key": "f2",
+          "defaultValue": "Active",
           "defaultResourceName": null,
           "visible": true,
           "enabled": true,
-          "required": true,
+          "required": false,
           "requiredMessage": null,
           "omitWhenHidden": null,
           "pattern": null,
@@ -178,50 +95,25 @@
 
           },
           "dataType": "string",
-          "renderType": "radio",
-          "choicesResourceName": null,
-          "choicesRunIf": null,
-          "choices": [
-            {
-              "label": "Active",
-              "value": "active"
-            },
-            {
-              "label": "Inactive",
-              "value": "inactive"
-            }
-          ]
+          "renderType": "text",
+          "rows": 1
         },
         {
           "type": "button",
-          "label": "Save",
-          "name": "Save",
-          "visible": "bundle.adminDatastore != null",
+          "label": "Submit",
+          "name": "Submit Button",
+          "visible": true,
           "enabled": true,
           "renderType": "submit-page",
           "renderAttributes": {
-            "class": "btn btn-primary"
-          }
-        },
-        {
-          "type": "button",
-          "label": "Cancel",
-          "name": "Cancel",
-          "visible": "bundle.adminDatastore != null",
-          "enabled": true,
-          "renderType": "custom",
-          "renderAttributes": {
-            "class": "btn btn-link cancel-record"
-          },
-          "events": [
 
-          ]
+          }
         }
       ],
       "events": [
 
       ],
-      "name": "Datastore",
+      "name": "Page",
       "renderType": "submittable",
       "type": "page"
     }
@@ -232,7 +124,7 @@
   "slug": "assets",
   "status": "Active",
   "submissionLabelExpression": null,
-  "type": "Datastore",
-  "updatedAt": "2016-05-18T18:11:59.893Z",
-  "updatedBy": "james.davies@kineticdata.com"
+  "type": "Console",
+  "updatedAt": "2016-06-03T22:29:38.864Z",
+  "updatedBy": "john"
 }
