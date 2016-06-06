@@ -3,6 +3,9 @@
     "name": "Approval"
   },
   {
+    "name": "Component"
+  },
+  {
     "name": "Console"
   },
   {
@@ -22,8 +25,5 @@
   },
   {
     "name": "Work Order"
-  },
-  {
-    "name": "Component"
   }
 ]
