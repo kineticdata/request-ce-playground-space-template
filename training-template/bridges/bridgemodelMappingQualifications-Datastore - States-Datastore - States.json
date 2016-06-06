@@ -1,3 +1,14 @@
 [
-
+  {
+    "name": "All",
+    "query": "kappSlug=admin&formSlug=states&limit=999"
+  },
+  {
+    "name": "By Abbreviation",
+    "query": "kappSlug=admin&formSlug=states&limit=999&values[Abbreviation]=${parameters('Abbreviation')}"
+  },
+  {
+    "name": "By Name",
+    "query": "kappSlug=admin&formSlug=states&limit=999&values[Name]=${parameters('Name')}"
+  }
 ]
