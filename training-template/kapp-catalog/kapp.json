@@ -2,33 +2,33 @@
   "afterLogoutPath": "",
   "attributes": [
     {
-      "name": "Task Server Url",
-      "values": [
-        "http://democe.kineticdata.com:8080/kinetic-task"
-      ]
-    },
-    {
-      "name": "Task Source Name",
-      "values": [
-        "Demo Template"
-      ]
-    },
-    {
-      "name": "Web Server Url",
-      "values": [
-        "http://democe.kineticdata.com:8080/kinetic"
-      ]
-    },
-    {
       "name": "Company Name",
       "values": [
         "Acme"
       ]
     },
     {
-      "name": "Company Logo",
+      "name": "Shared Bridged Resource Form Slug",
       "values": [
-        "http://keg.kineticdata.com/images/KD_logo_159box@2x.png"
+        "shared-resources"
+      ]
+    },
+    {
+      "name": "Task Server Url",
+      "values": [
+        "http://www.kdkeg.com:8081/kinetic-task"
+      ]
+    },
+    {
+      "name": "Task Source Name",
+      "values": [
+        "Training Spaces"
+      ]
+    },
+    {
+      "name": "Web Server Url",
+      "values": [
+        "https://www.kdkeg.com/kinetic"
       ]
     }
   ],
@@ -67,9 +67,33 @@
     {
       "endpoint": "Default Submission Modification",
       "name": "Submitter"
+    },
+    {
+      "endpoint": "Modification",
+      "name": "Admins"
+    },
+    {
+      "endpoint": "Form Creation",
+      "name": "Admins"
+    },
+    {
+      "endpoint": "Default Form Modification",
+      "name": "Admins"
+    },
+    {
+      "endpoint": "Default Form Display",
+      "name": "Authenticated Users"
+    },
+    {
+      "endpoint": "Default Submission Access",
+      "name": "Submitter"
+    },
+    {
+      "endpoint": "Default Submission Modification",
+      "name": "Submitter"
     }
   ],
   "slug": "catalog",
-  "updatedAt": "2016-05-18T21:10:53.567Z",
+  "updatedAt": "2016-06-03T21:44:14.947Z",
   "updatedBy": "james.davies@kineticdata.com"
 }
