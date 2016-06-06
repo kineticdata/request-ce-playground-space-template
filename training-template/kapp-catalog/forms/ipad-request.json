@@ -2,15 +2,27 @@
   "anonymous": false,
   "attributes": [
     {
-      "name": "Approval Type",
+      "name": "Approval Form Slug",
       "values": [
-        "Manager Approval Required"
+        "approval"
+      ]
+    },
+    {
+      "name": "Fulfillment Form Slug",
+      "values": [
+        "workorder"
+      ]
+    },
+    {
+      "name": "Fulfillment Group",
+      "values": [
+        "Fulfillment::Information Technology"
       ]
     },
     {
       "name": "Image",
       "values": [
-        "401k-request.png"
+        "stock-check.png"
       ]
     },
     {
@@ -26,8 +38,14 @@
   "categorizations": [
     {
       "category": {
-        "name": "HR Services",
-        "slug": "hr-services"
+        "name": "Hardware Services",
+        "slug": "hardware-services"
+      }
+    },
+    {
+      "category": {
+        "name": "Promoted Requests",
+        "slug": "promoted-requests"
       }
     }
   ],
@@ -46,7 +64,7 @@
           "type": "field",
           "name": "Color",
           "label": "Color",
-          "key": "f5",
+          "key": "f6",
           "defaultValue": null,
           "defaultResourceName": null,
           "visible": true,
@@ -64,8 +82,8 @@
           "renderAttributes": {
 
           },
-          "dataType": "json",
-          "renderType": "checkbox",
+          "dataType": "string",
+          "renderType": "dropdown",
           "choicesResourceName": null,
           "choicesRunIf": null,
           "choices": [
@@ -82,8 +100,8 @@
               "value": "Green"
             },
             {
-              "label": "Black",
-              "value": "Black"
+              "label": "Orange",
+              "value": "Orange"
             }
           ]
         },
@@ -219,9 +237,9 @@
 
   ],
   "slug": "ipad-request",
-  "status": "New",
-  "submissionLabelExpression": "${form('name')}",
+  "status": "Active",
+  "submissionLabelExpression": "ipad ${values('Color')} / ${values('Size')}",
   "type": "Service",
-  "updatedAt": "2016-05-18T20:28:58.223Z",
-  "updatedBy": "kdadmin@kineticdata.com"
+  "updatedAt": "2016-06-03T20:11:45.098Z",
+  "updatedBy": "james.davies@kineticdata.com"
 }
