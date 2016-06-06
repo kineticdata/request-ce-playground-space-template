@@ -1,0 +1,186 @@
+{
+  "anonymous": false,
+  "attributes": [
+
+  ],
+  "bridgedResources": [
+    {
+      "model": "Product Categories",
+      "name": "Prod Cat Tier 1",
+      "parameters": [
+
+      ],
+      "qualification": "Tier 1",
+      "status": "Active"
+    },
+    {
+      "model": "Product Categories",
+      "name": "Prod Cat Tier 2",
+      "parameters": [
+        {
+          "mapping": "${values('Tier 1')}",
+          "name": "Tier 1"
+        }
+      ],
+      "qualification": "Tier 2 By Tier 1",
+      "status": "Active"
+    },
+    {
+      "model": "Product Categories",
+      "name": "Prod Cat Tier 3",
+      "parameters": [
+        {
+          "mapping": "${values('Tier 1')}",
+          "name": "Tier 1"
+        },
+        {
+          "mapping": "${values('Tier 2')}",
+          "name": "Tier 2"
+        }
+      ],
+      "qualification": "Tier 3 By Tier 2 and Tier 1",
+      "status": "Active"
+    }
+  ],
+  "categorizations": [
+    {
+      "category": {
+        "name": "Example Services",
+        "slug": "example-services"
+      }
+    }
+  ],
+  "createdAt": "2016-05-31T23:04:32.882Z",
+  "createdBy": "james.davies@kineticdata.com",
+  "description": "Uses Kinetic Bridging to display Remedy Product Categorizations in Tiered Approach",
+  "name": "Multi-Tiered Bridge Example",
+  "notes": null,
+  "pages": [
+    {
+      "advanceCondition": null,
+      "displayCondition": null,
+      "displayPage": null,
+      "elements": [
+        {
+          "type": "field",
+          "name": "Tier 1",
+          "label": "Tier 1",
+          "key": "f1",
+          "defaultValue": null,
+          "defaultResourceName": null,
+          "visible": true,
+          "enabled": true,
+          "required": false,
+          "requiredMessage": null,
+          "omitWhenHidden": null,
+          "pattern": null,
+          "constraints": [
+
+          ],
+          "events": [
+
+          ],
+          "renderAttributes": {
+
+          },
+          "dataType": "string",
+          "renderType": "dropdown",
+          "choicesResourceName": "Prod Cat Tier 1",
+          "choicesRunIf": null,
+          "choices": {
+            "label": "${resources('Prod Cat Tier 1:Tier 1')}",
+            "value": "${resources('Prod Cat Tier 1:Tier 1')}"
+          }
+        },
+        {
+          "type": "field",
+          "name": "Tier 2",
+          "label": "Tier 2",
+          "key": "f2",
+          "defaultValue": null,
+          "defaultResourceName": null,
+          "visible": true,
+          "enabled": true,
+          "required": false,
+          "requiredMessage": null,
+          "omitWhenHidden": null,
+          "pattern": null,
+          "constraints": [
+
+          ],
+          "events": [
+
+          ],
+          "renderAttributes": {
+
+          },
+          "dataType": "string",
+          "renderType": "dropdown",
+          "choicesResourceName": "Prod Cat Tier 2",
+          "choicesRunIf": null,
+          "choices": {
+            "label": "${resources('Prod Cat Tier 2:Tier 2')}",
+            "value": "${resources('Prod Cat Tier 2:Tier 2')}"
+          }
+        },
+        {
+          "type": "field",
+          "name": "Tier 3",
+          "label": "Tier 3",
+          "key": "f3",
+          "defaultValue": null,
+          "defaultResourceName": null,
+          "visible": true,
+          "enabled": true,
+          "required": false,
+          "requiredMessage": null,
+          "omitWhenHidden": null,
+          "pattern": null,
+          "constraints": [
+
+          ],
+          "events": [
+
+          ],
+          "renderAttributes": {
+
+          },
+          "dataType": "string",
+          "renderType": "dropdown",
+          "choicesResourceName": "Prod Cat Tier 3",
+          "choicesRunIf": null,
+          "choices": {
+            "label": "${resources('Prod Cat Tier 3:Tier 3')}",
+            "value": "${resources('Prod Cat Tier 3:Tier 3')}"
+          }
+        },
+        {
+          "type": "button",
+          "label": "Submit",
+          "name": "Submit Button",
+          "visible": true,
+          "enabled": true,
+          "renderType": "submit-page",
+          "renderAttributes": {
+
+          }
+        }
+      ],
+      "events": [
+
+      ],
+      "name": "Page 1",
+      "renderType": "submittable",
+      "type": "page"
+    }
+  ],
+  "securityPolicies": [
+
+  ],
+  "slug": "multi-tiered-bridge-example",
+  "status": "Active",
+  "submissionLabelExpression": "Multi Test - ${values('Tier 1')} ${values('Tier 2')} ${values('Tier 3')}",
+  "type": "Service",
+  "updatedAt": "2016-06-03T18:05:34.142Z",
+  "updatedBy": "john"
+}
