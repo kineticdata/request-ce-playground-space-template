@@ -1,12 +1,17 @@
 [
   {
-    "name": "Request CE",
-    "status": "Active",
-    "url": "http://democe.kineticdata.com:8080/kinetic-bridgehub/app/api/v1/bridges/demo-template-core/"
-  },
-  {
     "name": "Counter",
     "status": "Active",
-    "url": "http://democe.kineticdata.com:8080/kinetic-bridgehub/app/api/v1/bridges/counter/"
+    "url": "http://www.kdkeg.com:8080/kinetic-bridgehub/app/api/v1/bridges/counter/"
+  },
+  {
+    "name": "Remedy ITSM",
+    "status": "Active",
+    "url": "http://www.kdkeg.com:8080/kinetic-bridgehub/app/api/v1/bridges/demobmc8/"
+  },
+  {
+    "name": "Request CE",
+    "status": "Active",
+    "url": "http://www.kdkeg.com:8080/kinetic-bridgehub/app/api/v1/bridges/training-template/"
   }
 ]
