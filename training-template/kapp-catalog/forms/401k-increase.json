@@ -2,9 +2,21 @@
   "anonymous": false,
   "attributes": [
     {
-      "name": "Approval Type",
+      "name": "Approval Form Slug",
       "values": [
-        "Manager Approval Required"
+        "approval"
+      ]
+    },
+    {
+      "name": "Fulfillment Form Slug",
+      "values": [
+        "hr-fulfillment"
+      ]
+    },
+    {
+      "name": "Fulfillment Group",
+      "values": [
+        "Fulfillment::Human Resources"
       ]
     },
     {
@@ -34,7 +46,7 @@
   "createdAt": "2016-02-16T16:24:37.109Z",
   "createdBy": "user@kineticdata.com",
   "description": "Use this form to request an increase or decrease in the percentage or your salary that is regularly contributed to your 401k.",
-  "name": "401k Increase",
+  "name": "401k Increase Request",
   "notes": "a",
   "pages": [
     {
@@ -157,10 +169,10 @@
   "securityPolicies": [
 
   ],
-  "slug": "401k-increase",
-  "status": "New",
-  "submissionLabelExpression": "${form('name')} - ${values('Increase or Decrease')} - ${values('Amount')}",
+  "slug": "401k-increase-request",
+  "status": "Active",
+  "submissionLabelExpression": "${values('Increase or Decrease')} - ${values('Amount')}",
   "type": "Service",
-  "updatedAt": "2016-05-18T20:28:49.671Z",
-  "updatedBy": "kdadmin@kineticdata.com"
+  "updatedAt": "2016-06-04T14:43:13.479Z",
+  "updatedBy": "james.davies@kineticdata.com"
 }
