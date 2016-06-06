@@ -2,6 +2,18 @@
   "anonymous": false,
   "attributes": [
     {
+      "name": "Fulfillment Form Slug",
+      "values": [
+        "workorder"
+      ]
+    },
+    {
+      "name": "Fulfillment Group",
+      "values": [
+        "Fulfillment::Information Technology"
+      ]
+    },
+    {
       "name": "Image",
       "values": [
         "support-request.png"
@@ -446,9 +458,9 @@
 
   ],
   "slug": "support-request",
-  "status": "New",
-  "submissionLabelExpression": "${form('name')} - ${values('Request Summary')}",
+  "status": "Active",
+  "submissionLabelExpression": "${values('Request Summary')}",
   "type": "Service",
-  "updatedAt": "2016-05-18T20:29:03.464Z",
-  "updatedBy": "kdadmin@kineticdata.com"
+  "updatedAt": "2016-06-03T20:12:52.701Z",
+  "updatedBy": "james.davies@kineticdata.com"
 }
