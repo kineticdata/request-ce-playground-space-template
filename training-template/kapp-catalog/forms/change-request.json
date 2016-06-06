@@ -2,6 +2,18 @@
   "anonymous": false,
   "attributes": [
     {
+      "name": "Fulfillment Form Slug",
+      "values": [
+        "workorder"
+      ]
+    },
+    {
+      "name": "Fulfillment Group",
+      "values": [
+        "Fulfillment::Information Technology"
+      ]
+    },
+    {
       "name": "Image",
       "values": [
         "change-request.png"
@@ -635,9 +647,9 @@
 
   ],
   "slug": "change-request",
-  "status": "New",
-  "submissionLabelExpression": "${values('Title')}",
+  "status": "Active",
+  "submissionLabelExpression": "${values('Title')} - Urgency: ${values('Urgency')} - Impact: ${values('Impact')}",
   "type": "Service",
-  "updatedAt": "2016-05-18T20:28:52.802Z",
-  "updatedBy": "kdadmin@kineticdata.com"
+  "updatedAt": "2016-06-03T20:09:34.854Z",
+  "updatedBy": "james.davies@kineticdata.com"
 }
