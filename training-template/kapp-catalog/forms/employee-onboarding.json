@@ -2,40 +2,32 @@
   "anonymous": false,
   "attributes": [
     {
+      "name": "Approval Form Slug",
+      "values": [
+        "approval"
+      ]
+    },
+    {
+      "name": "Fulfillment Form Slug",
+      "values": [
+        "workorder"
+      ]
+    },
+    {
+      "name": "Fulfillment Group",
+      "values": [
+        "Fulfillment::Human Resources"
+      ]
+    },
+    {
       "name": "Image",
       "values": [
         "employee-onboarding.gif"
       ]
-    },
-    {
-      "name": "Approval Type",
-      "values": [
-        "Manager Approval"
-      ]
     }
   ],
   "bridgedResources": [
-    {
-      "model": "Computers",
-      "name": "Computers",
-      "parameters": [
-        {
-          "mapping": "${values('Computer Type')}",
-          "name": "Type"
-        }
-      ],
-      "qualification": "By Computer Type",
-      "status": "Active"
-    },
-    {
-      "model": "Telephone Numbers",
-      "name": "Telephone Numbers",
-      "parameters": [
 
-      ],
-      "qualification": "All Telephone Numbers",
-      "status": "Active"
-    }
   ],
   "categorizations": [
     {
@@ -46,15 +38,15 @@
     },
     {
       "category": {
-        "name": "Popular Requests",
-        "slug": "popular-requests"
+        "name": "Promoted Requests",
+        "slug": "promoted-requests"
       }
     }
   ],
   "createdAt": "2016-02-03T23:10:21.161Z",
   "createdBy": "john.sundberg@kineticdata.com",
   "description": "This service allows HR Managers to setup new Employees within the organization. HR Managers should use this service to setup the user in the appropriate systems, order business cards, and setup their workspaces.",
-  "name": "Employee Onboarding",
+  "name": "Employee Onboarding Request",
   "notes": "",
   "pages": [
     {
@@ -756,337 +748,239 @@
               "title": null,
               "visible": true,
               "renderAttributes": {
-                "class": "row"
+                "class": "col-md-12"
               },
               "elements": [
                 {
-                  "type": "section",
-                  "renderType": null,
-                  "name": "Column 1",
-                  "title": null,
+                  "type": "field",
+                  "name": "New Employee Department",
+                  "label": "New Employee Department",
+                  "key": "f23",
+                  "defaultValue": null,
+                  "defaultResourceName": null,
                   "visible": true,
-                  "omitWhenHidden": null,
-                  "renderAttributes": {
-                    "class": "col-md-6"
-                  },
-                  "elements": [
+                  "enabled": true,
+                  "required": false,
+                  "requiredMessage": null,
+                  "pattern": null,
+                  "constraints": [
+
+                  ],
+                  "events": [
                     {
-                      "type": "field",
-                      "name": "New Employee Department",
-                      "label": "New Employee Department",
-                      "key": "f23",
-                      "defaultValue": null,
-                      "defaultResourceName": null,
-                      "visible": true,
-                      "enabled": true,
-                      "required": false,
-                      "requiredMessage": null,
-                      "pattern": null,
-                      "constraints": [
-
-                      ],
-                      "events": [
+                      "name": "Set Defaults",
+                      "type": "Change",
+                      "action": "Custom",
+                      "mappings": [
                         {
-                          "name": "Set Defaults",
-                          "type": "Change",
-                          "action": "Custom",
-                          "mappings": [
-                            {
-                              "field": "Resources Required",
-                              "value": "['Business Cards','Cell Phone']"
-                            }
-                          ],
-                          "code": "K('field[Resources Required]').value([]);\nK('field[System Access Required]').value([]);\nif (element.value() === \"Accounting\") {\n  K('field[Resources Required]').value(['Business Cards','Cell Phone','Corperate Credit Card']);\n  K('field[System Access Required]').value(['Email','Employee Portal','Time Tracker']);\n} else if (element.value() === \"Engineering\") {\n  K('field[Resources Required]').value(['Computer','Cell Phone']);\n  K('field[System Access Required]').value(['Email','Employee Portal','SAP']);\n} else if (element.value() === \"Finance\") {\n  K('field[Resources Required]').value(['Business Cards','Corperate Credit Card','Cell Phone','Computer','Company Car']);\n  K('field[System Access Required]').value(['Email','Employee Portal','Project Management Suite','SAP','Time Tracker']);\n}\n\n\n\n"
+                          "field": "Resources Required",
+                          "value": "['Business Cards','Cell Phone']"
                         }
                       ],
-                      "renderAttributes": {
-
-                      },
-                      "dataType": "string",
-                      "renderType": "dropdown",
-                      "choicesResourceName": null,
-                      "choices": [
-                        {
-                          "label": "Accounting",
-                          "value": "Accounting"
-                        },
-                        {
-                          "label": "Engineering",
-                          "value": "Engineering"
-                        },
-                        {
-                          "label": "Finance",
-                          "value": "Finance"
-                        },
-                        {
-                          "label": "Human Resources",
-                          "value": "Human Resources"
-                        },
-                        {
-                          "label": "Information Technology",
-                          "value": "Information Technology"
-                        },
-                        {
-                          "label": "Marketing",
-                          "value": "Marketing"
-                        },
-                        {
-                          "label": "Manufacturing",
-                          "value": "Manufacturing"
-                        },
-                        {
-                          "label": "Purchasing",
-                          "value": "Purchasing"
-                        }
-                      ],
-                      "choicesRunIf": null,
-                      "omitWhenHidden": null
-                    },
-                    {
-                      "type": "field",
-                      "name": "New Employee Region",
-                      "label": "New Employee Region",
-                      "key": "f24",
-                      "defaultValue": null,
-                      "defaultResourceName": null,
-                      "visible": true,
-                      "enabled": true,
-                      "required": false,
-                      "requiredMessage": null,
-                      "pattern": null,
-                      "constraints": [
-
-                      ],
-                      "events": [
-
-                      ],
-                      "renderAttributes": {
-
-                      },
-                      "dataType": "string",
-                      "renderType": "dropdown",
-                      "choicesResourceName": null,
-                      "choices": [
-                        {
-                          "label": "North East",
-                          "value": "North East"
-                        },
-                        {
-                          "label": "South East",
-                          "value": "South East"
-                        },
-                        {
-                          "label": "Mid-West",
-                          "value": "Mid-West"
-                        },
-                        {
-                          "label": "South West",
-                          "value": "South West"
-                        },
-                        {
-                          "label": "North West",
-                          "value": "North West"
-                        }
-                      ],
-                      "choicesRunIf": null,
-                      "omitWhenHidden": null
-                    },
-                    {
-                      "type": "field",
-                      "name": "New Employee Role",
-                      "label": "New Employee Role",
-                      "key": "f25",
-                      "defaultValue": null,
-                      "defaultResourceName": null,
-                      "visible": true,
-                      "enabled": true,
-                      "required": false,
-                      "requiredMessage": null,
-                      "pattern": null,
-                      "constraints": [
-
-                      ],
-                      "events": [
-                        {
-                          "name": "Change - Employee Role",
-                          "type": "Change",
-                          "action": "Custom",
-                          "code": "if (element.value() === \"Director\") {\n  K('field[Resources Required]').value([]);\n  K('field[System Access Required]').value([]);\n  K('field[Resources Required]').value(['Business Cards','Cell Phone','Corperate Credit Card','Computer','Company Car']);\n  K('field[System Access Required]').value(['Email','Employee Portal','Time Tracker','SAP','Project Management Suite']);\n}"
-                        }
-                      ],
-                      "renderAttributes": {
-
-                      },
-                      "dataType": "string",
-                      "renderType": "dropdown",
-                      "choicesResourceName": null,
-                      "choices": [
-                        {
-                          "label": "Part Time Employee",
-                          "value": "Part Time Employee"
-                        },
-                        {
-                          "label": "Full Time Employee",
-                          "value": "Full Time Employee"
-                        },
-                        {
-                          "label": "Manager",
-                          "value": "Manager"
-                        },
-                        {
-                          "label": "Director",
-                          "value": "Director"
-                        },
-                        {
-                          "label": "Contractor",
-                          "value": "Contractor"
-                        }
-                      ],
-                      "choicesRunIf": null,
-                      "omitWhenHidden": null
-                    },
-                    {
-                      "type": "field",
-                      "name": "Estimated Start Date",
-                      "label": "Estimated Start Date",
-                      "key": "f106",
-                      "defaultValue": null,
-                      "defaultResourceName": null,
-                      "visible": true,
-                      "enabled": true,
-                      "required": true,
-                      "requiredMessage": null,
-                      "pattern": null,
-                      "constraints": [
-
-                      ],
-                      "events": [
-
-                      ],
-                      "renderAttributes": {
-
-                      },
-                      "dataType": "string",
-                      "renderType": "datetime",
-                      "omitWhenHidden": null
+                      "code": "K('field[Resources Required]').value([]);\nK('field[System Access Required]').value([]);\nif (element.value() === \"Accounting\") {\n  K('field[Resources Required]').value(['Business Cards','Cell Phone','Corperate Credit Card']);\n  K('field[System Access Required]').value(['Email','Employee Portal','Time Tracker']);\n} else if (element.value() === \"Engineering\") {\n  K('field[Resources Required]').value(['Computer','Cell Phone']);\n  K('field[System Access Required]').value(['Email','Employee Portal','SAP']);\n} else if (element.value() === \"Finance\") {\n  K('field[Resources Required]').value(['Business Cards','Corperate Credit Card','Cell Phone','Computer','Company Car']);\n  K('field[System Access Required]').value(['Email','Employee Portal','Project Management Suite','SAP','Time Tracker']);\n}\n\n\n\n"
                     }
-                  ]
+                  ],
+                  "renderAttributes": {
+
+                  },
+                  "dataType": "string",
+                  "renderType": "dropdown",
+                  "choicesResourceName": null,
+                  "choices": [
+                    {
+                      "label": "Accounting",
+                      "value": "Accounting"
+                    },
+                    {
+                      "label": "Engineering",
+                      "value": "Engineering"
+                    },
+                    {
+                      "label": "Finance",
+                      "value": "Finance"
+                    },
+                    {
+                      "label": "Human Resources",
+                      "value": "Human Resources"
+                    },
+                    {
+                      "label": "Information Technology",
+                      "value": "Information Technology"
+                    },
+                    {
+                      "label": "Marketing",
+                      "value": "Marketing"
+                    },
+                    {
+                      "label": "Manufacturing",
+                      "value": "Manufacturing"
+                    },
+                    {
+                      "label": "Purchasing",
+                      "value": "Purchasing"
+                    }
+                  ],
+                  "choicesRunIf": null,
+                  "omitWhenHidden": null
                 },
                 {
-                  "type": "section",
-                  "renderType": null,
-                  "name": "Column 2",
-                  "title": null,
+                  "type": "field",
+                  "name": "New Employee Region",
+                  "label": "New Employee Region",
+                  "key": "f24",
+                  "defaultValue": null,
+                  "defaultResourceName": null,
                   "visible": true,
-                  "omitWhenHidden": null,
+                  "enabled": true,
+                  "required": false,
+                  "requiredMessage": null,
+                  "pattern": null,
+                  "constraints": [
+
+                  ],
+                  "events": [
+
+                  ],
                   "renderAttributes": {
-                    "class": "col-md-6"
+
                   },
-                  "elements": [
+                  "dataType": "string",
+                  "renderType": "dropdown",
+                  "choicesResourceName": null,
+                  "choices": [
                     {
-                      "type": "field",
-                      "name": "New Employee Title",
-                      "label": "New Employee Title",
-                      "key": "f117",
-                      "defaultValue": null,
-                      "defaultResourceName": null,
-                      "visible": true,
-                      "enabled": true,
-                      "required": true,
-                      "requiredMessage": null,
-                      "omitWhenHidden": null,
-                      "pattern": null,
-                      "constraints": [
-
-                      ],
-                      "events": [
-
-                      ],
-                      "renderAttributes": {
-
-                      },
-                      "dataType": "string",
-                      "renderType": "text",
-                      "rows": 1
+                      "label": "North East",
+                      "value": "North East"
                     },
                     {
-                      "type": "field",
-                      "name": "Office Telephone Number",
-                      "label": "Office Telephone Number",
-                      "key": "f118",
-                      "defaultValue": null,
-                      "defaultResourceName": null,
-                      "visible": true,
-                      "enabled": true,
-                      "required": false,
-                      "requiredMessage": null,
-                      "omitWhenHidden": null,
-                      "pattern": null,
-                      "constraints": [
-
-                      ],
-                      "events": [
-
-                      ],
-                      "renderAttributes": {
-
-                      },
-                      "dataType": "string",
-                      "renderType": "dropdown",
-                      "choicesResourceName": "Telephone Numbers",
-                      "choicesRunIf": null,
-                      "choices": {
-                        "label": "${resources('Telephone Numbers:Telephone Number')}",
-                        "value": "${resources('Telephone Numbers:Telephone Number')}"
-                      }
+                      "label": "South East",
+                      "value": "South East"
                     },
                     {
-                      "type": "field",
-                      "name": "Employee Email Address",
-                      "label": "Employee Email Address",
-                      "key": "f107",
-                      "defaultValue": "${(values('First Name') + '.' + values('Last Name') + '@').toLowerCase()}mail.mil",
-                      "defaultResourceName": null,
-                      "visible": true,
-                      "enabled": true,
-                      "required": false,
-                      "requiredMessage": null,
-                      "pattern": null,
-                      "constraints": [
-
-                      ],
-                      "events": [
-
-                      ],
-                      "renderAttributes": {
-
-                      },
-                      "dataType": "string",
-                      "renderType": "text",
-                      "rows": 1,
-                      "omitWhenHidden": null
+                      "label": "Mid-West",
+                      "value": "Mid-West"
+                    },
+                    {
+                      "label": "South West",
+                      "value": "South West"
+                    },
+                    {
+                      "label": "North West",
+                      "value": "North West"
                     }
-                  ]
+                  ],
+                  "choicesRunIf": null,
+                  "omitWhenHidden": null
+                },
+                {
+                  "type": "field",
+                  "name": "New Employee Role",
+                  "label": "New Employee Role",
+                  "key": "f25",
+                  "defaultValue": null,
+                  "defaultResourceName": null,
+                  "visible": true,
+                  "enabled": true,
+                  "required": false,
+                  "requiredMessage": null,
+                  "pattern": null,
+                  "constraints": [
+
+                  ],
+                  "events": [
+                    {
+                      "name": "Change - Employee Role",
+                      "type": "Change",
+                      "action": "Custom",
+                      "code": "if (element.value() === \"Director\") {\n  K('field[Resources Required]').value([]);\n  K('field[System Access Required]').value([]);\n  K('field[Resources Required]').value(['Business Cards','Cell Phone','Corperate Credit Card','Computer','Company Car']);\n  K('field[System Access Required]').value(['Email','Employee Portal','Time Tracker','SAP','Project Management Suite']);\n}"
+                    }
+                  ],
+                  "renderAttributes": {
+
+                  },
+                  "dataType": "string",
+                  "renderType": "dropdown",
+                  "choicesResourceName": null,
+                  "choices": [
+                    {
+                      "label": "Part Time Employee",
+                      "value": "Part Time Employee"
+                    },
+                    {
+                      "label": "Full Time Employee",
+                      "value": "Full Time Employee"
+                    },
+                    {
+                      "label": "Manager",
+                      "value": "Manager"
+                    },
+                    {
+                      "label": "Director",
+                      "value": "Director"
+                    },
+                    {
+                      "label": "Contractor",
+                      "value": "Contractor"
+                    }
+                  ],
+                  "choicesRunIf": null,
+                  "omitWhenHidden": null
+                },
+                {
+                  "type": "field",
+                  "name": "Estimated Start Date",
+                  "label": "Estimated Start Date",
+                  "key": "f106",
+                  "defaultValue": null,
+                  "defaultResourceName": null,
+                  "visible": true,
+                  "enabled": true,
+                  "required": true,
+                  "requiredMessage": null,
+                  "pattern": null,
+                  "constraints": [
+
+                  ],
+                  "events": [
+
+                  ],
+                  "renderAttributes": {
+
+                  },
+                  "dataType": "string",
+                  "renderType": "datetime",
+                  "omitWhenHidden": null
+                },
+                {
+                  "type": "field",
+                  "name": "Employee Email Address",
+                  "label": "Employee Email Address",
+                  "key": "f107",
+                  "defaultValue": "${(values('First Name') + '.' + values('Last Name') + '@').toLowerCase()}mail.mil",
+                  "defaultResourceName": null,
+                  "visible": true,
+                  "enabled": true,
+                  "required": false,
+                  "requiredMessage": null,
+                  "pattern": null,
+                  "constraints": [
+
+                  ],
+                  "events": [
+
+                  ],
+                  "renderAttributes": {
+
+                  },
+                  "dataType": "string",
+                  "renderType": "text",
+                  "rows": 1,
+                  "omitWhenHidden": null
                 }
               ],
               "renderType": null,
               "omitWhenHidden": null
-            }
-          ],
-          "omitWhenHidden": true,
-          "renderType": null
-        },
-        {
-          "type": "section",
-          "renderType": null,
-          "name": "Part 2",
-          "title": null,
-          "visible": true,
-          "omitWhenHidden": null,
-          "renderAttributes": {
-            "class": "row"
-          },
-          "elements": [
+            },
             {
               "type": "section",
               "name": "Resources Section",
@@ -1211,7 +1105,9 @@
               "renderType": null,
               "omitWhenHidden": null
             }
-          ]
+          ],
+          "omitWhenHidden": true,
+          "renderType": null
         },
         {
           "type": "section",
@@ -1261,12 +1157,7 @@
         }
       ],
       "events": [
-        {
-          "name": "Sort Office Telephone Numbers",
-          "type": "Load",
-          "action": "Custom",
-          "code": "/* Sorts select options list by select name */\nvar options = $('select[name=\"Office Telephone Number\"] option');\nvar arr = options.map(function(_, o) { return { t: $(o).text(), v: o.value }; }).get();\narr.sort(function(o1, o2) { return o1.t > o2.t ? 1 : o1.t < o2.t ? -1 : 0; });\noptions.each(function(i, o) {\n  o.value = arr[i].v;\n  $(o).text(arr[i].t);\n});\n"
-        }
+
       ],
       "name": "New Employee Setup",
       "renderType": "submittable",
@@ -1274,7 +1165,7 @@
     },
     {
       "advanceCondition": "",
-      "displayCondition": "values('Resources Required').indexOf('Business Cards') > 0",
+      "displayCondition": "values('Resources Required').indexOf('Business Cards') != -1",
       "displayPage": null,
       "elements": [
         {
@@ -1310,7 +1201,7 @@
                   "type": "content",
                   "renderType": "html",
                   "name": "BusinessCard Preview",
-                  "text": "<div id=\"cardPreview\">\n</div>\n\n<script>\n$( document ).ready(function() {\n  $('#cardPreview').append('<img id=\"cardImage\"></img>');\n  if(bundle.logo() != undefined){\n    if(bundle.logo().indexOf('http') >= 0){\n      $('#cardImage').attr('src', bundle.logo());\n    } else {\n    \t$('#cardImage').attr('src', bundle.location() + '/' + bundle.logo());\n    }\n  }\n  $text = $('<p id=\"cardText\"></p>');\n\t$text.append('<b>' + K('submission').values['First Name'] + ' ' + K('submission').values['Middle Name'] + ' ' + K('submission').values['Last Name'] + '</b>' + '<br/>');\n  $text.append('<b>' + K('submission').values['New Employee Title'] + '</b>' + '<br/>');\n  $text.append(K('submission').values['Address Line 1'] + '<br/>');\n  if ( K('submission').values['Address Line 2'] != '' ) {\n  \t$text.append(K('submission').values['Address Line 2'] + '<br/>') ;\n  }\n  $text.append(K('submission').values['City'] + ', ' + K('submission').values['State'] + ' ' + K('submission').values['Zip'] + '<br/>');\n  $text.append(K('submission').values['Office Telephone Number'] + '<br/>') ;\n  if ( K('submission').values['Employee Email Address'] != '' ) {\n  \t$text.append(K('submission').values['Employee Email Address'] + '<br/>') ;\n  }\n  $('#cardPreview').append($text);\n});\n</script>\n<style>\n \t#cardPreview {\n    width: 380px;\n    border: 1px solid;\n    padding: 10px 10px;\n    height: 230px;\n    display: inline-block;\n  }\n  #cardText {\n    float:right;\n    text-align: left;\n    margin-top: 40px;\n  }\n  #cardImage {\n    height:35px;\n    float:left;\n  }\n</style>",
+                  "text": "<div id=\"cardPreview\">\n</div>\n\n<script>\n$( document ).ready(function() {\n  $('#cardPreview').append('<h3 id=\"cardImage\"></h3>');\n  $('#cardImage').html(K('kapp').attributes('Company Name'));\n  $text = $('<p id=\"cardText\"></p>');\n    $text.append('<b>' + K('submission').value('First Name') + ' ' + (K('submission').value('Middle Name') !== null ? K('submission').value('Middle Name') + ' ' : '')  + K('submission').value('Last Name') + '</b>' + '<br/>');\n  $text.append(K('submission').value('Address Line 1') + '<br/>');\n  if ( K('submission').value('Address Line 2') != '' ) {\n    $text.append(K('submission').value('Address Line 2') + '<br/>') ;\n  }\n  $text.append(K('submission').value('City') + ', ' + K('submission').value('State') + ' ' + K('submission').value('Zip') + '<br/>');\n  $('#cardPreview').append($text);\n});\n</script>\n<style>\n    #cardPreview {\n    width: 320px;\n    border: 1px solid;\n    padding: 10px;\n    height: 130px;\n    display: inline-block;\n  }\n  #cardText {\n    float:right;\n    text-align: left;\n    margin-top: 40px;\n  }\n  #cardImage {\n    height:30px;\n    float:left;\n  }\n</style>",
                   "visible": true,
                   "renderAttributes": {
 
@@ -1326,7 +1217,7 @@
               "title": null,
               "visible": true,
               "renderAttributes": {
-                "class": "col-sm-6"
+                "class": "col-sm-12"
               },
               "elements": [
                 {
@@ -1488,20 +1379,20 @@
       "elements": [
         {
           "type": "section",
-          "name": "Credit Card Section",
+          "name": "Credit Card Panel",
           "title": "Corporate Credit Card Options",
           "visible": "true",
           "renderAttributes": {
-            "class": "row"
+
           },
           "elements": [
             {
               "type": "section",
-              "name": "Column 1",
+              "name": "Credit Card Panel Body",
               "title": null,
               "visible": true,
               "renderAttributes": {
-                "class": "col-md-6"
+
               },
               "elements": [
                 {
@@ -1659,20 +1550,20 @@
       "elements": [
         {
           "type": "section",
-          "name": "Cell Phone Section",
+          "name": "Cell Phone Panel",
           "title": "Cell Phone Options",
           "visible": "true",
           "renderAttributes": {
-            "class": "row"
+
           },
           "elements": [
             {
               "type": "section",
-              "name": "Column 1",
+              "name": "Cell Phone Body Panel",
               "title": null,
               "visible": true,
               "renderAttributes": {
-                "class": "col-md-6"
+
               },
               "elements": [
                 {
@@ -1789,7 +1680,7 @@
       "elements": [
         {
           "type": "section",
-          "name": "Computer Section",
+          "name": "Computer Panel",
           "title": "Computer Options",
           "visible": "true",
           "renderAttributes": {
@@ -1798,7 +1689,7 @@
           "elements": [
             {
               "type": "section",
-              "name": "Part 1",
+              "name": "Computer Body",
               "title": null,
               "visible": true,
               "renderAttributes": {
@@ -1806,425 +1697,78 @@
               },
               "elements": [
                 {
-                  "type": "section",
-                  "renderType": null,
-                  "name": "Column 1",
-                  "title": null,
+                  "type": "field",
+                  "name": "Computer Type",
+                  "label": "Cell Phone Carrier",
+                  "key": "f101",
+                  "defaultValue": "",
+                  "defaultResourceName": null,
                   "visible": true,
-                  "omitWhenHidden": null,
+                  "enabled": true,
+                  "required": false,
+                  "requiredMessage": null,
+                  "pattern": null,
+                  "constraints": [
+
+                  ],
+                  "events": [
+
+                  ],
                   "renderAttributes": {
-                    "class": "col-md-4"
+
                   },
-                  "elements": [
+                  "dataType": "string",
+                  "renderType": "dropdown",
+                  "choicesResourceName": null,
+                  "choices": [
                     {
-                      "type": "field",
-                      "name": "Computer Type",
-                      "label": "Computer Type",
-                      "key": "f101",
-                      "defaultValue": "Desktop",
-                      "defaultResourceName": null,
-                      "visible": true,
-                      "enabled": true,
-                      "required": false,
-                      "requiredMessage": null,
-                      "pattern": null,
-                      "constraints": [
-
-                      ],
-                      "events": [
-                        {
-                          "name": "Set Computer Details",
-                          "type": "Change",
-                          "action": "Set Fields",
-                          "bridgedResourceName": "Computers",
-                          "mappings": [
-                            {
-                              "field": "Manufacturer",
-                              "value": "${resources('Computers:Manufacturer')}"
-                            },
-                            {
-                              "field": "Description",
-                              "value": "${resources('Computers:Description')}"
-                            },
-                            {
-                              "field": "Memory",
-                              "value": "${resources('Computers:Memory')}"
-                            },
-                            {
-                              "field": "Disk Storage",
-                              "value": "${resources('Computers:Disk Storage')}"
-                            },
-                            {
-                              "field": "CPU",
-                              "value": "${resources('Computers:CPU')}"
-                            },
-                            {
-                              "field": "Operating System",
-                              "value": "${resources('Computers:Operating System')}"
-                            },
-                            {
-                              "field": "Display",
-                              "value": "${resources('Computers:Display')}"
-                            },
-                            {
-                              "field": "Document URL",
-                              "value": "${resources('Computers:Document URL')}"
-                            },
-                            {
-                              "field": "Computer Status",
-                              "value": "${resources('Computers:Status')}"
-                            }
-                          ]
-                        }
-                      ],
-                      "renderAttributes": {
-
-                      },
-                      "dataType": "string",
-                      "renderType": "dropdown",
-                      "choicesResourceName": null,
-                      "choices": [
-                        {
-                          "label": "Desktop - Standard (Windows)",
-                          "value": "Desktop - Standard (Windows)"
-                        },
-                        {
-                          "label": "Desktop - Intermediate (MAC)",
-                          "value": "Desktop - Intermediate (MAC)"
-                        },
-                        {
-                          "label": "Desktop - Intermediate (Windows)",
-                          "value": "Desktop - Intermediate (Windows)"
-                        },
-                        {
-                          "label": "Workstation - Developer (Windows)",
-                          "value": "Workstation - Developer (Windows)"
-                        },
-                        {
-                          "label": "Laptop - Standard (Windows)",
-                          "value": "Laptop - Standard (Windows)"
-                        },
-                        {
-                          "label": "Laptop - Intermediate (MAC)",
-                          "value": "Laptop - Intermediate (MAC)"
-                        },
-                        {
-                          "label": "Laptop - Intermediate (Windows)",
-                          "value": "Laptop - Intermediate (Windows)"
-                        },
-                        {
-                          "label": "Mobile Workstation - Developer (Windows)",
-                          "value": "Mobile Workstation - Developer (Windows)"
-                        },
-                        {
-                          "label": "Tablet (Windows)",
-                          "value": "Tablet (Windows)"
-                        },
-                        {
-                          "label": "Tablet (iOS)",
-                          "value": "Tablet (iOS)"
-                        }
-                      ],
-                      "choicesRunIf": null,
-                      "omitWhenHidden": null
+                      "label": "Laptop",
+                      "value": "Laptop"
                     },
                     {
-                      "type": "field",
-                      "name": "Manufacturer",
-                      "label": "Manufacturer",
-                      "key": "f115",
-                      "defaultValue": null,
-                      "defaultResourceName": null,
-                      "visible": true,
-                      "enabled": false,
-                      "required": false,
-                      "requiredMessage": null,
-                      "omitWhenHidden": null,
-                      "pattern": null,
-                      "constraints": [
-
-                      ],
-                      "events": [
-
-                      ],
-                      "renderAttributes": {
-                        "class": "no-border"
-                      },
-                      "dataType": "string",
-                      "renderType": "text",
-                      "rows": 1
-                    },
-                    {
-                      "type": "field",
-                      "name": "Description",
-                      "label": "Description",
-                      "key": "f109",
-                      "defaultValue": null,
-                      "defaultResourceName": null,
-                      "visible": true,
-                      "enabled": false,
-                      "required": false,
-                      "requiredMessage": null,
-                      "omitWhenHidden": null,
-                      "pattern": null,
-                      "constraints": [
-
-                      ],
-                      "events": [
-
-                      ],
-                      "renderAttributes": {
-                        "class": "no-border"
-                      },
-                      "dataType": "string",
-                      "renderType": "text",
-                      "rows": 1
-                    },
-                    {
-                      "type": "field",
-                      "name": "Memory",
-                      "label": "Memory",
-                      "key": "f108",
-                      "defaultValue": null,
-                      "defaultResourceName": null,
-                      "visible": true,
-                      "enabled": false,
-                      "required": false,
-                      "requiredMessage": null,
-                      "omitWhenHidden": null,
-                      "pattern": null,
-                      "constraints": [
-
-                      ],
-                      "events": [
-
-                      ],
-                      "renderAttributes": {
-                        "class": "no-border"
-                      },
-                      "dataType": "string",
-                      "renderType": "text",
-                      "rows": 2
-                    },
-                    {
-                      "type": "field",
-                      "name": "Disk Storage",
-                      "label": "Disk Storage",
-                      "key": "f110",
-                      "defaultValue": null,
-                      "defaultResourceName": null,
-                      "visible": true,
-                      "enabled": false,
-                      "required": false,
-                      "requiredMessage": null,
-                      "omitWhenHidden": null,
-                      "pattern": null,
-                      "constraints": [
-
-                      ],
-                      "events": [
-
-                      ],
-                      "renderAttributes": {
-                        "class": "no-border"
-                      },
-                      "dataType": "string",
-                      "renderType": "text",
-                      "rows": 1
-                    },
-                    {
-                      "type": "field",
-                      "name": "CPU",
-                      "label": "CPU",
-                      "key": "f111",
-                      "defaultValue": null,
-                      "defaultResourceName": null,
-                      "visible": true,
-                      "enabled": false,
-                      "required": false,
-                      "requiredMessage": null,
-                      "omitWhenHidden": null,
-                      "pattern": null,
-                      "constraints": [
-
-                      ],
-                      "events": [
-
-                      ],
-                      "renderAttributes": {
-                        "class": "no-border"
-                      },
-                      "dataType": "string",
-                      "renderType": "text",
-                      "rows": 3
-                    },
-                    {
-                      "type": "field",
-                      "name": "Operating System",
-                      "label": "Operating System",
-                      "key": "f112",
-                      "defaultValue": null,
-                      "defaultResourceName": null,
-                      "visible": true,
-                      "enabled": false,
-                      "required": false,
-                      "requiredMessage": null,
-                      "omitWhenHidden": null,
-                      "pattern": null,
-                      "constraints": [
-
-                      ],
-                      "events": [
-
-                      ],
-                      "renderAttributes": {
-                        "class": "no-border"
-                      },
-                      "dataType": "string",
-                      "renderType": "text",
-                      "rows": 1
-                    },
-                    {
-                      "type": "field",
-                      "name": "Display",
-                      "label": "Display",
-                      "key": "f113",
-                      "defaultValue": null,
-                      "defaultResourceName": null,
-                      "visible": true,
-                      "enabled": false,
-                      "required": false,
-                      "requiredMessage": null,
-                      "omitWhenHidden": null,
-                      "pattern": null,
-                      "constraints": [
-
-                      ],
-                      "events": [
-
-                      ],
-                      "renderAttributes": {
-                        "class": "no-border"
-                      },
-                      "dataType": "string",
-                      "renderType": "text",
-                      "rows": 3
-                    },
-                    {
-                      "type": "section",
-                      "renderType": null,
-                      "name": "Availability Section",
-                      "title": null,
-                      "visible": true,
-                      "omitWhenHidden": null,
-                      "renderAttributes": {
-
-                      },
-                      "elements": [
-                        {
-                          "type": "content",
-                          "renderType": "html",
-                          "name": "Availability Back Order",
-                          "text": "<div id=\"computerAvailability\">\n  <div class=\"alert alert-warning\" role=\"alert\">\n    This system is on back order.\n  </div>\n</div>",
-                          "visible": "values('Computer Status') == \"Back Order\"",
-                          "renderAttributes": {
-
-                          }
-                        },
-                        {
-                          "type": "content",
-                          "renderType": "html",
-                          "name": "Availability In Stock",
-                          "text": "<div id=\"computerAvailability\">\n  <div class=\"alert alert-success\" role=\"alert\">\n    This system is in stock.\n  </div>\n</div>",
-                          "visible": "values('Computer Status') == \"In Stock\"",
-                          "renderAttributes": {
-
-                          }
-                        }
-                      ]
+                      "label": "Desktop",
+                      "value": "Desktop"
                     }
-                  ]
+                  ],
+                  "choicesRunIf": null,
+                  "omitWhenHidden": null
                 },
                 {
-                  "type": "section",
-                  "renderType": null,
-                  "name": "Column 2",
-                  "title": null,
+                  "type": "field",
+                  "name": "OS",
+                  "label": "OS",
+                  "key": "f102",
+                  "defaultValue": "",
+                  "defaultResourceName": null,
                   "visible": true,
-                  "omitWhenHidden": null,
+                  "enabled": true,
+                  "required": false,
+                  "requiredMessage": null,
+                  "pattern": null,
+                  "constraints": [
+
+                  ],
+                  "events": [
+
+                  ],
                   "renderAttributes": {
-                    "class": "col-md-8"
+
                   },
-                  "elements": [
+                  "dataType": "string",
+                  "renderType": "dropdown",
+                  "choicesResourceName": null,
+                  "choices": [
                     {
-                      "type": "content",
-                      "renderType": "html",
-                      "name": "Computer Spec Document",
-                      "text": "<div id=\"computerSpecs\">\n</div>",
-                      "visible": true,
-                      "renderAttributes": {
-
-                      }
+                      "label": "OSX",
+                      "value": "OSX"
                     },
                     {
-                      "type": "field",
-                      "name": "Document URL",
-                      "label": "Document URL",
-                      "key": "f114",
-                      "defaultValue": null,
-                      "defaultResourceName": null,
-                      "visible": false,
-                      "enabled": false,
-                      "required": false,
-                      "requiredMessage": null,
-                      "omitWhenHidden": false,
-                      "pattern": null,
-                      "constraints": [
-
-                      ],
-                      "events": [
-                        {
-                          "name": "Set User Spec Document View",
-                          "type": "Change",
-                          "action": "Custom",
-                          "code": "$('#computerSpecs').empty();\nvar docReference = K('field[Document URL]').value();\nvar embedContent = '<embed src=\"' + docReference + '\" style=\"width:100%;height:600px;\"></embed>';\nif($('input[name=\"Document URL\"]').val() != '') {\n   $('#computerSpecs').html(embedContent);\n}",
-                          "runIf": ""
-                        }
-                      ],
-                      "renderAttributes": {
-
-                      },
-                      "dataType": "string",
-                      "renderType": "text",
-                      "rows": 1
-                    },
-                    {
-                      "type": "field",
-                      "name": "Computer Status",
-                      "label": "Computer Status",
-                      "key": "f116",
-                      "defaultValue": null,
-                      "defaultResourceName": null,
-                      "visible": false,
-                      "enabled": false,
-                      "required": false,
-                      "requiredMessage": null,
-                      "omitWhenHidden": false,
-                      "pattern": null,
-                      "constraints": [
-
-                      ],
-                      "events": [
-
-                      ],
-                      "renderAttributes": {
-
-                      },
-                      "dataType": "string",
-                      "renderType": "text",
-                      "rows": 1
+                      "label": "Windows",
+                      "value": "Windows"
                     }
-                  ]
+                  ],
+                  "choicesRunIf": null,
+                  "omitWhenHidden": null
                 }
               ],
               "renderType": null,
@@ -2282,13 +1826,7 @@
         }
       ],
       "events": [
-        {
-          "name": "Set User Spec Document View",
-          "type": "Load",
-          "action": "Custom",
-          "runIf": "values('Document URL') !== null",
-          "code": "$('#computerSpecs').empty();\nvar docReference = K('field[Document URL]').value();\nvar embedContent = '<embed src=\"' + docReference + '\" style=\"width:100%;height:600px;\"></embed>';\nif($('input[name=\"Document URL\"]').val() != '') {\n   $('#computerSpecs').html(embedContent);\n}"
-        }
+
       ],
       "name": "Computer",
       "renderType": "submittable",
@@ -2301,22 +1839,20 @@
       "elements": [
         {
           "type": "section",
-          "name": "Company Car Section",
+          "name": "Company Car Panel",
           "title": "Company Car",
           "visible": "true",
           "renderAttributes": {
-            "class": "row"
+
           },
           "elements": [
             {
               "type": "section",
-              "renderType": null,
-              "name": "Column 1",
+              "name": "Company Car Body",
               "title": null,
               "visible": true,
-              "omitWhenHidden": null,
               "renderAttributes": {
-                "class": "col-md-12"
+
               },
               "elements": [
                 {
@@ -2328,18 +1864,7 @@
                   "renderAttributes": {
 
                   }
-                }
-              ]
-            },
-            {
-              "type": "section",
-              "name": "Column 2",
-              "title": null,
-              "visible": true,
-              "renderAttributes": {
-                "class": "col-md-6"
-              },
-              "elements": [
+                },
                 {
                   "type": "field",
                   "name": "Company Car",
@@ -2758,27 +2283,12 @@
     }
   ],
   "securityPolicies": [
-    {
-      "endpoint": "Display",
-      "name": "All"
-    },
-    {
-      "endpoint": "Modification",
-      "name": "All"
-    },
-    {
-      "endpoint": "Submission Access",
-      "name": "All"
-    },
-    {
-      "endpoint": "Submission Modification",
-      "name": "All"
-    }
+
   ],
   "slug": "employee-onboarding",
-  "status": "New",
-  "submissionLabelExpression": "Onboarding Request For ${values('First Name')} ${values('Last Name')}",
+  "status": "Active",
+  "submissionLabelExpression": "${values('First Name')} ${values('Last Name')}",
   "type": "Service",
-  "updatedAt": "2016-05-18T20:28:56.081Z",
-  "updatedBy": "kdadmin@kineticdata.com"
+  "updatedAt": "2016-06-03T20:10:38.716Z",
+  "updatedBy": "james.davies@kineticdata.com"
 }
