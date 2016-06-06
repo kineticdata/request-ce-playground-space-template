@@ -1,0 +1,30 @@
+[
+  {
+    "allowsMultiple": false,
+    "name": "Helper Kapp Slug"
+  },
+  {
+    "allowsMultiple": false,
+    "name": "Queue Default Group"
+  },
+  {
+    "allowsMultiple": false,
+    "name": "Queue Details Value"
+  },
+  {
+    "allowsMultiple": true,
+    "name": "Queue Filters"
+  },
+  {
+    "allowsMultiple": false,
+    "name": "Queue Form Type"
+  },
+  {
+    "allowsMultiple": false,
+    "name": "Queue Name"
+  },
+  {
+    "allowsMultiple": false,
+    "name": "Queue Setup Visible"
+  }
+]
