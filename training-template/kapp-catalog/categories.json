@@ -4,36 +4,12 @@
       {
         "name": "Sort Order",
         "values": [
-          "1"
-        ]
-      },
-      {
-        "name": "fa-logo",
-        "values": [
-          "fa-wrench"
+          "6"
         ]
       }
     ],
-    "name": "IT Services",
-    "slug": "it-services"
-  },
-  {
-    "attributes": [
-      {
-        "name": "Sort Order",
-        "values": [
-          "2"
-        ]
-      },
-      {
-        "name": "fa-logo",
-        "values": [
-          "fa-users"
-        ]
-      }
-    ],
-    "name": "HR Services",
-    "slug": "hr-services"
+    "name": "Example Services",
+    "slug": "example-services"
   },
   {
     "attributes": [
@@ -41,12 +17,6 @@
         "name": "Sort Order",
         "values": [
           "3"
-        ]
-      },
-      {
-        "name": "fa-logo",
-        "values": [
-          "fa-wrench"
         ]
       }
     ],
@@ -60,12 +30,6 @@
         "values": [
           "4"
         ]
-      },
-      {
-        "name": "fa-logo",
-        "values": [
-          "fa-usd"
-        ]
       }
     ],
     "name": "Finance Services",
@@ -74,9 +38,9 @@
   {
     "attributes": [
       {
-        "name": "Sort Order",
+        "name": "fa-logo",
         "values": [
-          "0"
+          "fa-desktop"
         ]
       },
       {
@@ -86,9 +50,9 @@
         ]
       },
       {
-        "name": "fa-logo",
+        "name": "Sort Order",
         "values": [
-          "fa-desktop"
+          "0"
         ]
       }
     ],
@@ -100,24 +64,24 @@
       {
         "name": "Sort Order",
         "values": [
-          "1"
-        ]
-      },
-      {
-        "name": "Parent",
-        "values": [
-          "it-services"
-        ]
-      },
-      {
-        "name": "fa-logo",
-        "values": [
-          "fa-floppy-o"
+          "2"
         ]
       }
     ],
-    "name": "Software Services",
-    "slug": "software-services"
+    "name": "HR Services",
+    "slug": "hr-services"
+  },
+  {
+    "attributes": [
+      {
+        "name": "Sort Order",
+        "values": [
+          "1"
+        ]
+      }
+    ],
+    "name": "IT Services",
+    "slug": "it-services"
   },
   {
     "attributes": [
@@ -128,7 +92,31 @@
         ]
       }
     ],
-    "name": "Popular Requests",
-    "slug": "popular-requests"
+    "name": "Promoted Requests",
+    "slug": "promoted-requests"
+  },
+  {
+    "attributes": [
+      {
+        "name": "fa-logo",
+        "values": [
+          "fa-floppy-o"
+        ]
+      },
+      {
+        "name": "Parent",
+        "values": [
+          "it-services"
+        ]
+      },
+      {
+        "name": "Sort Order",
+        "values": [
+          "1"
+        ]
+      }
+    ],
+    "name": "Software Services",
+    "slug": "software-services"
   }
 ]
