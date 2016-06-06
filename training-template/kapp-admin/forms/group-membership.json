@@ -124,8 +124,8 @@
   ],
   "slug": "group-membership",
   "status": "Active",
-  "submissionLabelExpression": null,
+  "submissionLabelExpression": "${values('Group Id')} - ${values('Username')}",
   "type": "Content",
-  "updatedAt": "2016-06-03T16:38:53.945Z",
-  "updatedBy": "james.davies@kineticdata.com"
+  "updatedAt": "2016-06-06T20:36:49.245Z",
+  "updatedBy": "john"
 }

@@ -153,8 +153,8 @@
   ],
   "slug": "broadcast-alerts",
   "status": "Active",
-  "submissionLabelExpression": null,
+  "submissionLabelExpression": "${values('Subject')}",
   "type": "Datastore",
-  "updatedAt": "2016-06-06T14:22:05.259Z",
-  "updatedBy": "james.davies@kineticdata.com"
+  "updatedAt": "2016-06-06T20:25:30.400Z",
+  "updatedBy": "john"
 }

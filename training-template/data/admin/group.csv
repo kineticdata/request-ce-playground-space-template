@@ -1,0 +1,18 @@
+Name,Description,Parent,Status,Display Name
+System Support,,,delete,System Support
+System Support::Hardware,,System Support,delete,Hardware
+Notifications,This is the parent for the notifications group,,delete,Notifications
+Notifications::Security,,Notifications,delete,Security
+Fulfillment,This is the fulfillment container group.,,active,Fulfillment
+Fulfillment::IT,,Fulfillment,delete,IT
+Fulfillment::HR,,Fulfillment,delete,HR
+Fulfillment::Facilities,,Fulfillment,delete,Facilities
+Fulfillment::Management,,Fulfillment,delete,Management
+Fulfillment::HR::Management,,Fulfillment::HR,delete,Management
+Fulfillment::Human Resources,,Fulfillment,active,Human Resources
+Fulfillment::Facilities,,Fulfillment,active,Facilities
+Fulfillment::Information Technology,,Fulfillment,active,Information Technology
+Fulfillment::Finance,,Fulfillment,active,Finance
+Fulfillment::Generic,,Fulfillment,active,Generic
+Approval,,,active,Approval
+Approval::Executive,,Approval,active,Executive

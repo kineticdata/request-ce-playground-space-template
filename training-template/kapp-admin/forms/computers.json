@@ -335,8 +335,8 @@
   ],
   "slug": "computers",
   "status": "Active",
-  "submissionLabelExpression": null,
+  "submissionLabelExpression": "${values('Type')} - ${values('Manufacturer')}",
   "type": "Datastore",
-  "updatedAt": "2016-05-19T20:28:47.934Z",
-  "updatedBy": "kdadmin@kineticdata.com"
+  "updatedAt": "2016-06-06T20:53:47.661Z",
+  "updatedBy": "james.davies@kineticdata.com"
 }

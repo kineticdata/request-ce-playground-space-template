@@ -1,6 +1,18 @@
 [
   {
     "allowsMultiple": false,
+    "name": "Company Logo"
+  },
+  {
+    "allowsMultiple": false,
+    "name": "Company Name"
+  },
+  {
+    "allowsMultiple": false,
+    "name": "Shared Bridged Resource Form Slug"
+  },
+  {
+    "allowsMultiple": false,
     "name": "Task Server Url"
   },
   {
@@ -10,13 +22,5 @@
   {
     "allowsMultiple": false,
     "name": "Web Server Url"
-  },
-  {
-    "allowsMultiple": false,
-    "name": "Company Logo"
-  },
-  {
-    "allowsMultiple": false,
-    "name": "Company Name"
   }
 ]

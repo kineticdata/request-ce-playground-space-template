@@ -1,52 +1,52 @@
-"Name","Abbreviation","Status"
-"Alabama","AL","active"
-"Alaska","AK","active"
-"Arizona","AZ","active"
-"Arkansas","AR","active"
-"California","CA","active"
-"Colorado","CO","active"
-"Connecticut","CT","active"
-"Delaware","DE","active"
-"District of Columbia","DC","active"
-"Florida","FL","active"
-"Georgia","GA","active"
-"Hawaii","HI","active"
-"Idaho","ID","active"
-"Illinois","IL","active"
-"Indiana","IN","active"
-"Iowa","IA","active"
-"Kansas","KS","active"
-"Kentucky","KY","active"
-"Louisiana","LA","active"
-"Maine","ME","active"
-"Montana","MT","active"
-"Nebraska","NE","active"
-"Nevada","NV","active"
-"New Hampshire","NH","active"
-"New Jersey","NJ","active"
-"New Mexico","NM","active"
-"New York","NY","active"
-"North Carolina","NC","active"
-"North Dakota","ND","active"
-"Ohio","OH","active"
-"Oklahoma","OK","active"
-"Oregon","OR","active"
-"Maryland","MD","active"
-"Massachusetts","MA","active"
-"Michigan","MI","active"
-"Minnesota","MN","active"
-"Mississippi","MS","active"
-"Missouri","MO","active"
-"Pennsylvania","PA","active"
-"Rhode Island","RI","active"
-"South Carolina","SC","active"
-"South Dakota","SD","active"
-"Tennessee","TN","active"
-"Texas","TX","active"
-"Utah","UT","active"
-"Vermont","VT","active"
-"Virginia","VA","active"
-"Washington","WA","active"
-"West Virginia","WV","active"
-"Wisconsin","WI","active"
-"Wyoming","WY","active"
+Status,Abbreviation,Name
+active,AL,Alabama
+active,AK,Alaska
+active,AZ,Arizona
+active,AR,Arkansas
+active,CA,California
+active,CO,Colorado
+active,CT,Connecticut
+active,DE,Delaware
+active,DC,District of Columbia
+active,FL,Florida
+active,GA,Georgia
+active,HI,Hawaii
+active,ID,Idaho
+active,IL,Illinois
+active,IN,Indiana
+active,IA,Iowa
+active,KS,Kansas
+active,KY,Kentucky
+active,LA,Louisiana
+active,ME,Maine
+active,MT,Montana
+active,NE,Nebraska
+active,NV,Nevada
+active,NH,New Hampshire
+active,NJ,New Jersey
+active,NM,New Mexico
+active,NY,New York
+active,NC,North Carolina
+active,ND,North Dakota
+active,OH,Ohio
+active,OK,Oklahoma
+active,OR,Oregon
+active,MD,Maryland
+active,MA,Massachusetts
+active,MI,Michigan
+active,MN,Minnesota
+active,MS,Mississippi
+active,MO,Missouri
+active,PA,Pennsylvania
+active,RI,Rhode Island
+active,SC,South Carolina
+active,SD,South Dakota
+active,TN,Tennessee
+active,TX,Texas
+active,UT,Utah
+active,VT,Vermont
+active,VA,Virginia
+active,WA,Washington
+active,WV,West Virginia
+active,WI,Wisconsin
+active,WY,Wyoming

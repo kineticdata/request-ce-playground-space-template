@@ -46,8 +46,8 @@
   ],
   "slug": "categories",
   "status": "Active",
-  "submissionLabelExpression": null,
+  "submissionLabelExpression": "${form('name')}",
   "type": "Console",
-  "updatedAt": "2016-05-19T20:28:49.517Z",
-  "updatedBy": "kdadmin@kineticdata.com"
+  "updatedAt": "2016-06-06T20:53:34.687Z",
+  "updatedBy": "james.davies@kineticdata.com"
 }
