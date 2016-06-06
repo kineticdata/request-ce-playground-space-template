@@ -4,7 +4,7 @@
     {
       "name": "Datastore Configuration",
       "values": [
-        "[]"
+        "[{\"data\":\"Name\",\"title\":\"Name\",\"visible\":true,\"searchable\":true,\"orderable\":true},{\"data\":\"Abbreviation\",\"title\":\"Abbreviation\",\"visible\":true,\"searchable\":true,\"orderable\":true},{\"data\":\"Status\",\"title\":\"Status\",\"visible\":true,\"searchable\":true,\"orderable\":true}]"
       ]
     }
   ],
@@ -27,15 +27,41 @@
       "elements": [
         {
           "type": "field",
-          "name": "State Name",
-          "label": "State Name",
+          "name": "Name",
+          "label": "Name",
           "key": "fSample",
           "defaultValue": null,
           "defaultResourceName": null,
           "visible": true,
           "enabled": true,
-          "required": false,
-          "requiredMessage": null,
+          "required": true,
+          "requiredMessage": "Name is required",
+          "omitWhenHidden": null,
+          "pattern": null,
+          "constraints": [
+
+          ],
+          "events": [
+
+          ],
+          "renderAttributes": {
+
+          },
+          "dataType": "string",
+          "renderType": "text",
+          "rows": 1
+        },
+        {
+          "type": "field",
+          "name": "Abbreviation",
+          "label": "Abbreviation",
+          "key": "f2",
+          "defaultValue": null,
+          "defaultResourceName": null,
+          "visible": true,
+          "enabled": true,
+          "required": true,
+          "requiredMessage": "Abbreviation is required",
           "omitWhenHidden": null,
           "pattern": null,
           "constraints": [
@@ -56,7 +82,7 @@
           "name": "Status",
           "label": "Status",
           "key": "f1",
-          "defaultValue": null,
+          "defaultValue": "active",
           "defaultResourceName": null,
           "visible": true,
           "enabled": true,
@@ -127,8 +153,8 @@
   ],
   "slug": "states",
   "status": "Active",
-  "submissionLabelExpression": null,
+  "submissionLabelExpression": "${values('Name')}",
   "type": "Datastore",
-  "updatedAt": "2016-05-18T18:27:22.150Z",
+  "updatedAt": "2016-05-20T19:02:04.621Z",
   "updatedBy": "james.davies@kineticdata.com"
 }
