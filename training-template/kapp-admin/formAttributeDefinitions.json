@@ -1,10 +1,10 @@
 [
   {
     "allowsMultiple": false,
-    "name": "Kapp Slug"
+    "name": "Community Link"
   },
   {
-    "allowsMultiple": false,
-    "name": "Community Link"
+    "allowsMultiple": true,
+    "name": "Kapp Slug"
   }
 ]
