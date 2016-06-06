@@ -9,6 +9,9 @@
     "name": "Content"
   },
   {
+    "name": "Datastore"
+  },
+  {
     "name": "Service"
   },
   {
@@ -22,8 +25,5 @@
   },
   {
     "name": "Work Order"
-  },
-  {
-    "name": "Datastore"
   }
 ]
