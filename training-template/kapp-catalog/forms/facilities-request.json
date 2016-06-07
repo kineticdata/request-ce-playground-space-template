@@ -10,7 +10,7 @@
     {
       "name": "Fulfillment Group",
       "values": [
-        "Fulfillment::Facilities"
+        "Fulfillment::Generic"
       ]
     },
     {

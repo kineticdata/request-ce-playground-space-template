@@ -16,7 +16,7 @@
     {
       "name": "Task Server Url",
       "values": [
-        "http://www.kdkeg.com:8081/kinetic-task"
+        "https://demo.kineticdata.com/kinetic-task"
       ]
     },
     {
