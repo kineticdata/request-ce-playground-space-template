@@ -173,6 +173,6 @@
   "status": "Active",
   "submissionLabelExpression": "${values('Increase or Decrease')} - ${values('Amount')}",
   "type": "Service",
-  "updatedAt": "2016-06-04T14:43:13.479Z",
-  "updatedBy": "james.davies@kineticdata.com"
+  "updatedAt": "2016-06-06T23:09:46.395Z",
+  "updatedBy": "demo.taskman@kineticdata.com"
 }

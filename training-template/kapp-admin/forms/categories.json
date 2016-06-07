@@ -48,6 +48,6 @@
   "status": "Active",
   "submissionLabelExpression": "${form('name')}",
   "type": "Console",
-  "updatedAt": "2016-06-06T20:53:34.687Z",
-  "updatedBy": "james.davies@kineticdata.com"
+  "updatedAt": "2016-06-06T23:09:34.854Z",
+  "updatedBy": "demo.taskman@kineticdata.com"
 }

@@ -10,5 +10,9 @@
   {
     "name": "Message",
     "structureField": "${fields('values[Message]')}"
+  },
+  {
+    "name": "createdAt",
+    "structureField": "${fields('createdAt')}"
   }
 ]

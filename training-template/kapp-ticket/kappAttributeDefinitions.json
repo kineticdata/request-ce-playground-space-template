@@ -21,6 +21,10 @@
   },
   {
     "allowsMultiple": false,
+    "name": "Queue Group Base"
+  },
+  {
+    "allowsMultiple": false,
     "name": "Queue Name"
   },
   {

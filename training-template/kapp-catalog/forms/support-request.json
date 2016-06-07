@@ -26,14 +26,14 @@
   "categorizations": [
     {
       "category": {
-        "name": "IT Services",
-        "slug": "it-services"
+        "name": "Hardware Services",
+        "slug": "hardware-services"
       }
     },
     {
       "category": {
-        "name": "Hardware Services",
-        "slug": "hardware-services"
+        "name": "IT Services",
+        "slug": "it-services"
       }
     },
     {
@@ -461,6 +461,6 @@
   "status": "Active",
   "submissionLabelExpression": "${values('Request Summary')}",
   "type": "Service",
-  "updatedAt": "2016-06-03T20:12:52.701Z",
-  "updatedBy": "james.davies@kineticdata.com"
+  "updatedAt": "2016-06-06T23:09:45.476Z",
+  "updatedBy": "demo.taskman@kineticdata.com"
 }

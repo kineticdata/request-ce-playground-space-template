@@ -126,6 +126,6 @@
   "status": "Active",
   "submissionLabelExpression": "${values('Group Id')} - ${values('Username')}",
   "type": "Content",
-  "updatedAt": "2016-06-06T20:36:49.245Z",
-  "updatedBy": "john"
+  "updatedAt": "2016-06-06T23:09:34.196Z",
+  "updatedBy": "demo.taskman@kineticdata.com"
 }

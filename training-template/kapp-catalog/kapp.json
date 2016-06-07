@@ -28,7 +28,7 @@
     {
       "name": "Web Server Url",
       "values": [
-        "https://www.kdkeg.com/kinetic"
+        "https://demo.kineticdata.com/kinetic"
       ]
     }
   ],
@@ -37,13 +37,37 @@
   "createdBy": "james.davies@kineticdata.com",
   "defaultFormConfirmationPage": null,
   "defaultFormDisplayPage": null,
-  "defaultSubmissionLabelExpression": null,
+  "defaultSubmissionLabelExpression": "${form('name')}",
   "displayType": "Display Page",
   "displayValue": "kapp.jsp",
   "loginPage": "login.jsp",
-  "name": "ERM Catalog",
+  "name": "Catalog",
   "resetPasswordPage": null,
   "securityPolicies": [
+    {
+      "endpoint": "Modification",
+      "name": "Admins"
+    },
+    {
+      "endpoint": "Form Creation",
+      "name": "Admins"
+    },
+    {
+      "endpoint": "Default Form Modification",
+      "name": "Admins"
+    },
+    {
+      "endpoint": "Default Form Display",
+      "name": "Authenticated Users"
+    },
+    {
+      "endpoint": "Default Submission Access",
+      "name": "Submitter"
+    },
+    {
+      "endpoint": "Default Submission Modification",
+      "name": "Submitter"
+    },
     {
       "endpoint": "Modification",
       "name": "Admins"
@@ -94,6 +118,6 @@
     }
   ],
   "slug": "catalog",
-  "updatedAt": "2016-06-03T21:44:14.947Z",
+  "updatedAt": "2016-06-07T14:31:12.956Z",
   "updatedBy": "james.davies@kineticdata.com"
 }
