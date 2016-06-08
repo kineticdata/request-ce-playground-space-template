@@ -2,16 +2,16 @@
   {
     "name": "Counter",
     "status": "Active",
-    "url": "https://demo.kineticdata.com/kinetic-bridgehub/app/api/v1/bridges/counter/"
+    "url": "https://developer.kineticdata.com/kinetic-bridgehub/app/api/v1/bridges/counter/"
   },
   {
     "name": "Remedy ITSM",
     "status": "Active",
-    "url": "https://demo.kineticdata.com/kinetic-bridgehub/app/api/v1/bridges/demobmc8/"
+    "url": "https://developer.kineticdata.com/kinetic-bridgehub/app/api/v1/bridges/demobmc8/"
   },
   {
     "name": "Request CE",
     "status": "Active",
-    "url": "https://demo.kineticdata.com/kinetic-bridgehub/app/api/v1/bridges/ce-demo-template/"
+    "url": "https://developer.kineticdata.com/kinetic-bridgehub/app/api/v1/bridges/ce-demo-template/"
   }
 ]
