@@ -760,7 +760,7 @@
                   "defaultResourceName": null,
                   "visible": true,
                   "enabled": true,
-                  "required": false,
+                  "required": true,
                   "requiredMessage": null,
                   "pattern": null,
                   "constraints": [
@@ -832,7 +832,7 @@
                   "defaultResourceName": null,
                   "visible": true,
                   "enabled": true,
-                  "required": false,
+                  "required": true,
                   "requiredMessage": null,
                   "pattern": null,
                   "constraints": [
@@ -881,7 +881,7 @@
                   "defaultResourceName": null,
                   "visible": true,
                   "enabled": true,
-                  "required": false,
+                  "required": true,
                   "requiredMessage": null,
                   "pattern": null,
                   "constraints": [
@@ -930,13 +930,14 @@
                   "type": "field",
                   "name": "Estimated Start Date",
                   "label": "Estimated Start Date",
-                  "key": "f106",
+                  "key": "f108",
                   "defaultValue": null,
                   "defaultResourceName": null,
                   "visible": true,
                   "enabled": true,
                   "required": true,
                   "requiredMessage": null,
+                  "omitWhenHidden": null,
                   "pattern": null,
                   "constraints": [
 
@@ -948,15 +949,14 @@
 
                   },
                   "dataType": "string",
-                  "renderType": "datetime",
-                  "omitWhenHidden": null
+                  "renderType": "date"
                 },
                 {
                   "type": "field",
                   "name": "Employee Email Address",
                   "label": "Employee Email Address",
                   "key": "f107",
-                  "defaultValue": "${(values('First Name') + '.' + values('Last Name') + '@').toLowerCase()}mail.mil",
+                  "defaultValue": "${(values('First Name') + '.' + values('Last Name') + '@').toLowerCase()}sample.com",
                   "defaultResourceName": null,
                   "visible": true,
                   "enabled": true,
@@ -999,7 +999,7 @@
                   "defaultResourceName": null,
                   "visible": true,
                   "enabled": true,
-                  "required": false,
+                  "required": true,
                   "requiredMessage": null,
                   "pattern": null,
                   "constraints": [
@@ -1061,7 +1061,7 @@
                   "defaultResourceName": null,
                   "visible": true,
                   "enabled": true,
-                  "required": false,
+                  "required": true,
                   "requiredMessage": null,
                   "pattern": null,
                   "constraints": [
@@ -1201,7 +1201,7 @@
                   "type": "content",
                   "renderType": "html",
                   "name": "BusinessCard Preview",
-                  "text": "<div id=\"cardPreview\">\n</div>\n\n<script>\n$( document ).ready(function() {\n  $('#cardPreview').append('<h3 id=\"cardImage\"></h3>');\n  $('#cardImage').html(K('kapp').attributes('Company Name'));\n  $text = $('<p id=\"cardText\"></p>');\n    $text.append('<b>' + K('submission').value('First Name') + ' ' + (K('submission').value('Middle Name') !== null ? K('submission').value('Middle Name') + ' ' : '')  + K('submission').value('Last Name') + '</b>' + '<br/>');\n  $text.append(K('submission').value('Address Line 1') + '<br/>');\n  if ( K('submission').value('Address Line 2') != '' ) {\n    $text.append(K('submission').value('Address Line 2') + '<br/>') ;\n  }\n  $text.append(K('submission').value('City') + ', ' + K('submission').value('State') + ' ' + K('submission').value('Zip') + '<br/>');\n  $('#cardPreview').append($text);\n});\n</script>\n<style>\n    #cardPreview {\n    width: 320px;\n    border: 1px solid;\n    padding: 10px;\n    height: 130px;\n    display: inline-block;\n  }\n  #cardText {\n    float:right;\n    text-align: left;\n    margin-top: 40px;\n  }\n  #cardImage {\n    height:30px;\n    float:left;\n  }\n</style>",
+                  "text": "<div id=\"cardPreview\">\n</div>\n\n<script>\n$( document ).ready(function() {\n  $('#cardPreview').append('<h3 id=\"cardImage\"></h3>');\n  $('#cardImage').html(K('kapp').attributes('Company Name'));\n  $text = $('<p id=\"cardText\"></p>');\n    $text.append('<b>' + K('submission').value('First Name') + ' ' + (K('submission').value('Middle Name') !== null ? K('submission').value('Middle Name') + ' ' : '')  + K('submission').value('Last Name') + '</b>' + '<br/>');\n  $text.append(K('submission').value('Address Line 1') + '<br/>');\n  if ( K('submission').value('Address Line 2') != null && K('submission').value('Address Line 2') != '' ) {\n    $text.append(K('submission').value('Address Line 2') + '<br/>') ;\n  }\n  $text.append(K('submission').value('City') + ', ' + K('submission').value('State') + ' ' + K('submission').value('Zip') + '<br/>');\n  $('#cardPreview').append($text);\n});\n</script>\n<style>\n    #cardPreview {\n    width: 320px;\n    border: 1px solid;\n    padding: 10px;\n    height: 130px;\n    display: inline-block;\n  }\n  #cardText {\n    float:right;\n    text-align: left;\n    margin-top: 40px;\n  }\n  #cardImage {\n    height:30px;\n    float:left;\n  }\n</style>",
                   "visible": true,
                   "renderAttributes": {
 
@@ -1229,7 +1229,7 @@
                   "defaultResourceName": null,
                   "visible": true,
                   "enabled": true,
-                  "required": false,
+                  "required": true,
                   "requiredMessage": null,
                   "pattern": null,
                   "constraints": [
@@ -1278,7 +1278,7 @@
                   "defaultResourceName": null,
                   "visible": true,
                   "enabled": true,
-                  "required": false,
+                  "required": true,
                   "requiredMessage": null,
                   "pattern": null,
                   "constraints": [
@@ -1575,7 +1575,7 @@
                   "defaultResourceName": null,
                   "visible": true,
                   "enabled": true,
-                  "required": false,
+                  "required": true,
                   "requiredMessage": null,
                   "pattern": null,
                   "constraints": [
@@ -1592,10 +1592,6 @@
                   "choicesResourceName": null,
                   "choices": [
                     {
-                      "label": "Verizon",
-                      "value": "Verizon"
-                    },
-                    {
                       "label": "AT&T",
                       "value": "AT&T"
                     },
@@ -1606,6 +1602,10 @@
                     {
                       "label": "T-Mobile",
                       "value": "T-Mobile"
+                    },
+                    {
+                      "label": "Verizon",
+                      "value": "Verizon"
                     }
                   ],
                   "choicesRunIf": null,
@@ -2289,6 +2289,6 @@
   "status": "Active",
   "submissionLabelExpression": "${values('First Name')} ${values('Last Name')}",
   "type": "Service",
-  "updatedAt": "2016-06-06T23:09:47.118Z",
-  "updatedBy": "demo.taskman@kineticdata.com"
+  "updatedAt": "2016-06-08T16:38:47.067Z",
+  "updatedBy": "james.davies@kineticdata.com"
 }
