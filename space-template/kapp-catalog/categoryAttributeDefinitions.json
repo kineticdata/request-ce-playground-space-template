@@ -10,5 +10,9 @@
   {
     "allowsMultiple": false,
     "name": "fa-logo"
+  },
+  {
+    "allowsMultiple": false,
+    "name": "Hidden"
   }
 ]

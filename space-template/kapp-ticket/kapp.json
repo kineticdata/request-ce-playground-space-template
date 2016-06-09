@@ -29,7 +29,7 @@
     {
       "name": "Queue Group Base",
       "values": [
-
+        "Fulfillment"
       ]
     },
     {
@@ -42,6 +42,12 @@
       "name": "Queue Setup Visible",
       "values": [
         "true"
+      ]
+    },
+    {
+      "name": "Queue Summary Value",
+      "values": [
+        ""
       ]
     },
     {
@@ -113,6 +119,6 @@
     }
   ],
   "slug": "ticket",
-  "updatedAt": "2016-06-07T17:14:06.159Z",
-  "updatedBy": "john"
+  "updatedAt": "2016-06-08T19:34:19.868Z",
+  "updatedBy": "james.davies@kineticdata.com"
 }

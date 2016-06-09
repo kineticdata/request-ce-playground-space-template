@@ -2,5 +2,9 @@
   {
     "allowsMultiple": false,
     "name": "Admin Kapp Slug"
+  },
+  {
+    "allowsMultiple": false,
+    "name": "QApp Slug"
   }
 ]

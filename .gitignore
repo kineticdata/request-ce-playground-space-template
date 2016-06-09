@@ -38,4 +38,4 @@ Thumbs.db
 
 # KINETIC SPECIFIC #
 ####################
-training-template/users/users.json
+config.json
