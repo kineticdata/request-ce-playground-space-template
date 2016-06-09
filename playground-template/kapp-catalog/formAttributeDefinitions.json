@@ -29,6 +29,10 @@
   },
   {
     "allowsMultiple": false,
+    "name": "Image"
+  },
+  {
+    "allowsMultiple": false,
     "name": "SLA"
   }
 ]

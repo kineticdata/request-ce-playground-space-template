@@ -1,7 +1,18 @@
 {
   "anonymous": false,
   "attributes": [
-
+    {
+      "name": "Fulfillment Form Slug",
+      "values": [
+        "workorder"
+      ]
+    },
+    {
+      "name": "Fulfillment Group",
+      "values": [
+        "Fulfillment::Generic"
+      ]
+    }
   ],
   "bridgedResources": [
 
@@ -73,6 +84,6 @@
   "status": "Active",
   "submissionLabelExpression": null,
   "type": "Service",
-  "updatedAt": "2016-06-09T18:51:18.752Z",
-  "updatedBy": "demo.taskman@kineticdata.com"
+  "updatedAt": "2016-06-09T21:51:38.548Z",
+  "updatedBy": "john.sundberg@kineticdata.com"
 }
