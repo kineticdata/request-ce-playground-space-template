@@ -7,6 +7,6 @@
   {
     "name": "Request CE",
     "status": "Active",
-    "url": "https://developer.kineticdata.com/kinetic-bridgehub/app/api/v1/bridges/ce-developer-template/"
+    "url": "https://developer.kineticdata.com/kinetic-bridgehub/app/api/v1/bridges/ce-playground-template/"
   }
 ]

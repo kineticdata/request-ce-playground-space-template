@@ -240,6 +240,6 @@
   "status": "Active",
   "submissionLabelExpression": "ipad ${values('Color')} / ${values('Size')}",
   "type": "Service",
-  "updatedAt": "2016-06-08T16:40:17.259Z",
-  "updatedBy": "james.davies@kineticdata.com"
+  "updatedAt": "2016-06-09T18:51:18.921Z",
+  "updatedBy": "demo.taskman@kineticdata.com"
 }
