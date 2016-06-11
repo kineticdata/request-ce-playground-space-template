@@ -8,6 +8,12 @@
       ]
     },
     {
+      "name": "Icon",
+      "values": [
+        "fa-tasks"
+      ]
+    },
+    {
       "name": "Queue Default Group",
       "values": [
         "Fulfillment"
@@ -143,6 +149,6 @@
     }
   ],
   "slug": "ticket",
-  "updatedAt": "2016-06-09T18:51:26.165Z",
-  "updatedBy": "demo.taskman@kineticdata.com"
+  "updatedAt": "2016-06-10T18:15:48.463Z",
+  "updatedBy": "john.sundberg@kineticdata.com"
 }

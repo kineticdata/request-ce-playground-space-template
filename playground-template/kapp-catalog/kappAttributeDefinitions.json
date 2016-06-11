@@ -9,6 +9,10 @@
   },
   {
     "allowsMultiple": false,
+    "name": "Icon"
+  },
+  {
+    "allowsMultiple": false,
     "name": "Shared Bridged Resource Form Slug"
   },
   {

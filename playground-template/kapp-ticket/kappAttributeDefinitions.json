@@ -5,6 +5,10 @@
   },
   {
     "allowsMultiple": false,
+    "name": "Icon"
+  },
+  {
+    "allowsMultiple": false,
     "name": "Queue Default Group"
   },
   {
