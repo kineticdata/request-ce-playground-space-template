@@ -28,8 +28,9 @@
     {
       "name": "Queue Filters",
       "values": [
-        "{\"name\":\"All\",\"qualifications\":[]}",
-        "{\"name\":\"Open\",\"qualifications\":[{\"field\":\"values[Status]=\\\"Open\\\"\",\"value\":\"\"}]}"
+        "{\"name\":\"All\",\"qualifications\":[],\"order\":2}",
+        "{\"name\":\"Mine\",\"qualifications\":[{\"field\":\"values[Assigned Individual]\",\"value\":\"${me}\"},{\"field\":\"values[Status]\",\"value\":\"${openStatuses}\"}],\"order\":0}",
+        "{\"name\":\"Open\",\"qualifications\":[{\"field\":\"values[Status]\",\"value\":\"Open\"}],\"order\":1}"
       ]
     },
     {
@@ -149,6 +150,6 @@
     }
   ],
   "slug": "ticket",
-  "updatedAt": "2016-06-10T18:15:48.463Z",
+  "updatedAt": "2016-06-13T19:43:37.062Z",
   "updatedBy": "john.sundberg@kineticdata.com"
 }
