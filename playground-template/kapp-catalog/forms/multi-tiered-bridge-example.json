@@ -5,40 +5,40 @@
   ],
   "bridgedResources": [
     {
-      "model": "Product Categories",
-      "name": "Prod Cat Tier 1",
+      "model": "Datastore - Cities With Population",
+      "name": "Cities List",
+      "parameters": [
+        {
+          "mapping": "${values('State')}",
+          "name": "State"
+        }
+      ],
+      "qualification": "By State",
+      "status": "Active"
+    },
+    {
+      "model": "Datastore - Cities With Population",
+      "name": "City Population",
+      "parameters": [
+        {
+          "mapping": "${values('Cities')}",
+          "name": "City"
+        },
+        {
+          "mapping": "${values('State')}",
+          "name": "State"
+        }
+      ],
+      "qualification": "By City and State",
+      "status": "Active"
+    },
+    {
+      "model": "Datastore - States",
+      "name": "States List",
       "parameters": [
 
       ],
-      "qualification": "Tier 1",
-      "status": "Active"
-    },
-    {
-      "model": "Product Categories",
-      "name": "Prod Cat Tier 2",
-      "parameters": [
-        {
-          "mapping": "${values('Tier 1')}",
-          "name": "Tier 1"
-        }
-      ],
-      "qualification": "Tier 2 By Tier 1",
-      "status": "Active"
-    },
-    {
-      "model": "Product Categories",
-      "name": "Prod Cat Tier 3",
-      "parameters": [
-        {
-          "mapping": "${values('Tier 1')}",
-          "name": "Tier 1"
-        },
-        {
-          "mapping": "${values('Tier 2')}",
-          "name": "Tier 2"
-        }
-      ],
-      "qualification": "Tier 3 By Tier 2 and Tier 1",
+      "qualification": "All",
       "status": "Active"
     }
   ],
@@ -52,7 +52,7 @@
   ],
   "createdAt": "2016-05-31T23:04:32.882Z",
   "createdBy": "james.davies@kineticdata.com",
-  "description": "Multi Tiered Product Categorizations in Tiered Approach",
+  "description": "Multi Tiered Example pulling data from two different locations. One from the States Datastore, the other from Cities, by passing the state.",
   "name": "Multi-Tiered Bridge Example",
   "notes": null,
   "pages": [
@@ -62,40 +62,19 @@
       "displayPage": null,
       "elements": [
         {
-          "type": "field",
-          "name": "Tier 1",
-          "label": "Tier 1",
-          "key": "f1",
-          "defaultValue": null,
-          "defaultResourceName": null,
+          "type": "content",
+          "renderType": "html",
+          "name": "Instructions",
+          "text": "<div class=\"well\">\n  <p>This form is a good example of how you can create multi-tiered bridge requests.</p>\n  <p>The state drop down list is pulling data from the States datastore form. Once a state is selected, the city drop down list is then populated by passing the State as a parameter to the cities datastore. Once a city is selected, the Population is populated by passing the City and State as parameters to the Cities datastore.</p>\n  <p>If you look in Form Settings > Bridged Resources you can see how the bridged resources are configured to pass the proper parameters.</p>\n</div>",
           "visible": true,
-          "enabled": true,
-          "required": false,
-          "requiredMessage": null,
-          "omitWhenHidden": null,
-          "pattern": null,
-          "constraints": [
-
-          ],
-          "events": [
-
-          ],
           "renderAttributes": {
 
-          },
-          "dataType": "string",
-          "renderType": "dropdown",
-          "choicesResourceName": "Prod Cat Tier 1",
-          "choicesRunIf": null,
-          "choices": {
-            "label": "${resources('Prod Cat Tier 1:Tier 1')}",
-            "value": "${resources('Prod Cat Tier 1:Tier 1')}"
           }
         },
         {
           "type": "field",
-          "name": "Tier 2",
-          "label": "Tier 2",
+          "name": "State",
+          "label": "State",
           "key": "f2",
           "defaultValue": null,
           "defaultResourceName": null,
@@ -116,17 +95,59 @@
           },
           "dataType": "string",
           "renderType": "dropdown",
-          "choicesResourceName": "Prod Cat Tier 2",
+          "choicesResourceName": "States List",
           "choicesRunIf": null,
           "choices": {
-            "label": "${resources('Prod Cat Tier 2:Tier 2')}",
-            "value": "${resources('Prod Cat Tier 2:Tier 2')}"
+            "label": "${resources('States List:Name')}",
+            "value": "${resources('States List:Abbreviation')}"
           }
         },
         {
           "type": "field",
-          "name": "Tier 3",
-          "label": "Tier 3",
+          "name": "Cities",
+          "label": "Cities",
+          "key": "f1",
+          "defaultValue": null,
+          "defaultResourceName": null,
+          "visible": true,
+          "enabled": true,
+          "required": false,
+          "requiredMessage": null,
+          "omitWhenHidden": null,
+          "pattern": null,
+          "constraints": [
+
+          ],
+          "events": [
+            {
+              "name": "Set City Population",
+              "type": "Change",
+              "action": "Set Fields",
+              "mappings": [
+                {
+                  "field": "Population",
+                  "value": "${resources('City Population:Population')}"
+                }
+              ],
+              "bridgedResourceName": "City Population"
+            }
+          ],
+          "renderAttributes": {
+
+          },
+          "dataType": "string",
+          "renderType": "dropdown",
+          "choicesResourceName": "Cities List",
+          "choicesRunIf": null,
+          "choices": {
+            "label": "${resources('Cities List:City')}",
+            "value": "${resources('Cities List:City')}"
+          }
+        },
+        {
+          "type": "field",
+          "name": "Population",
+          "label": "Population",
           "key": "f3",
           "defaultValue": null,
           "defaultResourceName": null,
@@ -146,13 +167,8 @@
 
           },
           "dataType": "string",
-          "renderType": "dropdown",
-          "choicesResourceName": "Prod Cat Tier 3",
-          "choicesRunIf": null,
-          "choices": {
-            "label": "${resources('Prod Cat Tier 3:Tier 3')}",
-            "value": "${resources('Prod Cat Tier 3:Tier 3')}"
-          }
+          "renderType": "text",
+          "rows": 1
         },
         {
           "type": "button",
@@ -181,6 +197,6 @@
   "status": "Active",
   "submissionLabelExpression": "Multi Test - ${values('Tier 1')} ${values('Tier 2')} ${values('Tier 3')}",
   "type": "Service",
-  "updatedAt": "2016-06-09T18:51:19.609Z",
-  "updatedBy": "demo.taskman@kineticdata.com"
+  "updatedAt": "2016-06-14T18:39:45.597Z",
+  "updatedBy": "james.davies@kineticdata.com"
 }

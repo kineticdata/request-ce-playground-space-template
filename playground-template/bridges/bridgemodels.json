@@ -10,6 +10,11 @@
     "status": "Active"
   },
   {
+    "activeMappingName": "Datastore - Cities With Population",
+    "name": "Datastore - Cities With Population",
+    "status": "Active"
+  },
+  {
     "activeMappingName": "Datastore - States",
     "name": "Datastore - States",
     "status": "Active"

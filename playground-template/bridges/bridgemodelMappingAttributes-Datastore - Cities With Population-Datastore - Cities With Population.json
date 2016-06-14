@@ -1,0 +1,18 @@
+[
+  {
+    "name": "City",
+    "structureField": "${fields('values[City]')}"
+  },
+  {
+    "name": "State",
+    "structureField": "${fields('values[State]')}"
+  },
+  {
+    "name": "Population",
+    "structureField": "${fields('values[Population]')}"
+  },
+  {
+    "name": "Status",
+    "structureField": "${fields('values[Status]')}"
+  }
+]
