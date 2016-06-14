@@ -14,6 +14,12 @@
       ]
     },
     {
+      "name": "Fulfillment Individual",
+      "values": [
+        "self"
+      ]
+    },
+    {
       "name": "Image",
       "values": [
         "support-request.png"
@@ -461,6 +467,6 @@
   "status": "Active",
   "submissionLabelExpression": "${values('Request Summary')}",
   "type": "Service",
-  "updatedAt": "2016-06-09T18:51:18.048Z",
-  "updatedBy": "demo.taskman@kineticdata.com"
+  "updatedAt": "2016-06-14T20:00:39.610Z",
+  "updatedBy": "john.sundberg@kineticdata.com"
 }

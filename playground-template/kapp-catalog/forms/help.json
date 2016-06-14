@@ -12,6 +12,12 @@
       "values": [
         "Fulfillment::Generic"
       ]
+    },
+    {
+      "name": "Fulfillment Individual",
+      "values": [
+        "self"
+      ]
     }
   ],
   "bridgedResources": [
@@ -40,7 +46,7 @@
           "defaultResourceName": null,
           "visible": true,
           "enabled": true,
-          "required": false,
+          "required": true,
           "requiredMessage": null,
           "omitWhenHidden": null,
           "pattern": null,
@@ -84,6 +90,6 @@
   "status": "Active",
   "submissionLabelExpression": null,
   "type": "Service",
-  "updatedAt": "2016-06-09T21:51:38.548Z",
+  "updatedAt": "2016-06-14T20:00:23.947Z",
   "updatedBy": "john.sundberg@kineticdata.com"
 }
