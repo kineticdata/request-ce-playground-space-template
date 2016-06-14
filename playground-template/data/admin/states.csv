@@ -10,43 +10,43 @@ active,DE,Delaware
 active,DC,District of Columbia
 active,FL,Florida
 active,GA,Georgia
-active,HI,Hawaii
 active,ID,Idaho
-active,IL,Illinois
 active,IN,Indiana
+active,IL,Illinois
+active,HI,Hawaii
 active,IA,Iowa
-active,KS,Kansas
 active,KY,Kentucky
-active,LA,Louisiana
-active,ME,Maine
-active,MT,Montana
-active,NE,Nebraska
-active,NV,Nevada
-active,NH,New Hampshire
-active,NJ,New Jersey
-active,NM,New Mexico
-active,NY,New York
-active,NC,North Carolina
-active,ND,North Dakota
-active,OH,Ohio
-active,OK,Oklahoma
-active,OR,Oregon
+active,KS,Kansas
 active,MD,Maryland
+active,LA,Louisiana
 active,MA,Massachusetts
+active,ME,Maine
 active,MI,Michigan
 active,MN,Minnesota
-active,MS,Mississippi
 active,MO,Missouri
-active,PA,Pennsylvania
+active,MT,Montana
+active,NE,Nebraska
+active,MS,Mississippi
+active,NH,New Hampshire
+active,NJ,New Jersey
+active,NV,Nevada
+active,NY,New York
+active,NC,North Carolina
+active,NM,New Mexico
+active,ND,North Dakota
+active,OK,Oklahoma
+active,OH,Ohio
 active,RI,Rhode Island
+active,OR,Oregon
+active,PA,Pennsylvania
 active,SC,South Carolina
-active,SD,South Dakota
 active,TN,Tennessee
+active,SD,South Dakota
+active,VT,Vermont
 active,TX,Texas
 active,UT,Utah
-active,VT,Vermont
-active,VA,Virginia
 active,WA,Washington
 active,WV,West Virginia
+active,VA,Virginia
 active,WI,Wisconsin
 active,WY,Wyoming
