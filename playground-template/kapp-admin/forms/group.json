@@ -11,6 +11,7 @@
   ],
   "createdAt": "2016-04-28T19:20:52.442Z",
   "createdBy": "anne.ramey@kineticdata.com",
+  "customHeadContent": null,
   "description": "Form to store the group data.",
   "name": "Group",
   "notes": null,

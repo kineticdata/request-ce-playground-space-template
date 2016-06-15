@@ -11,6 +11,7 @@
   ],
   "createdAt": "2016-06-07T16:58:34.867Z",
   "createdBy": "john",
+  "customHeadContent": null,
   "description": "This template is of a basic queue item. All elements in Hidden Metadata and Status Information are required for the Queue to function.",
   "name": "Basic Queue Item Template",
   "notes": null,

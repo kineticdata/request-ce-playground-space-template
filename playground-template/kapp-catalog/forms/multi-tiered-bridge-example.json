@@ -52,6 +52,7 @@
   ],
   "createdAt": "2016-05-31T23:04:32.882Z",
   "createdBy": "james.davies@kineticdata.com",
+  "customHeadContent": null,
   "description": "Multi Tiered Example pulling data from two different locations. One from the States Datastore, the other from Cities, by passing the state.",
   "name": "Multi-Tiered Bridge Example",
   "notes": null,

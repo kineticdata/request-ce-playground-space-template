@@ -11,6 +11,7 @@
   ],
   "createdAt": "2016-05-11T16:05:44.136Z",
   "createdBy": "marcin.zarycki@kineticdata.com",
+  "customHeadContent": null,
   "description": "Stores members within a group.",
   "name": "Group Membership",
   "notes": null,

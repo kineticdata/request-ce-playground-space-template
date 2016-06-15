@@ -16,6 +16,7 @@
   ],
   "createdAt": "2016-05-04T14:14:04.289Z",
   "createdBy": "james.davies@kineticdata.com",
+  "customHeadContent": null,
   "description": "Stores Types of Computers. Used in Onboarding Request",
   "name": "Computers",
   "notes": null,

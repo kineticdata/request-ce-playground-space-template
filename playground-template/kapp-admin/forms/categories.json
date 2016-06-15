@@ -22,6 +22,7 @@
   ],
   "createdAt": "2016-04-11T17:24:10.681Z",
   "createdBy": "stephanie.harms@kineticdata.com",
+  "customHeadContent": null,
   "description": "Console to visually manage categories for individual kapps.",
   "name": "Categories",
   "notes": null,
