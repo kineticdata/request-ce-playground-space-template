@@ -128,8 +128,8 @@
   ],
   "slug": "telephone",
   "status": "Active",
-  "submissionLabelExpression": null,
+  "submissionLabelExpression": "${values('Telephone Number')}",
   "type": "Datastore",
-  "updatedAt": "2016-06-09T18:51:05.902Z",
-  "updatedBy": "demo.taskman@kineticdata.com"
+  "updatedAt": "2016-06-15T18:29:48.922Z",
+  "updatedBy": "john.sundberg@kineticdata.com"
 }
