@@ -20,6 +20,12 @@
       ]
     },
     {
+      "name": "Fulfillment Individual",
+      "values": [
+        "self"
+      ]
+    },
+    {
       "name": "Image",
       "values": [
         "stock-check.png"
@@ -241,6 +247,6 @@
   "status": "Active",
   "submissionLabelExpression": "ipad ${values('Color')} / ${values('Size')}",
   "type": "Service",
-  "updatedAt": "2016-06-10T19:29:15.282Z",
-  "updatedBy": "john.sundberg@kineticdata.com"
+  "updatedAt": "2016-06-15T18:54:38.841Z",
+  "updatedBy": "james.davies@kineticdata.com"
 }
