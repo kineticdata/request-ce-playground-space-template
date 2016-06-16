@@ -89,8 +89,8 @@
   ],
   "slug": "help",
   "status": "Active",
-  "submissionLabelExpression": null,
+  "submissionLabelExpression": "Help - ${values('Ask a question')}",
   "type": "Service",
-  "updatedAt": "2016-06-14T20:00:23.947Z",
+  "updatedAt": "2016-06-16T20:36:33.053Z",
   "updatedBy": "john.sundberg@kineticdata.com"
 }
