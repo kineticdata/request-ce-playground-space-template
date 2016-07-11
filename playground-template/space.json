@@ -1,1 +1,58 @@
-{"afterLogoutPath":null,"attributes":[{"name":"Admin Kapp Slug","values":["admin"]},{"name":"Company Name","values":["Acme"]},{"name":"QApp Slug","values":["ticket"]},{"name":"Task Server Url","values":["https://developer.kineticdata.com/kinetic-task"]},{"name":"Task Source Name","values":["Training Spaces"]},{"name":"Web Server Url","values":["https://developer.kineticdata.com/kinetic"]}],"bundlePath":null,"createdAt":"2016-06-09T18:50:54.985Z","createdBy":"admin","displayType":"Redirect","displayValue":"catalog","loginPage":null,"name":"Playground Template","resetPasswordPage":null,"sessionInactiveLimitInSeconds":2500000,"slug":"playground-template","updatedAt":"2016-07-11T15:18:27.208Z","updatedBy":"james.davies@kineticdata.com"}
+{
+  "afterLogoutPath": null,
+  "attributes": [
+    {
+      "name": "Admin Kapp Slug",
+      "values": [
+        "admin"
+      ]
+    },
+    {
+      "name": "Company Name",
+      "values": [
+        "Acme"
+      ]
+    },
+    {
+      "name": "QApp Slug",
+      "values": [
+        "ticket"
+      ]
+    },
+    {
+      "name": "Task Server Url",
+      "values": [
+        "https://developer.kineticdata.com/kinetic-task"
+      ]
+    },
+    {
+      "name": "Task Source Name",
+      "values": [
+        "Training Spaces"
+      ]
+    },
+    {
+      "name": "Web Server Url",
+      "values": [
+        "https://developer.kineticdata.com/kinetic"
+      ]
+    }
+  ],
+  "bundlePath": null,
+  "createdAt": "2016-06-09T18:50:54.985Z",
+  "createdBy": "admin",
+  "displayType": "Redirect",
+  "displayValue": "catalog",
+  "loginPage": null,
+  "name": "Playground Template",
+  "resetPasswordPage": null,
+  "sessionInactiveLimitInSeconds": 2500000,
+  "slug": "playground-template",
+  "updatedAt": "2016-07-11T15:18:27.208Z",
+  "updatedBy": "james.davies@kineticdata.com",
+  "filestore": {
+    "filehubUrl": "https://developer.kineticdata.com/kinetic-filehub",
+    "key": "NH6MP0G",
+    "slug": "training-spaces"
+  }
+}
