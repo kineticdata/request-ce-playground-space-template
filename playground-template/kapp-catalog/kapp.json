@@ -2,33 +2,9 @@
   "afterLogoutPath": "",
   "attributes": [
     {
-      "name": "Company Name",
-      "values": [
-        "Acme"
-      ]
-    },
-    {
-      "name": "Icon",
-      "values": [
-        "fa-circle"
-      ]
-    },
-    {
       "name": "Shared Bridged Resource Form Slug",
       "values": [
         "shared-resources"
-      ]
-    },
-    {
-      "name": "Task Server Url",
-      "values": [
-        "https://developer.kineticdata.com/kinetic-task"
-      ]
-    },
-    {
-      "name": "Task Source Name",
-      "values": [
-        "Training Spaces"
       ]
     },
     {
@@ -148,6 +124,6 @@
     }
   ],
   "slug": "catalog",
-  "updatedAt": "2016-06-10T18:15:13.678Z",
-  "updatedBy": "john.sundberg@kineticdata.com"
+  "updatedAt": "2016-07-11T15:26:58.568Z",
+  "updatedBy": "james.davies@kineticdata.com"
 }

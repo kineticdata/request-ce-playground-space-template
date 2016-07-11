@@ -48,7 +48,7 @@
     {
       "name": "Queue Setup Visible",
       "values": [
-        "true"
+        "false"
       ]
     },
     {
@@ -150,6 +150,6 @@
     }
   ],
   "slug": "ticket",
-  "updatedAt": "2016-06-13T19:43:37.062Z",
-  "updatedBy": "john.sundberg@kineticdata.com"
+  "updatedAt": "2016-07-11T15:27:41.290Z",
+  "updatedBy": "james.davies@kineticdata.com"
 }
