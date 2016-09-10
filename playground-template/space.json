@@ -38,7 +38,7 @@
       ]
     }
   ],
-  "bundlePath": null,
+  "bundlePath": "shared-bundle",
   "createdAt": "2016-06-09T18:50:54.985Z",
   "createdBy": "admin",
   "displayType": "Redirect",
@@ -47,8 +47,9 @@
   "name": "Playground Template",
   "resetPasswordPage": null,
   "sessionInactiveLimitInSeconds": 2500000,
+  "sharedBundleBase": "shared-bundle",
   "slug": "playground-template",
-  "updatedAt": "2016-07-11T15:18:27.208Z",
+  "updatedAt": "2016-09-10T13:51:43.899Z",
   "updatedBy": "james.davies@kineticdata.com",
   "filestore": {
     "filehubUrl": "https://developer.kineticdata.com/kinetic-filehub",
