@@ -4,7 +4,7 @@
     {
       "name": "Kapp Slug",
       "values": [
-        "catalog"
+        "admin"
       ]
     }
   ],
@@ -14,24 +14,24 @@
   "categorizations": [
 
   ],
-  "createdAt": "2016-04-20T17:39:35.163Z",
-  "createdBy": "marcin.zarycki@kineticdata.com",
+  "createdAt": "2016-09-10T13:51:57.793Z",
+  "createdBy": "james.davies@kineticdata.com",
   "customHeadContent": null,
-  "description": "Allows users to store supporting data used within their application.",
-  "name": "Datastore",
+  "description": "Allows for management of translations.",
+  "name": "Translations",
   "notes": null,
   "pages": [
     {
       "advanceCondition": null,
       "displayCondition": null,
-      "displayPage": "pages/datastore/console.jsp",
+      "displayPage": "pages/translations/console.jsp",
       "elements": [
 
       ],
       "events": [
 
       ],
-      "name": "Datastore",
+      "name": "Translations",
       "renderType": "submittable",
       "type": "page"
     }
@@ -39,10 +39,10 @@
   "securityPolicies": [
 
   ],
-  "slug": "datastore",
-  "status": "New",
+  "slug": "translations",
+  "status": "Active",
   "submissionLabelExpression": null,
   "type": "Console",
-  "updatedAt": "2016-09-10T13:46:08.610Z",
+  "updatedAt": "2016-09-10T13:51:57.793Z",
   "updatedBy": "james.davies@kineticdata.com"
 }
