@@ -904,14 +904,7 @@
     }
   ],
   "securityPolicies": [
-    {
-      "endpoint": "Display",
-      "name": "VPN Group"
-    },
-    {
-      "endpoint": "Submission Access",
-      "name": "VPN Group"
-    }
+
   ],
   "slug": "facilities-request",
   "status": "Active",
