@@ -60,7 +60,7 @@
   "customHeadContent": null,
   "description": "iPad Request",
   "name": "iPad Request",
-  "notes": "a",
+  "notes": "",
   "pages": [
     {
       "advanceCondition": null,
@@ -95,20 +95,16 @@
           "choicesRunIf": null,
           "choices": [
             {
-              "label": "Red",
-              "value": "Red"
+              "label": "Space Grey",
+              "value": "Space Grey"
             },
             {
-              "label": "Blue",
-              "value": "Blue"
+              "label": "Silver",
+              "value": "Silver"
             },
             {
-              "label": "Green",
-              "value": "Green"
-            },
-            {
-              "label": "Orange",
-              "value": "Orange"
+              "label": "Gold",
+              "value": "Gold"
             }
           ]
         },
@@ -140,85 +136,18 @@
           "choicesRunIf": null,
           "choices": [
             {
-              "label": "8GB",
-              "value": "8GB"
-            },
-            {
-              "label": "16GB",
-              "value": "16GB"
-            },
-            {
               "label": "32GB",
               "value": "32GB"
             },
             {
-              "label": "64GB",
-              "value": "64GB"
-            }
-          ]
-        },
-        {
-          "type": "field",
-          "name": "Inscribed",
-          "label": "Inscribed",
-          "key": "f3",
-          "defaultValue": null,
-          "defaultResourceName": null,
-          "visible": true,
-          "enabled": true,
-          "required": false,
-          "requiredMessage": null,
-          "omitWhenHidden": null,
-          "pattern": null,
-          "constraints": [
-
-          ],
-          "events": [
-
-          ],
-          "renderAttributes": {
-
-          },
-          "dataType": "string",
-          "renderType": "radio",
-          "choicesResourceName": null,
-          "choicesRunIf": null,
-          "choices": [
-            {
-              "label": "Yes",
-              "value": "Yes"
+              "label": "128GB",
+              "value": "128GB"
             },
             {
-              "label": "No",
-              "value": "No"
+              "label": "256GB",
+              "value": "256GB"
             }
           ]
-        },
-        {
-          "type": "field",
-          "name": "Inscription Text",
-          "label": "Inscription Text",
-          "key": "f4",
-          "defaultValue": null,
-          "defaultResourceName": null,
-          "visible": "values('Inscribed')===\"Yes\"",
-          "enabled": true,
-          "required": "values('Inscribed')===\"Yes\"",
-          "requiredMessage": null,
-          "omitWhenHidden": true,
-          "pattern": null,
-          "constraints": [
-
-          ],
-          "events": [
-
-          ],
-          "renderAttributes": {
-
-          },
-          "dataType": "string",
-          "renderType": "text",
-          "rows": 2
         },
         {
           "type": "button",
@@ -247,6 +176,6 @@
   "status": "Active",
   "submissionLabelExpression": "ipad ${values('Color')} / ${values('Size')}",
   "type": "Service",
-  "updatedAt": "2016-06-15T18:54:38.841Z",
-  "updatedBy": "james.davies@kineticdata.com"
+  "updatedAt": "2016-07-14T15:36:31.251Z",
+  "updatedBy": "john.sundberg@kineticdata.com"
 }

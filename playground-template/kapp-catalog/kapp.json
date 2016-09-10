@@ -14,7 +14,7 @@
       ]
     }
   ],
-  "bundlePath": "adminlte",
+  "bundlePath": "request-ce-bundle-demo",
   "createdAt": "2016-04-28T22:07:55.423Z",
   "createdBy": "james.davies@kineticdata.com",
   "defaultFormConfirmationPage": null,
@@ -124,6 +124,6 @@
     }
   ],
   "slug": "catalog",
-  "updatedAt": "2016-07-11T15:26:58.568Z",
+  "updatedAt": "2016-09-10T13:34:57.239Z",
   "updatedBy": "james.davies@kineticdata.com"
 }

@@ -7,6 +7,9 @@
     {
       "model": "Datastore - Cities With Population",
       "name": "Cities List",
+      "order": [
+
+      ],
       "parameters": [
         {
           "mapping": "${values('State')}",
@@ -19,6 +22,9 @@
     {
       "model": "Datastore - Cities With Population",
       "name": "City Population",
+      "order": [
+
+      ],
       "parameters": [
         {
           "mapping": "${values('Cities')}",
@@ -35,6 +41,9 @@
     {
       "model": "Datastore - States",
       "name": "States List",
+      "order": [
+
+      ],
       "parameters": [
 
       ],
@@ -196,8 +205,8 @@
   ],
   "slug": "multi-tiered-bridge-example",
   "status": "Active",
-  "submissionLabelExpression": "Multi Test - ${values('State')} ${values('Cities')} ${values('Population')}",
+  "submissionLabelExpression": "${values('State')} ${values('Cities')} ${values('Population')}",
   "type": "Service",
-  "updatedAt": "2016-06-14T18:39:45.597Z",
-  "updatedBy": "james.davies@kineticdata.com"
+  "updatedAt": "2016-07-29T13:46:03.476Z",
+  "updatedBy": "john.sundberg@kineticdata.com"
 }
