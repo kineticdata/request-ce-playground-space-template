@@ -176,6 +176,6 @@
   "status": "Active",
   "submissionLabelExpression": "ipad ${values('Color')} / ${values('Size')}",
   "type": "Service",
-  "updatedAt": "2016-07-14T15:36:31.251Z",
-  "updatedBy": "john.sundberg@kineticdata.com"
+  "updatedAt": "2016-12-24T14:49:04.495Z",
+  "updatedBy": "demo.taskman@kineticdata.com"
 }

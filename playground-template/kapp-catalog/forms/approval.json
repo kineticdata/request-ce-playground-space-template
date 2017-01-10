@@ -553,6 +553,6 @@
   "status": "Active",
   "submissionLabelExpression": "${values('Summary')}",
   "type": "Approval",
-  "updatedAt": "2016-06-14T19:56:33.751Z",
-  "updatedBy": "james.davies@kineticdata.com"
+  "updatedAt": "2016-12-24T14:49:01.529Z",
+  "updatedBy": "demo.taskman@kineticdata.com"
 }

@@ -24,8 +24,33 @@
   "displayValue": null,
   "loginPage": null,
   "name": "Admin",
+  "requireAuthentication": false,
   "resetPasswordPage": null,
   "securityPolicies": [
+    {
+      "endpoint": "Modification",
+      "name": "Admins"
+    },
+    {
+      "endpoint": "Form Creation",
+      "name": "Admins"
+    },
+    {
+      "endpoint": "Default Form Modification",
+      "name": "Admins"
+    },
+    {
+      "endpoint": "Default Form Display",
+      "name": "Authenticated Users"
+    },
+    {
+      "endpoint": "Default Submission Access",
+      "name": "Submitter"
+    },
+    {
+      "endpoint": "Default Submission Modification",
+      "name": "Submitter"
+    },
     {
       "endpoint": "Modification",
       "name": "Admins"
@@ -148,6 +173,6 @@
     }
   ],
   "slug": "admin",
-  "updatedAt": "2016-09-10T13:52:00.462Z",
+  "updatedAt": "2017-01-10T20:45:49.409Z",
   "updatedBy": "james.davies@kineticdata.com"
 }

@@ -1,12 +1,7 @@
 {
   "anonymous": false,
   "attributes": [
-    {
-      "name": "Kapp Slug",
-      "values": [
-        "catalog"
-      ]
-    }
+
   ],
   "bridgedResources": [
 
@@ -14,10 +9,10 @@
   "categorizations": [
 
   ],
-  "createdAt": "2016-04-20T17:39:35.163Z",
-  "createdBy": "marcin.zarycki@kineticdata.com",
+  "createdAt": "2017-01-10T20:50:12.256Z",
+  "createdBy": "james.davies@kineticdata.com",
   "customHeadContent": null,
-  "description": "Allows users to store supporting data used within their application.",
+  "description": "A Datastore is a Kinetic Request form that can be used to store data for use in other applications or forms. The data can be accessed using bridges.",
   "name": "Datastore",
   "notes": null,
   "pages": [
@@ -40,9 +35,9 @@
 
   ],
   "slug": "datastore",
-  "status": "New",
+  "status": "Active",
   "submissionLabelExpression": null,
   "type": "Console",
-  "updatedAt": "2016-09-10T13:46:08.610Z",
+  "updatedAt": "2017-01-10T20:50:12.256Z",
   "updatedBy": "james.davies@kineticdata.com"
 }

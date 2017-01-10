@@ -1,16 +1,9 @@
 [
   {
     "event": "Submitted",
-    "filter": "submission('type')===\"Approval\"",
-    "name": "Approval Submitted",
-    "type": "Submission",
-    "url": "https://developer.kineticdata.com/kinetic-task/app/api/v1/run-tree/${space('attribute:Task Source Name')}/Approval/Complete"
-  },
-  {
-    "event": "Submitted",
-    "filter": "submission('type')===\"Service\"",
+    "filter": "",
     "name": "Submission Submitted",
     "type": "Submission",
-    "url": "https://developer.kineticdata.com/kinetic-task/app/api/v1/run-tree/${space('attribute:Task Source Name')}/Submission/Complete"
+    "url": "http://localhost:8080/kinetic-task/app/api/v1/run-tree/${space('attribute:Task Source Name')}/${kapp('slug')}%20%3E%20${form('slug')}/Complete"
   }
 ]

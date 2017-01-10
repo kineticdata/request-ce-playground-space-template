@@ -22,19 +22,19 @@
     {
       "name": "Task Server Url",
       "values": [
-        "https://developer.kineticdata.com/kinetic-task"
+        "http://localhost:8080/kinetic-task"
       ]
     },
     {
       "name": "Task Source Name",
       "values": [
-        "Training Spaces"
+        "CE Playground"
       ]
     },
     {
       "name": "Web Server Url",
       "values": [
-        "https://developer.kineticdata.com/kinetic"
+        "http://localhost:8080/kinetic"
       ]
     }
   ],
@@ -44,16 +44,17 @@
   "displayType": "Redirect",
   "displayValue": "catalog",
   "loginPage": null,
-  "name": "Playground Template",
+  "name": "Playground",
+  "requireAuthentication": false,
   "resetPasswordPage": null,
   "sessionInactiveLimitInSeconds": 2500000,
   "sharedBundleBase": "shared-bundle",
-  "slug": "playground-template",
-  "updatedAt": "2016-09-10T13:51:43.899Z",
+  "slug": "playground",
+  "updatedAt": "2017-01-10T21:07:57.311Z",
   "updatedBy": "james.davies@kineticdata.com",
   "filestore": {
-    "filehubUrl": "https://developer.kineticdata.com/kinetic-filehub",
+    "filehubUrl": "http://localhost:8080/kinetic-filehub",
     "key": "NH6MP0G",
-    "slug": "training-spaces"
+    "slug": "attachments"
   }
 }

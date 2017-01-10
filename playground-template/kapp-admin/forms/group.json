@@ -9,8 +9,8 @@
   "categorizations": [
 
   ],
-  "createdAt": "2016-04-28T19:20:52.442Z",
-  "createdBy": "anne.ramey@kineticdata.com",
+  "createdAt": "2017-01-10T20:49:12.535Z",
+  "createdBy": "james.davies@kineticdata.com",
   "customHeadContent": null,
   "description": "Form to store the group data.",
   "name": "Group",
@@ -256,8 +256,8 @@
   ],
   "slug": "group",
   "status": "Active",
-  "submissionLabelExpression": "${values('Name')}",
+  "submissionLabelExpression": "${values('Name')} ${values('Status')}",
   "type": "Content",
-  "updatedAt": "2016-06-16T20:45:22.076Z",
-  "updatedBy": "john.sundberg@kineticdata.com"
+  "updatedAt": "2017-01-10T20:49:12.535Z",
+  "updatedBy": "james.davies@kineticdata.com"
 }

@@ -4,13 +4,27 @@
 
   ],
   "bridgedResources": [
+    {
+      "model": "Person",
+      "name": "Person by Username",
+      "order": [
 
+      ],
+      "parameters": [
+        {
+          "mapping": "${values('Search')}",
+          "name": "Username"
+        }
+      ],
+      "qualification": "By Username",
+      "status": "Active"
+    }
   ],
   "categorizations": [
 
   ],
-  "createdAt": "2016-05-11T16:05:44.136Z",
-  "createdBy": "marcin.zarycki@kineticdata.com",
+  "createdAt": "2017-01-10T20:49:12.558Z",
+  "createdBy": "james.davies@kineticdata.com",
   "customHeadContent": null,
   "description": "Stores members within a group.",
   "name": "Group Membership",
@@ -34,8 +48,8 @@
           "elements": [
             {
               "type": "field",
-              "name": "Group Id",
-              "label": "Group Id",
+              "name": "Group Name",
+              "label": "Group Name",
               "key": "f3",
               "defaultValue": null,
               "defaultResourceName": null,
@@ -60,13 +74,45 @@
             },
             {
               "type": "field",
-              "name": "Username",
-              "label": "Username",
+              "name": "Search",
+              "label": "Find a User",
               "key": "f1",
               "defaultValue": null,
               "defaultResourceName": null,
               "visible": true,
               "enabled": true,
+              "required": false,
+              "requiredMessage": null,
+              "omitWhenHidden": null,
+              "pattern": null,
+              "constraints": [
+
+              ],
+              "events": [
+
+              ],
+              "renderAttributes": {
+                "uses-typeahead": "true",
+                "typeahead-attribute-to-set": "Username",
+                "typeahead-bridged-resource": "Person by Username",
+                "typeahead-fa-class": "fa-user",
+                "typeahead-attributes-to-show": "Display Name,Username",
+                "typeahead-placeholder": "Search By Username",
+                "typeahead-fields-to-set": "Username=Username"
+              },
+              "dataType": "string",
+              "renderType": "text",
+              "rows": 1
+            },
+            {
+              "type": "field",
+              "name": "Username",
+              "label": "Username",
+              "key": "f4",
+              "defaultValue": null,
+              "defaultResourceName": null,
+              "visible": true,
+              "enabled": false,
               "required": true,
               "requiredMessage": null,
               "omitWhenHidden": null,
@@ -113,7 +159,14 @@
         }
       ],
       "events": [
-
+        {
+          "name": "Initialize Typeahead",
+          "type": "Load",
+          "action": "Custom",
+          "code": "typeAheadSearch(K('form'));",
+          "runIf": "true",
+          "bridgedResourceName": null
+        }
       ],
       "name": "Group Member",
       "renderType": "submittable",
@@ -125,8 +178,8 @@
   ],
   "slug": "group-membership",
   "status": "Active",
-  "submissionLabelExpression": "${values('Group Id')} - ${values('Username')}",
+  "submissionLabelExpression": "${values('Group Name')} ${values('Username')}",
   "type": "Content",
-  "updatedAt": "2016-06-09T18:51:07.024Z",
-  "updatedBy": "demo.taskman@kineticdata.com"
+  "updatedAt": "2017-01-10T20:49:12.558Z",
+  "updatedBy": "james.davies@kineticdata.com"
 }
