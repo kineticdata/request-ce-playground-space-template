@@ -20,6 +20,11 @@
     "status": "Active"
   },
   {
+    "activeMappingName": "Person",
+    "name": "Person",
+    "status": "Active"
+  },
+  {
     "activeMappingName": null,
     "name": "Ticket Count",
     "status": "Active"

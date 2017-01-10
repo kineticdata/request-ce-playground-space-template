@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Display Name",
+    "structureField": "${fields('displayName')}"
+  },
+  {
+    "name": "Username",
+    "structureField": "${fields('username')}"
+  },
+  {
+    "name": "Email",
+    "structureField": "${fields('email')}"
+  }
+]

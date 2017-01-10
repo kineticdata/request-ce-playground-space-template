@@ -1,0 +1,10 @@
+[
+  {
+    "name": "By Email",
+    "query": "email=%${parameters('Email')}%"
+  },
+  {
+    "name": "By Username",
+    "query": "username=%${parameters('Username')}%"
+  }
+]

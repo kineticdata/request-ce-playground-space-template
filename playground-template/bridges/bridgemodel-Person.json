@@ -1,0 +1,38 @@
+{
+  "activeMappingName": "Person",
+  "attributes": [
+    {
+      "name": "Display Name"
+    },
+    {
+      "name": "Email"
+    },
+    {
+      "name": "Username"
+    }
+  ],
+  "name": "Person",
+  "qualifications": [
+    {
+      "name": "By Email",
+      "parameters": [
+        {
+          "name": "Email",
+          "notes": null
+        }
+      ],
+      "resultType": "Multiple"
+    },
+    {
+      "name": "By Username",
+      "parameters": [
+        {
+          "name": "Username",
+          "notes": null
+        }
+      ],
+      "resultType": "Multiple"
+    }
+  ],
+  "status": "Active"
+}
