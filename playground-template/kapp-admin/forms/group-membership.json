@@ -180,6 +180,6 @@
   "status": "Active",
   "submissionLabelExpression": "${values('Group Name')} ${values('Username')}",
   "type": "Content",
-  "updatedAt": "2017-01-10T20:49:12.558Z",
-  "updatedBy": "james.davies@kineticdata.com"
+  "updatedAt": "2017-01-11T20:15:18.459Z",
+  "updatedBy": "demo.taskman@kineticdata.com"
 }

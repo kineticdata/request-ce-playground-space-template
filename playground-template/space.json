@@ -10,7 +10,7 @@
     {
       "name": "Company Name",
       "values": [
-        "Acme"
+        "Playground Template"
       ]
     },
     {
@@ -56,7 +56,7 @@
   "sessionInactiveLimitInSeconds": 2500000,
   "sharedBundleBase": "shared-bundle",
   "slug": "playground-template",
-  "updatedAt": "2017-01-11T17:04:34.681Z",
+  "updatedAt": "2017-01-11T20:16:24.096Z",
   "updatedBy": "admin",
   "filestore": {
     "filehubUrl": "https://developer.kineticdata.com/kinetic-filehub",

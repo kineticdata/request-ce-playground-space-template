@@ -301,6 +301,6 @@
   "status": "Active",
   "submissionLabelExpression": "${values('Date Time Sent')} ${values('Username')} ${values('Title')}",
   "type": "Content",
-  "updatedAt": "2017-01-10T20:45:47.877Z",
-  "updatedBy": "james.davies@kineticdata.com"
+  "updatedAt": "2017-01-11T20:15:16.906Z",
+  "updatedBy": "demo.taskman@kineticdata.com"
 }

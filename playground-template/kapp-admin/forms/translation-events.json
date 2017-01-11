@@ -141,6 +141,6 @@
   "status": "Active",
   "submissionLabelExpression": "${values('Type')} - ${submission('id')}",
   "type": "Content",
-  "updatedAt": "2016-12-24T14:49:22.651Z",
+  "updatedAt": "2017-01-11T20:15:17.300Z",
   "updatedBy": "demo.taskman@kineticdata.com"
 }

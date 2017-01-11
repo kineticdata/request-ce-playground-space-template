@@ -228,6 +228,6 @@
   "status": "Active",
   "submissionLabelExpression": "${values('Context')},${values('Locale')},${values('Key').substring(0,50)}",
   "type": "Content",
-  "updatedAt": "2016-12-24T14:49:24.032Z",
+  "updatedAt": "2017-01-11T20:15:18.821Z",
   "updatedBy": "demo.taskman@kineticdata.com"
 }

@@ -557,6 +557,6 @@
   "status": "New",
   "submissionLabelExpression": "${values('Work Order Displayed Name')}",
   "type": "Ticket",
-  "updatedAt": "2016-12-24T14:48:37.037Z",
+  "updatedAt": "2017-01-11T20:15:41.318Z",
   "updatedBy": "demo.taskman@kineticdata.com"
 }

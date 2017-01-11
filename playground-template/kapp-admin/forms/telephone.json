@@ -130,6 +130,6 @@
   "status": "Active",
   "submissionLabelExpression": "${values('Telephone Number')}",
   "type": "Datastore",
-  "updatedAt": "2016-12-24T14:49:24.368Z",
+  "updatedAt": "2017-01-11T20:15:16.237Z",
   "updatedBy": "demo.taskman@kineticdata.com"
 }
