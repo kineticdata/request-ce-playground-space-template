@@ -4,6 +4,6 @@
     "filter": "",
     "name": "Submission Submitted",
     "type": "Submission",
-    "url": "http://localhost:8080/kinetic-task/app/api/v1/run-tree/${space('attribute:Task Source Name')}/${kapp('slug')}%20%3E%20${form('slug')}/Complete"
+    "url": "https://developer.kineticdata.com/kinetic-task/app/api/v1/run-tree/${space('attribute:Task Source Name')}/Work%20Order/Complete"
   }
 ]
