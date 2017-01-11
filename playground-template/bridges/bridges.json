@@ -3,12 +3,18 @@
     "key": null,
     "name": "Counter",
     "status": "Active",
-    "url": "http://localhost:8080/kinetic-bridgehub/app/api/v1/bridges/counter/"
+    "url": "https://developer.kineticdata.com/kinetic-bridgehub/app/api/v1/bridges/counter/"
   },
   {
     "key": null,
     "name": "Kinetic Core",
     "status": "Active",
-    "url": "http://localhost:8080/kinetic-bridgehub/app/api/v1/bridges/ce-playground/"
+    "url": "https://developer.kineticdata.com/kinetic-bridgehub/app/api/v1/bridges/ce-playground-template/"
+  },
+  {
+    "key": null,
+    "name": "Playground Data",
+    "status": "Active",
+    "url": "https://developer.kineticdata.com/kinetic-bridgehub/app/api/v1/bridges/ce-playground-data/"
   }
 ]
